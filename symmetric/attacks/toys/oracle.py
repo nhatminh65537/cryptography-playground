@@ -125,6 +125,7 @@ def main():
             case '3':
                 if key == input_hex('Enter your key\n>>> '):
                     print('CONGRATULATION!!! -> FLAG:', FLAG_SPN if cid == '1' else FLAG_FEISTEL)
+                    exit(0)
                 else:
                     print('WRONG KEY!!!')
             case '4':
