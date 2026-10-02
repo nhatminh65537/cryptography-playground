@@ -4,12 +4,12 @@
 {
     "distutils": {
         "depends": [],
-        "name": "minispn",
+        "name": "optimized_minispn",
         "sources": [
-            "/home/hikinx/Projects/crypto/symmetric/attacks/toys/archive/minispn.pyx"
+            "/home/hikinx/Projects/crypto/symmetric/attacks/toys/archive/optimized_minispn.pyx"
         ]
     },
-    "module_name": "minispn"
+    "module_name": "optimized_minispn"
 }
 END: Cython Metadata */
 
@@ -1136,8 +1136,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__minispn
-#define __PYX_HAVE_API__minispn
+#define __PYX_HAVE__optimized_minispn
+#define __PYX_HAVE_API__optimized_minispn
 /* Early includes */
 #include <stdint.h>
 #include "pythread.h"
@@ -1351,7 +1351,7 @@ static const char *__pyx_filename;
 /* #### Code section: filename_table ### */
 
 static const char* const __pyx_f[] = {
-  "minispn.pyx",
+  "optimized_minispn.pyx",
   "<stringsource>",
 };
 /* #### Code section: utility_code_proto_before_types ### */
@@ -1577,28 +1577,28 @@ typedef struct {
 /* #### Code section: type_declarations ### */
 
 /*--- Type declarations ---*/
-struct __pyx_obj_7minispn_Cipher;
+struct __pyx_obj_17optimized_minispn_Cipher;
 struct __pyx_defaults;
 struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "minispn.pyx":88
+/* "optimized_minispn.pyx":88
  *     return out
  * 
  * cdef class Cipher:             # <<<<<<<<<<<<<<
  *     cdef uint64_t rk[7]
  * 
 */
-struct __pyx_obj_7minispn_Cipher {
+struct __pyx_obj_17optimized_minispn_Cipher {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7minispn_Cipher *__pyx_vtab;
+  struct __pyx_vtabstruct_17optimized_minispn_Cipher *__pyx_vtab;
   uint64_t rk[7];
 };
 
 
-/* "minispn.pyx":145
+/* "optimized_minispn.pyx":145
  * 
  * class MiniSPN:
  *     def __init__(self, block_size=_BLOCK, sbox_size=_SBOX_BITS, num_rounds=_ROUNDS, /,             # <<<<<<<<<<<<<<
@@ -1690,7 +1690,7 @@ struct __pyx_memoryviewslice_obj {
 
 
 
-/* "minispn.pyx":88
+/* "optimized_minispn.pyx":88
  *     return out
  * 
  * cdef class Cipher:             # <<<<<<<<<<<<<<
@@ -1698,11 +1698,11 @@ struct __pyx_memoryviewslice_obj {
  * 
 */
 
-struct __pyx_vtabstruct_7minispn_Cipher {
-  uint64_t (*encrypt_int)(struct __pyx_obj_7minispn_Cipher *, uint64_t, int __pyx_skip_dispatch);
-  uint64_t (*decrypt_int)(struct __pyx_obj_7minispn_Cipher *, uint64_t, int __pyx_skip_dispatch);
+struct __pyx_vtabstruct_17optimized_minispn_Cipher {
+  uint64_t (*encrypt_int)(struct __pyx_obj_17optimized_minispn_Cipher *, uint64_t, int __pyx_skip_dispatch);
+  uint64_t (*decrypt_int)(struct __pyx_obj_17optimized_minispn_Cipher *, uint64_t, int __pyx_skip_dispatch);
 };
-static struct __pyx_vtabstruct_7minispn_Cipher *__pyx_vtabptr_7minispn_Cipher;
+static struct __pyx_vtabstruct_17optimized_minispn_Cipher *__pyx_vtabptr_17optimized_minispn_Cipher;
 
 
 /* "View.MemoryView":110
@@ -2929,16 +2929,16 @@ static PyObject *__pyx_memoryview__get_base(struct __pyx_memoryview_obj *__pyx_v
 static PyObject *__pyx_memoryviewslice_convert_item_to_object(struct __pyx_memoryviewslice_obj *__pyx_v_self, char *__pyx_v_itemp); /* proto*/
 static PyObject *__pyx_memoryviewslice_assign_item_from_object(struct __pyx_memoryviewslice_obj *__pyx_v_self, char *__pyx_v_itemp, PyObject *__pyx_v_value); /* proto*/
 static PyObject *__pyx_memoryviewslice__get_base(struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto*/
-static uint64_t __pyx_f_7minispn_6Cipher_encrypt_int(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x, int __pyx_skip_dispatch); /* proto*/
-static uint64_t __pyx_f_7minispn_6Cipher_decrypt_int(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x, int __pyx_skip_dispatch); /* proto*/
+static uint64_t __pyx_f_17optimized_minispn_6Cipher_encrypt_int(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x, int __pyx_skip_dispatch); /* proto*/
+static uint64_t __pyx_f_17optimized_minispn_6Cipher_decrypt_int(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x, int __pyx_skip_dispatch); /* proto*/
 
 /* Module declarations from "libc.stdint" */
 
-/* Module declarations from "minispn" */
-static uint64_t __pyx_v_7minispn_MASK;
-static uint64_t __pyx_v_7minispn_T[8][64];
-static uint64_t __pyx_v_7minispn_P[6][0x100];
-static uint64_t __pyx_v_7minispn_IS[0x1000];
+/* Module declarations from "optimized_minispn" */
+static uint64_t __pyx_v_17optimized_minispn_MASK;
+static uint64_t __pyx_v_17optimized_minispn_T[8][64];
+static uint64_t __pyx_v_17optimized_minispn_P[6][0x100];
+static uint64_t __pyx_v_17optimized_minispn_IS[0x1000];
 static PyObject *__pyx_collections_abc_Sequence = 0;
 static PyObject *generic = 0;
 static PyObject *strided = 0;
@@ -2947,11 +2947,11 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static CYTHON_INLINE uint64_t __pyx_f_7minispn__enc(uint64_t, uint64_t *); /*proto*/
-static CYTHON_INLINE uint64_t __pyx_f_7minispn__dec(uint64_t, uint64_t *); /*proto*/
-static uint64_t __pyx_f_7minispn__bits2int(PyObject *); /*proto*/
-static PyObject *__pyx_f_7minispn__int2bits(uint64_t); /*proto*/
-static PyObject *__pyx_f_7minispn___pyx_unpickle_Cipher__set_state(struct __pyx_obj_7minispn_Cipher *, PyObject *); /*proto*/
+static CYTHON_INLINE uint64_t __pyx_f_17optimized_minispn__enc(uint64_t, uint64_t *); /*proto*/
+static CYTHON_INLINE uint64_t __pyx_f_17optimized_minispn__dec(uint64_t, uint64_t *); /*proto*/
+static uint64_t __pyx_f_17optimized_minispn__bits2int(PyObject *); /*proto*/
+static PyObject *__pyx_f_17optimized_minispn__int2bits(uint64_t); /*proto*/
+static PyObject *__pyx_f_17optimized_minispn___pyx_unpickle_Cipher__set_state(struct __pyx_obj_17optimized_minispn_Cipher *, PyObject *); /*proto*/
 static CYTHON_INLINE PyObject *__Pyx_carray_to_py_uint64_t(uint64_t *, Py_ssize_t); /*proto*/
 static CYTHON_INLINE PyObject *__Pyx_carray_to_tuple_uint64_t(uint64_t *, Py_ssize_t); /*proto*/
 static int __Pyx_carray_from_py_uint64_t(PyObject *, uint64_t *, Py_ssize_t); /*proto*/
@@ -2992,11 +2992,11 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, 
 /* #### Code section: typeinfo ### */
 static const __Pyx_TypeInfo __Pyx_TypeInfo_nn_uint64_t = { "uint64_t", NULL, sizeof(uint64_t), { 0 }, 0, __PYX_IS_UNSIGNED(uint64_t) ? 'U' : 'I', __PYX_IS_UNSIGNED(uint64_t), 0 };
 /* #### Code section: before_global_var ### */
-#define __Pyx_MODULE_NAME "minispn"
-extern int __pyx_module_is_main_minispn;
-int __pyx_module_is_main_minispn = 0;
+#define __Pyx_MODULE_NAME "optimized_minispn"
+extern int __pyx_module_is_main_optimized_minispn;
+int __pyx_module_is_main_optimized_minispn = 0;
 
-/* Implementation of "minispn" */
+/* Implementation of "optimized_minispn" */
 /* #### Code section: global_var ### */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ValueError;
@@ -3115,7 +3115,6 @@ static const char __pyx_k_fortran[] = "fortran";
 static const char __pyx_k_invperm[] = "invperm";
 static const char __pyx_k_memview[] = "memview";
 static const char __pyx_k_miniSPN[] = "miniSPN";
-static const char __pyx_k_minispn[] = "minispn";
 static const char __pyx_k_num2bit[] = "_num2bit";
 static const char __pyx_k_prepare[] = "__prepare__";
 static const char __pyx_k_A_G4wd_1[] = "\200A\330\010\014\210G\2204\220w\230d\240#\240]\260!\2601";
@@ -3156,7 +3155,6 @@ static const char __pyx_k_MemoryError[] = "MemoryError";
 static const char __pyx_k_PickleError[] = "PickleError";
 static const char __pyx_k_decrypt_int[] = "decrypt_int";
 static const char __pyx_k_encrypt_int[] = "encrypt_int";
-static const char __pyx_k_minispn_pyx[] = "minispn.pyx";
 static const char __pyx_k_MiniSPN__xor[] = "MiniSPN._xor";
 static const char __pyx_k_build_tables[] = "_build_tables";
 static const char __pyx_k_decrypt_bits[] = "decrypt_bits";
@@ -3196,6 +3194,7 @@ static const char __pyx_k_setstate_cython[] = "__setstate_cython__";
 static const char __pyx_k_MiniSPN__num2bit[] = "MiniSPN._num2bit";
 static const char __pyx_k_A_s_U_1_1E_Qc_RvT[] = "\200A\330\010\037\230s\240&\250\001\250\021\330\r\016\330\014\020\220\005\220U\230!\2301\330\020\023\2201\220E\230\024\230Q\230c\240\021\240#\240R\240v\250T\260\021";
 static const char __pyx_k_need_7_round_keys[] = "need 7 round keys";
+static const char __pyx_k_optimized_minispn[] = "optimized_minispn";
 static const char __pyx_k_pyx_unpickle_Enum[] = "__pyx_unpickle_Enum";
 static const char __pyx_k_Cipher_decrypt_int[] = "Cipher.decrypt_int";
 static const char __pyx_k_Cipher_encrypt_int[] = "Cipher.encrypt_int";
@@ -3222,6 +3221,7 @@ static const char __pyx_k_Invalid_shape_in_axis[] = "Invalid shape in axis ";
 static const char __pyx_k_MiniSPN_decrypt_block[] = "MiniSPN.decrypt_block";
 static const char __pyx_k_MiniSPN_encrypt_block[] = "MiniSPN.encrypt_block";
 static const char __pyx_k_contiguous_and_direct[] = "<contiguous and direct>";
+static const char __pyx_k_optimized_minispn_pyx[] = "optimized_minispn.pyx";
 static const char __pyx_k_Cannot_index_with_type[] = "Cannot index with type '";
 static const char __pyx_k_Cipher___reduce_cython[] = "Cipher.__reduce_cython__";
 static const char __pyx_k_Cipher_decrypt_inplace[] = "Cipher.decrypt_inplace";
@@ -3309,39 +3309,39 @@ static void __pyx_memoryviewslice___pyx_pf_15View_dot_MemoryView_16_memoryviewsl
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_7minispn_6Cipher_set_round_keys(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_keys); /* proto */
-static PyObject *__pyx_pf_7minispn_6Cipher_2encrypt_int(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x); /* proto */
-static PyObject *__pyx_pf_7minispn_6Cipher_4decrypt_int(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x); /* proto */
-static PyObject *__pyx_pf_7minispn_6Cipher_6encrypt_bits(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_bits); /* proto */
-static PyObject *__pyx_pf_7minispn_6Cipher_8decrypt_bits(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_bits); /* proto */
-static PyObject *__pyx_pf_7minispn_6Cipher_10encrypt_many(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_xs); /* proto */
-static PyObject *__pyx_pf_7minispn_6Cipher_12decrypt_many(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_xs); /* proto */
-static PyObject *__pyx_pf_7minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, __Pyx_memviewslice __pyx_v_buf); /* proto */
-static PyObject *__pyx_pf_7minispn_6Cipher_16decrypt_inplace(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, __Pyx_memviewslice __pyx_v_buf); /* proto */
-static PyObject *__pyx_pf_7minispn_6Cipher_18__reduce_cython__(struct __pyx_obj_7minispn_Cipher *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7minispn_6Cipher_20__setstate_cython__(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_7minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_bits); /* proto */
-static PyObject *__pyx_pf_7minispn_6__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block_size, PyObject *__pyx_v_sbox_size, PyObject *__pyx_v_num_rounds, PyObject *__pyx_v_sbox, PyObject *__pyx_v_perm); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_6_num2bit(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, PyObject *__pyx_v_num, PyObject *__pyx_v_size); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_10_xor(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_12_rotate(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_i); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_14encrypt_block(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_16decrypt_block(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_18_check(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_20encrypt_int(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_x); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_22decrypt_int(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_x); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_24encrypt_many(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_xs); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_26decrypt_many(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_xs); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_28encrypt_inplace(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_buf); /* proto */
-static PyObject *__pyx_pf_7minispn_7MiniSPN_30decrypt_inplace(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_buf); /* proto */
-static PyObject *__pyx_pf_7minispn_4__pyx_unpickle_Cipher(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_7minispn_Cipher(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_7minispn___pyx_defaults(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_pf_17optimized_minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_set_round_keys(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_keys); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_2encrypt_int(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_4decrypt_int(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_6encrypt_bits(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_bits); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_8decrypt_bits(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_bits); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_10encrypt_many(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_xs); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_12decrypt_many(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_xs); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, __Pyx_memviewslice __pyx_v_buf); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_16decrypt_inplace(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, __Pyx_memviewslice __pyx_v_buf); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_18__reduce_cython__(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_20__setstate_cython__(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_bits); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_6__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block_size, PyObject *__pyx_v_sbox_size, PyObject *__pyx_v_num_rounds, PyObject *__pyx_v_sbox, PyObject *__pyx_v_perm); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_key); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_6_num2bit(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, PyObject *__pyx_v_num, PyObject *__pyx_v_size); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_10_xor(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_12_rotate(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_i); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_14encrypt_block(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_16decrypt_block(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_18_check(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_20encrypt_int(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_x); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_22decrypt_int(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_x); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_24encrypt_many(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_xs); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_26decrypt_many(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_xs); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_28encrypt_inplace(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_buf); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_30decrypt_inplace(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_buf); /* proto */
+static PyObject *__pyx_pf_17optimized_minispn_4__pyx_unpickle_Cipher(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_tp_new_17optimized_minispn_Cipher(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_17optimized_minispn___pyx_defaults(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -3384,14 +3384,14 @@ typedef struct {
   #ifdef __Pyx_Coroutine_USED
   PyTypeObject *__pyx_CoroutineType;
   #endif
-  PyObject *__pyx_type_7minispn_Cipher;
-  PyObject *__pyx_type_7minispn___pyx_defaults;
+  PyObject *__pyx_type_17optimized_minispn_Cipher;
+  PyObject *__pyx_type_17optimized_minispn___pyx_defaults;
   PyObject *__pyx_type___pyx_array;
   PyObject *__pyx_type___pyx_MemviewEnum;
   PyObject *__pyx_type___pyx_memoryview;
   PyObject *__pyx_type___pyx_memoryviewslice;
-  PyTypeObject *__pyx_ptype_7minispn_Cipher;
-  PyTypeObject *__pyx_ptype_7minispn___pyx_defaults;
+  PyTypeObject *__pyx_ptype_17optimized_minispn_Cipher;
+  PyTypeObject *__pyx_ptype_17optimized_minispn___pyx_defaults;
   PyTypeObject *__pyx_array_type;
   PyTypeObject *__pyx_MemviewEnum_type;
   PyTypeObject *__pyx_memoryview_type;
@@ -3664,27 +3664,27 @@ static __pyx_mstatetype * const __pyx_mstate_global = &__pyx_mstate_global_stati
 #define __pyx_n_u_memview __pyx_string_tab[151]
 #define __pyx_n_u_metaclass __pyx_string_tab[152]
 #define __pyx_n_u_miniSPN __pyx_string_tab[153]
-#define __pyx_n_u_minispn __pyx_string_tab[154]
-#define __pyx_kp_u_minispn_pyx __pyx_string_tab[155]
-#define __pyx_n_u_mode __pyx_string_tab[156]
-#define __pyx_n_u_module __pyx_string_tab[157]
-#define __pyx_n_u_n __pyx_string_tab[158]
-#define __pyx_n_u_name __pyx_string_tab[159]
-#define __pyx_n_u_name_2 __pyx_string_tab[160]
-#define __pyx_n_u_ndim __pyx_string_tab[161]
-#define __pyx_kp_u_need_7_round_keys __pyx_string_tab[162]
-#define __pyx_n_u_new __pyx_string_tab[163]
-#define __pyx_n_u_new_block __pyx_string_tab[164]
-#define __pyx_kp_u_no_default___reduce___due_to_non __pyx_string_tab[165]
-#define __pyx_n_u_num __pyx_string_tab[166]
-#define __pyx_n_u_num2bit __pyx_string_tab[167]
-#define __pyx_n_u_num_rounds __pyx_string_tab[168]
-#define __pyx_n_u_o __pyx_string_tab[169]
-#define __pyx_n_u_obj __pyx_string_tab[170]
-#define __pyx_kp_u_object __pyx_string_tab[171]
-#define __pyx_kp_u_only_the_48_6_6_configuration_is __pyx_string_tab[172]
-#define __pyx_kp_u_only_the_built_in_PERM_is_suppor __pyx_string_tab[173]
-#define __pyx_kp_u_only_the_built_in_SBOX_is_suppor __pyx_string_tab[174]
+#define __pyx_n_u_mode __pyx_string_tab[154]
+#define __pyx_n_u_module __pyx_string_tab[155]
+#define __pyx_n_u_n __pyx_string_tab[156]
+#define __pyx_n_u_name __pyx_string_tab[157]
+#define __pyx_n_u_name_2 __pyx_string_tab[158]
+#define __pyx_n_u_ndim __pyx_string_tab[159]
+#define __pyx_kp_u_need_7_round_keys __pyx_string_tab[160]
+#define __pyx_n_u_new __pyx_string_tab[161]
+#define __pyx_n_u_new_block __pyx_string_tab[162]
+#define __pyx_kp_u_no_default___reduce___due_to_non __pyx_string_tab[163]
+#define __pyx_n_u_num __pyx_string_tab[164]
+#define __pyx_n_u_num2bit __pyx_string_tab[165]
+#define __pyx_n_u_num_rounds __pyx_string_tab[166]
+#define __pyx_n_u_o __pyx_string_tab[167]
+#define __pyx_n_u_obj __pyx_string_tab[168]
+#define __pyx_kp_u_object __pyx_string_tab[169]
+#define __pyx_kp_u_only_the_48_6_6_configuration_is __pyx_string_tab[170]
+#define __pyx_kp_u_only_the_built_in_PERM_is_suppor __pyx_string_tab[171]
+#define __pyx_kp_u_only_the_built_in_SBOX_is_suppor __pyx_string_tab[172]
+#define __pyx_n_u_optimized_minispn __pyx_string_tab[173]
+#define __pyx_kp_u_optimized_minispn_pyx __pyx_string_tab[174]
 #define __pyx_n_u_out __pyx_string_tab[175]
 #define __pyx_n_u_pack __pyx_string_tab[176]
 #define __pyx_n_u_perm __pyx_string_tab[177]
@@ -3762,10 +3762,10 @@ static CYTHON_SMALL_CODE int __pyx_m_clear(PyObject *m) {
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   __Pyx_State_RemoveModule(NULL);
   #endif
-  Py_CLEAR(clear_module_state->__pyx_ptype_7minispn_Cipher);
-  Py_CLEAR(clear_module_state->__pyx_type_7minispn_Cipher);
-  Py_CLEAR(clear_module_state->__pyx_ptype_7minispn___pyx_defaults);
-  Py_CLEAR(clear_module_state->__pyx_type_7minispn___pyx_defaults);
+  Py_CLEAR(clear_module_state->__pyx_ptype_17optimized_minispn_Cipher);
+  Py_CLEAR(clear_module_state->__pyx_type_17optimized_minispn_Cipher);
+  Py_CLEAR(clear_module_state->__pyx_ptype_17optimized_minispn___pyx_defaults);
+  Py_CLEAR(clear_module_state->__pyx_type_17optimized_minispn___pyx_defaults);
   Py_CLEAR(clear_module_state->__pyx_array_type);
   Py_CLEAR(clear_module_state->__pyx_type___pyx_array);
   Py_CLEAR(clear_module_state->__pyx_MemviewEnum_type);
@@ -3870,10 +3870,10 @@ static CYTHON_SMALL_CODE int __pyx_m_traverse(PyObject *m, visitproc visit, void
   #ifdef __Pyx_FusedFunction_USED
   Py_VISIT(traverse_module_state->__pyx_FusedFunctionType);
   #endif
-  Py_VISIT(traverse_module_state->__pyx_ptype_7minispn_Cipher);
-  Py_VISIT(traverse_module_state->__pyx_type_7minispn_Cipher);
-  Py_VISIT(traverse_module_state->__pyx_ptype_7minispn___pyx_defaults);
-  Py_VISIT(traverse_module_state->__pyx_type_7minispn___pyx_defaults);
+  Py_VISIT(traverse_module_state->__pyx_ptype_17optimized_minispn_Cipher);
+  Py_VISIT(traverse_module_state->__pyx_type_17optimized_minispn_Cipher);
+  Py_VISIT(traverse_module_state->__pyx_ptype_17optimized_minispn___pyx_defaults);
+  Py_VISIT(traverse_module_state->__pyx_type_17optimized_minispn___pyx_defaults);
   Py_VISIT(traverse_module_state->__pyx_array_type);
   Py_VISIT(traverse_module_state->__pyx_type___pyx_array);
   Py_VISIT(traverse_module_state->__pyx_MemviewEnum_type);
@@ -17882,7 +17882,7 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   return __pyx_r;
 }
 
-/* "minispn.pyx":13
+/* "optimized_minispn.pyx":13
  * cdef uint64_t IS[4096]
  * 
  * def _build_tables():             # <<<<<<<<<<<<<<
@@ -17891,22 +17891,22 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_1_build_tables(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_1_build_tables = {"_build_tables", (PyCFunction)__pyx_pw_7minispn_1_build_tables, METH_NOARGS, 0};
-static PyObject *__pyx_pw_7minispn_1_build_tables(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_17optimized_minispn_1_build_tables(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyMethodDef __pyx_mdef_17optimized_minispn_1_build_tables = {"_build_tables", (PyCFunction)__pyx_pw_17optimized_minispn_1_build_tables, METH_NOARGS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_1_build_tables(PyObject *__pyx_self, CYTHON_UNUSED PyObject *unused) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_build_tables (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_7minispn__build_tables(__pyx_self);
+  __pyx_r = __pyx_pf_17optimized_minispn__build_tables(__pyx_self);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_17optimized_minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_self) {
   int __pyx_v_s;
   int __pyx_v_v;
   int __pyx_v_j;
@@ -17931,7 +17931,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_build_tables", 0);
 
-  /* "minispn.pyx":21
+  /* "optimized_minispn.pyx":21
  *     cdef int invperm[48]
  * 
  *     for i in range(64):             # <<<<<<<<<<<<<<
@@ -17941,7 +17941,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
   for (__pyx_t_1 = 0; __pyx_t_1 < 64; __pyx_t_1+=1) {
     __pyx_v_i = __pyx_t_1;
 
-    /* "minispn.pyx":22
+    /* "optimized_minispn.pyx":22
  * 
  *     for i in range(64):
  *         sbox[i] = SBOX[i]             # <<<<<<<<<<<<<<
@@ -17958,7 +17958,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
     (__pyx_v_sbox[__pyx_v_i]) = __pyx_t_4;
   }
 
-  /* "minispn.pyx":23
+  /* "optimized_minispn.pyx":23
  *     for i in range(64):
  *         sbox[i] = SBOX[i]
  *     for i in range(64):             # <<<<<<<<<<<<<<
@@ -17968,7 +17968,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
   for (__pyx_t_1 = 0; __pyx_t_1 < 64; __pyx_t_1+=1) {
     __pyx_v_i = __pyx_t_1;
 
-    /* "minispn.pyx":24
+    /* "optimized_minispn.pyx":24
  *         sbox[i] = SBOX[i]
  *     for i in range(64):
  *         inv[sbox[i]] = i             # <<<<<<<<<<<<<<
@@ -17978,7 +17978,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
     (__pyx_v_inv[(__pyx_v_sbox[__pyx_v_i])]) = __pyx_v_i;
   }
 
-  /* "minispn.pyx":25
+  /* "optimized_minispn.pyx":25
  *     for i in range(64):
  *         inv[sbox[i]] = i
  *     for i in range(48):             # <<<<<<<<<<<<<<
@@ -17988,7 +17988,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
   for (__pyx_t_1 = 0; __pyx_t_1 < 48; __pyx_t_1+=1) {
     __pyx_v_i = __pyx_t_1;
 
-    /* "minispn.pyx":26
+    /* "optimized_minispn.pyx":26
  *         inv[sbox[i]] = i
  *     for i in range(48):
  *         perm[i] = PERM[i]             # <<<<<<<<<<<<<<
@@ -18005,7 +18005,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
     (__pyx_v_perm[__pyx_v_i]) = __pyx_t_4;
   }
 
-  /* "minispn.pyx":27
+  /* "optimized_minispn.pyx":27
  *     for i in range(48):
  *         perm[i] = PERM[i]
  *     for i in range(48):             # <<<<<<<<<<<<<<
@@ -18015,7 +18015,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
   for (__pyx_t_1 = 0; __pyx_t_1 < 48; __pyx_t_1+=1) {
     __pyx_v_i = __pyx_t_1;
 
-    /* "minispn.pyx":28
+    /* "optimized_minispn.pyx":28
  *         perm[i] = PERM[i]
  *     for i in range(48):
  *         invperm[perm[i]] = i             # <<<<<<<<<<<<<<
@@ -18025,7 +18025,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
     (__pyx_v_invperm[(__pyx_v_perm[__pyx_v_i])]) = __pyx_v_i;
   }
 
-  /* "minispn.pyx":30
+  /* "optimized_minispn.pyx":30
  *         invperm[perm[i]] = i
  * 
  *     for s in range(8):             # <<<<<<<<<<<<<<
@@ -18035,7 +18035,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
   for (__pyx_t_1 = 0; __pyx_t_1 < 8; __pyx_t_1+=1) {
     __pyx_v_s = __pyx_t_1;
 
-    /* "minispn.pyx":31
+    /* "optimized_minispn.pyx":31
  * 
  *     for s in range(8):
  *         for v in range(64):             # <<<<<<<<<<<<<<
@@ -18045,7 +18045,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
     for (__pyx_t_4 = 0; __pyx_t_4 < 64; __pyx_t_4+=1) {
       __pyx_v_v = __pyx_t_4;
 
-      /* "minispn.pyx":32
+      /* "optimized_minispn.pyx":32
  *     for s in range(8):
  *         for v in range(64):
  *             o = sbox[v]             # <<<<<<<<<<<<<<
@@ -18054,7 +18054,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
 */
       __pyx_v_o = (__pyx_v_sbox[__pyx_v_v]);
 
-      /* "minispn.pyx":33
+      /* "optimized_minispn.pyx":33
  *         for v in range(64):
  *             o = sbox[v]
  *             r = 0             # <<<<<<<<<<<<<<
@@ -18063,7 +18063,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
 */
       __pyx_v_r = 0;
 
-      /* "minispn.pyx":34
+      /* "optimized_minispn.pyx":34
  *             o = sbox[v]
  *             r = 0
  *             for j in range(6):             # <<<<<<<<<<<<<<
@@ -18073,7 +18073,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
       for (__pyx_t_5 = 0; __pyx_t_5 < 6; __pyx_t_5+=1) {
         __pyx_v_j = __pyx_t_5;
 
-        /* "minispn.pyx":35
+        /* "optimized_minispn.pyx":35
  *             r = 0
  *             for j in range(6):
  *                 if (o >> (5 - j)) & 1:             # <<<<<<<<<<<<<<
@@ -18083,7 +18083,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
         __pyx_t_6 = (((__pyx_v_o >> (5 - __pyx_v_j)) & 1) != 0);
         if (__pyx_t_6) {
 
-          /* "minispn.pyx":36
+          /* "optimized_minispn.pyx":36
  *             for j in range(6):
  *                 if (o >> (5 - j)) & 1:
  *                     r |= (<uint64_t>1) << (47 - perm[6 * s + j])             # <<<<<<<<<<<<<<
@@ -18092,7 +18092,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
 */
           __pyx_v_r = (__pyx_v_r | (((uint64_t)1) << (47 - (__pyx_v_perm[((6 * __pyx_v_s) + __pyx_v_j)]))));
 
-          /* "minispn.pyx":35
+          /* "optimized_minispn.pyx":35
  *             r = 0
  *             for j in range(6):
  *                 if (o >> (5 - j)) & 1:             # <<<<<<<<<<<<<<
@@ -18102,18 +18102,18 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
         }
       }
 
-      /* "minispn.pyx":37
+      /* "optimized_minispn.pyx":37
  *                 if (o >> (5 - j)) & 1:
  *                     r |= (<uint64_t>1) << (47 - perm[6 * s + j])
  *             T[s][v] = r             # <<<<<<<<<<<<<<
  * 
  *     for k in range(6):
 */
-      ((__pyx_v_7minispn_T[__pyx_v_s])[__pyx_v_v]) = __pyx_v_r;
+      ((__pyx_v_17optimized_minispn_T[__pyx_v_s])[__pyx_v_v]) = __pyx_v_r;
     }
   }
 
-  /* "minispn.pyx":39
+  /* "optimized_minispn.pyx":39
  *             T[s][v] = r
  * 
  *     for k in range(6):             # <<<<<<<<<<<<<<
@@ -18123,7 +18123,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
   for (__pyx_t_1 = 0; __pyx_t_1 < 6; __pyx_t_1+=1) {
     __pyx_v_k = __pyx_t_1;
 
-    /* "minispn.pyx":40
+    /* "optimized_minispn.pyx":40
  * 
  *     for k in range(6):
  *         for v in range(256):             # <<<<<<<<<<<<<<
@@ -18133,7 +18133,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
     for (__pyx_t_4 = 0; __pyx_t_4 < 0x100; __pyx_t_4+=1) {
       __pyx_v_v = __pyx_t_4;
 
-      /* "minispn.pyx":41
+      /* "optimized_minispn.pyx":41
  *     for k in range(6):
  *         for v in range(256):
  *             r = 0             # <<<<<<<<<<<<<<
@@ -18142,7 +18142,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
 */
       __pyx_v_r = 0;
 
-      /* "minispn.pyx":42
+      /* "optimized_minispn.pyx":42
  *         for v in range(256):
  *             r = 0
  *             for j in range(8):             # <<<<<<<<<<<<<<
@@ -18152,7 +18152,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
       for (__pyx_t_5 = 0; __pyx_t_5 < 8; __pyx_t_5+=1) {
         __pyx_v_j = __pyx_t_5;
 
-        /* "minispn.pyx":43
+        /* "optimized_minispn.pyx":43
  *             r = 0
  *             for j in range(8):
  *                 if (v >> (7 - j)) & 1:             # <<<<<<<<<<<<<<
@@ -18162,7 +18162,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
         __pyx_t_6 = (((__pyx_v_v >> (7 - __pyx_v_j)) & 1) != 0);
         if (__pyx_t_6) {
 
-          /* "minispn.pyx":44
+          /* "optimized_minispn.pyx":44
  *             for j in range(8):
  *                 if (v >> (7 - j)) & 1:
  *                     r |= (<uint64_t>1) << (47 - invperm[8 * k + j])             # <<<<<<<<<<<<<<
@@ -18171,7 +18171,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
 */
           __pyx_v_r = (__pyx_v_r | (((uint64_t)1) << (47 - (__pyx_v_invperm[((8 * __pyx_v_k) + __pyx_v_j)]))));
 
-          /* "minispn.pyx":43
+          /* "optimized_minispn.pyx":43
  *             r = 0
  *             for j in range(8):
  *                 if (v >> (7 - j)) & 1:             # <<<<<<<<<<<<<<
@@ -18181,18 +18181,18 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
         }
       }
 
-      /* "minispn.pyx":45
+      /* "optimized_minispn.pyx":45
  *                 if (v >> (7 - j)) & 1:
  *                     r |= (<uint64_t>1) << (47 - invperm[8 * k + j])
  *             P[k][v] = r             # <<<<<<<<<<<<<<
  * 
  *     for v in range(4096):
 */
-      ((__pyx_v_7minispn_P[__pyx_v_k])[__pyx_v_v]) = __pyx_v_r;
+      ((__pyx_v_17optimized_minispn_P[__pyx_v_k])[__pyx_v_v]) = __pyx_v_r;
     }
   }
 
-  /* "minispn.pyx":47
+  /* "optimized_minispn.pyx":47
  *             P[k][v] = r
  * 
  *     for v in range(4096):             # <<<<<<<<<<<<<<
@@ -18202,17 +18202,17 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
   for (__pyx_t_1 = 0; __pyx_t_1 < 0x1000; __pyx_t_1+=1) {
     __pyx_v_v = __pyx_t_1;
 
-    /* "minispn.pyx":48
+    /* "optimized_minispn.pyx":48
  * 
  *     for v in range(4096):
  *         IS[v] = (<uint64_t>inv[v >> 6] << 6) | <uint64_t>inv[v & 63]             # <<<<<<<<<<<<<<
  * 
  * _build_tables()
 */
-    (__pyx_v_7minispn_IS[__pyx_v_v]) = ((((uint64_t)(__pyx_v_inv[(__pyx_v_v >> 6)])) << 6) | ((uint64_t)(__pyx_v_inv[(__pyx_v_v & 63)])));
+    (__pyx_v_17optimized_minispn_IS[__pyx_v_v]) = ((((uint64_t)(__pyx_v_inv[(__pyx_v_v >> 6)])) << 6) | ((uint64_t)(__pyx_v_inv[(__pyx_v_v & 63)])));
   }
 
-  /* "minispn.pyx":13
+  /* "optimized_minispn.pyx":13
  * cdef uint64_t IS[4096]
  * 
  * def _build_tables():             # <<<<<<<<<<<<<<
@@ -18226,7 +18226,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("minispn._build_tables", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn._build_tables", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -18234,7 +18234,7 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
   return __pyx_r;
 }
 
-/* "minispn.pyx":52
+/* "optimized_minispn.pyx":52
  * _build_tables()
  * 
  * cdef inline uint64_t _enc(uint64_t x, uint64_t* rk) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18242,12 +18242,12 @@ static PyObject *__pyx_pf_7minispn__build_tables(CYTHON_UNUSED PyObject *__pyx_s
  *     for r in range(6):
 */
 
-static CYTHON_INLINE uint64_t __pyx_f_7minispn__enc(uint64_t __pyx_v_x, uint64_t *__pyx_v_rk) {
+static CYTHON_INLINE uint64_t __pyx_f_17optimized_minispn__enc(uint64_t __pyx_v_x, uint64_t *__pyx_v_rk) {
   int __pyx_v_r;
   uint64_t __pyx_r;
   int __pyx_t_1;
 
-  /* "minispn.pyx":54
+  /* "optimized_minispn.pyx":54
  * cdef inline uint64_t _enc(uint64_t x, uint64_t* rk) noexcept nogil:
  *     cdef int r
  *     for r in range(6):             # <<<<<<<<<<<<<<
@@ -18257,7 +18257,7 @@ static CYTHON_INLINE uint64_t __pyx_f_7minispn__enc(uint64_t __pyx_v_x, uint64_t
   for (__pyx_t_1 = 0; __pyx_t_1 < 6; __pyx_t_1+=1) {
     __pyx_v_r = __pyx_t_1;
 
-    /* "minispn.pyx":55
+    /* "optimized_minispn.pyx":55
  *     cdef int r
  *     for r in range(6):
  *         x ^= rk[r]             # <<<<<<<<<<<<<<
@@ -18266,17 +18266,17 @@ static CYTHON_INLINE uint64_t __pyx_f_7minispn__enc(uint64_t __pyx_v_x, uint64_t
 */
     __pyx_v_x = (__pyx_v_x ^ (__pyx_v_rk[__pyx_v_r]));
 
-    /* "minispn.pyx":58
+    /* "optimized_minispn.pyx":58
  *         x = (T[0][x >> 42] ^ T[1][(x >> 36) & 63] ^ T[2][(x >> 30) & 63]
  *              ^ T[3][(x >> 24) & 63] ^ T[4][(x >> 18) & 63]
  *              ^ T[5][(x >> 12) & 63] ^ T[6][(x >> 6) & 63] ^ T[7][x & 63])             # <<<<<<<<<<<<<<
  *     return x ^ rk[6]
  * 
 */
-    __pyx_v_x = (((((((((__pyx_v_7minispn_T[0])[(__pyx_v_x >> 42)]) ^ ((__pyx_v_7minispn_T[1])[((__pyx_v_x >> 36) & 63)])) ^ ((__pyx_v_7minispn_T[2])[((__pyx_v_x >> 30) & 63)])) ^ ((__pyx_v_7minispn_T[3])[((__pyx_v_x >> 24) & 63)])) ^ ((__pyx_v_7minispn_T[4])[((__pyx_v_x >> 18) & 63)])) ^ ((__pyx_v_7minispn_T[5])[((__pyx_v_x >> 12) & 63)])) ^ ((__pyx_v_7minispn_T[6])[((__pyx_v_x >> 6) & 63)])) ^ ((__pyx_v_7minispn_T[7])[(__pyx_v_x & 63)]));
+    __pyx_v_x = (((((((((__pyx_v_17optimized_minispn_T[0])[(__pyx_v_x >> 42)]) ^ ((__pyx_v_17optimized_minispn_T[1])[((__pyx_v_x >> 36) & 63)])) ^ ((__pyx_v_17optimized_minispn_T[2])[((__pyx_v_x >> 30) & 63)])) ^ ((__pyx_v_17optimized_minispn_T[3])[((__pyx_v_x >> 24) & 63)])) ^ ((__pyx_v_17optimized_minispn_T[4])[((__pyx_v_x >> 18) & 63)])) ^ ((__pyx_v_17optimized_minispn_T[5])[((__pyx_v_x >> 12) & 63)])) ^ ((__pyx_v_17optimized_minispn_T[6])[((__pyx_v_x >> 6) & 63)])) ^ ((__pyx_v_17optimized_minispn_T[7])[(__pyx_v_x & 63)]));
   }
 
-  /* "minispn.pyx":59
+  /* "optimized_minispn.pyx":59
  *              ^ T[3][(x >> 24) & 63] ^ T[4][(x >> 18) & 63]
  *              ^ T[5][(x >> 12) & 63] ^ T[6][(x >> 6) & 63] ^ T[7][x & 63])
  *     return x ^ rk[6]             # <<<<<<<<<<<<<<
@@ -18286,7 +18286,7 @@ static CYTHON_INLINE uint64_t __pyx_f_7minispn__enc(uint64_t __pyx_v_x, uint64_t
   __pyx_r = (__pyx_v_x ^ (__pyx_v_rk[6]));
   goto __pyx_L0;
 
-  /* "minispn.pyx":52
+  /* "optimized_minispn.pyx":52
  * _build_tables()
  * 
  * cdef inline uint64_t _enc(uint64_t x, uint64_t* rk) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18299,7 +18299,7 @@ static CYTHON_INLINE uint64_t __pyx_f_7minispn__enc(uint64_t __pyx_v_x, uint64_t
   return __pyx_r;
 }
 
-/* "minispn.pyx":61
+/* "optimized_minispn.pyx":61
  *     return x ^ rk[6]
  * 
  * cdef inline uint64_t _dec(uint64_t x, uint64_t* rk) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18307,12 +18307,12 @@ static CYTHON_INLINE uint64_t __pyx_f_7minispn__enc(uint64_t __pyx_v_x, uint64_t
  *     for r in range(6, 0, -1):
 */
 
-static CYTHON_INLINE uint64_t __pyx_f_7minispn__dec(uint64_t __pyx_v_x, uint64_t *__pyx_v_rk) {
+static CYTHON_INLINE uint64_t __pyx_f_17optimized_minispn__dec(uint64_t __pyx_v_x, uint64_t *__pyx_v_rk) {
   int __pyx_v_r;
   uint64_t __pyx_r;
   int __pyx_t_1;
 
-  /* "minispn.pyx":63
+  /* "optimized_minispn.pyx":63
  * cdef inline uint64_t _dec(uint64_t x, uint64_t* rk) noexcept nogil:
  *     cdef int r
  *     for r in range(6, 0, -1):             # <<<<<<<<<<<<<<
@@ -18322,7 +18322,7 @@ static CYTHON_INLINE uint64_t __pyx_f_7minispn__dec(uint64_t __pyx_v_x, uint64_t
   for (__pyx_t_1 = 6; __pyx_t_1 > 0; __pyx_t_1-=1) {
     __pyx_v_r = __pyx_t_1;
 
-    /* "minispn.pyx":64
+    /* "optimized_minispn.pyx":64
  *     cdef int r
  *     for r in range(6, 0, -1):
  *         x ^= rk[r]             # <<<<<<<<<<<<<<
@@ -18331,26 +18331,26 @@ static CYTHON_INLINE uint64_t __pyx_f_7minispn__dec(uint64_t __pyx_v_x, uint64_t
 */
     __pyx_v_x = (__pyx_v_x ^ (__pyx_v_rk[__pyx_v_r]));
 
-    /* "minispn.pyx":66
+    /* "optimized_minispn.pyx":66
  *         x ^= rk[r]
  *         x = (P[0][x >> 40] ^ P[1][(x >> 32) & 255] ^ P[2][(x >> 24) & 255]
  *              ^ P[3][(x >> 16) & 255] ^ P[4][(x >> 8) & 255] ^ P[5][x & 255])             # <<<<<<<<<<<<<<
  *         x = ((IS[x >> 36] << 36) | (IS[(x >> 24) & 4095] << 24)
  *              | (IS[(x >> 12) & 4095] << 12) | IS[x & 4095])
 */
-    __pyx_v_x = (((((((__pyx_v_7minispn_P[0])[(__pyx_v_x >> 40)]) ^ ((__pyx_v_7minispn_P[1])[((__pyx_v_x >> 32) & 0xFF)])) ^ ((__pyx_v_7minispn_P[2])[((__pyx_v_x >> 24) & 0xFF)])) ^ ((__pyx_v_7minispn_P[3])[((__pyx_v_x >> 16) & 0xFF)])) ^ ((__pyx_v_7minispn_P[4])[((__pyx_v_x >> 8) & 0xFF)])) ^ ((__pyx_v_7minispn_P[5])[(__pyx_v_x & 0xFF)]));
+    __pyx_v_x = (((((((__pyx_v_17optimized_minispn_P[0])[(__pyx_v_x >> 40)]) ^ ((__pyx_v_17optimized_minispn_P[1])[((__pyx_v_x >> 32) & 0xFF)])) ^ ((__pyx_v_17optimized_minispn_P[2])[((__pyx_v_x >> 24) & 0xFF)])) ^ ((__pyx_v_17optimized_minispn_P[3])[((__pyx_v_x >> 16) & 0xFF)])) ^ ((__pyx_v_17optimized_minispn_P[4])[((__pyx_v_x >> 8) & 0xFF)])) ^ ((__pyx_v_17optimized_minispn_P[5])[(__pyx_v_x & 0xFF)]));
 
-    /* "minispn.pyx":68
+    /* "optimized_minispn.pyx":68
  *              ^ P[3][(x >> 16) & 255] ^ P[4][(x >> 8) & 255] ^ P[5][x & 255])
  *         x = ((IS[x >> 36] << 36) | (IS[(x >> 24) & 4095] << 24)
  *              | (IS[(x >> 12) & 4095] << 12) | IS[x & 4095])             # <<<<<<<<<<<<<<
  *     return x ^ rk[0]
  * 
 */
-    __pyx_v_x = (((((__pyx_v_7minispn_IS[(__pyx_v_x >> 36)]) << 36) | ((__pyx_v_7minispn_IS[((__pyx_v_x >> 24) & 0xFFF)]) << 24)) | ((__pyx_v_7minispn_IS[((__pyx_v_x >> 12) & 0xFFF)]) << 12)) | (__pyx_v_7minispn_IS[(__pyx_v_x & 0xFFF)]));
+    __pyx_v_x = (((((__pyx_v_17optimized_minispn_IS[(__pyx_v_x >> 36)]) << 36) | ((__pyx_v_17optimized_minispn_IS[((__pyx_v_x >> 24) & 0xFFF)]) << 24)) | ((__pyx_v_17optimized_minispn_IS[((__pyx_v_x >> 12) & 0xFFF)]) << 12)) | (__pyx_v_17optimized_minispn_IS[(__pyx_v_x & 0xFFF)]));
   }
 
-  /* "minispn.pyx":69
+  /* "optimized_minispn.pyx":69
  *         x = ((IS[x >> 36] << 36) | (IS[(x >> 24) & 4095] << 24)
  *              | (IS[(x >> 12) & 4095] << 12) | IS[x & 4095])
  *     return x ^ rk[0]             # <<<<<<<<<<<<<<
@@ -18360,7 +18360,7 @@ static CYTHON_INLINE uint64_t __pyx_f_7minispn__dec(uint64_t __pyx_v_x, uint64_t
   __pyx_r = (__pyx_v_x ^ (__pyx_v_rk[0]));
   goto __pyx_L0;
 
-  /* "minispn.pyx":61
+  /* "optimized_minispn.pyx":61
  *     return x ^ rk[6]
  * 
  * cdef inline uint64_t _dec(uint64_t x, uint64_t* rk) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -18373,7 +18373,7 @@ static CYTHON_INLINE uint64_t __pyx_f_7minispn__dec(uint64_t __pyx_v_x, uint64_t
   return __pyx_r;
 }
 
-/* "minispn.pyx":71
+/* "optimized_minispn.pyx":71
  *     return x ^ rk[0]
  * 
  * cdef uint64_t _bits2int(list bits) except? 0xFFFFFFFFFFFFFFFF:             # <<<<<<<<<<<<<<
@@ -18381,7 +18381,7 @@ static CYTHON_INLINE uint64_t __pyx_f_7minispn__dec(uint64_t __pyx_v_x, uint64_t
  *         raise ValueError("block must have exactly 48 bits")
 */
 
-static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
+static uint64_t __pyx_f_17optimized_minispn__bits2int(PyObject *__pyx_v_bits) {
   uint64_t __pyx_v_x;
   int __pyx_v_i;
   int __pyx_v_b;
@@ -18400,7 +18400,7 @@ static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_bits2int", 0);
 
-  /* "minispn.pyx":72
+  /* "optimized_minispn.pyx":72
  * 
  * cdef uint64_t _bits2int(list bits) except? 0xFFFFFFFFFFFFFFFF:
  *     if len(bits) != 48:             # <<<<<<<<<<<<<<
@@ -18415,7 +18415,7 @@ static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
   __pyx_t_2 = (__pyx_t_1 != 48);
   if (unlikely(__pyx_t_2)) {
 
-    /* "minispn.pyx":73
+    /* "optimized_minispn.pyx":73
  * cdef uint64_t _bits2int(list bits) except? 0xFFFFFFFFFFFFFFFF:
  *     if len(bits) != 48:
  *         raise ValueError("block must have exactly 48 bits")             # <<<<<<<<<<<<<<
@@ -18438,7 +18438,7 @@ static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(0, 73, __pyx_L1_error)
 
-    /* "minispn.pyx":72
+    /* "optimized_minispn.pyx":72
  * 
  * cdef uint64_t _bits2int(list bits) except? 0xFFFFFFFFFFFFFFFF:
  *     if len(bits) != 48:             # <<<<<<<<<<<<<<
@@ -18447,7 +18447,7 @@ static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
 */
   }
 
-  /* "minispn.pyx":74
+  /* "optimized_minispn.pyx":74
  *     if len(bits) != 48:
  *         raise ValueError("block must have exactly 48 bits")
  *     cdef uint64_t x = 0             # <<<<<<<<<<<<<<
@@ -18456,7 +18456,7 @@ static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
 */
   __pyx_v_x = 0;
 
-  /* "minispn.pyx":76
+  /* "optimized_minispn.pyx":76
  *     cdef uint64_t x = 0
  *     cdef int i, b
  *     for i in range(48):             # <<<<<<<<<<<<<<
@@ -18466,7 +18466,7 @@ static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
   for (__pyx_t_7 = 0; __pyx_t_7 < 48; __pyx_t_7+=1) {
     __pyx_v_i = __pyx_t_7;
 
-    /* "minispn.pyx":77
+    /* "optimized_minispn.pyx":77
  *     cdef int i, b
  *     for i in range(48):
  *         b = bits[i]             # <<<<<<<<<<<<<<
@@ -18480,7 +18480,7 @@ static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
     __pyx_t_8 = __Pyx_PyLong_As_int(__Pyx_PyList_GET_ITEM(__pyx_v_bits, __pyx_v_i)); if (unlikely((__pyx_t_8 == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 77, __pyx_L1_error)
     __pyx_v_b = __pyx_t_8;
 
-    /* "minispn.pyx":78
+    /* "optimized_minispn.pyx":78
  *     for i in range(48):
  *         b = bits[i]
  *         x = (x << 1) | <uint64_t>(b & 1)             # <<<<<<<<<<<<<<
@@ -18490,7 +18490,7 @@ static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
     __pyx_v_x = ((__pyx_v_x << 1) | ((uint64_t)(__pyx_v_b & 1)));
   }
 
-  /* "minispn.pyx":79
+  /* "optimized_minispn.pyx":79
  *         b = bits[i]
  *         x = (x << 1) | <uint64_t>(b & 1)
  *     return x             # <<<<<<<<<<<<<<
@@ -18500,7 +18500,7 @@ static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
   __pyx_r = __pyx_v_x;
   goto __pyx_L0;
 
-  /* "minispn.pyx":71
+  /* "optimized_minispn.pyx":71
  *     return x ^ rk[0]
  * 
  * cdef uint64_t _bits2int(list bits) except? 0xFFFFFFFFFFFFFFFF:             # <<<<<<<<<<<<<<
@@ -18513,14 +18513,14 @@ static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("minispn._bits2int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn._bits2int", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 18446744073709551615;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "minispn.pyx":81
+/* "optimized_minispn.pyx":81
  *     return x
  * 
  * cdef list _int2bits(uint64_t x):             # <<<<<<<<<<<<<<
@@ -18528,7 +18528,7 @@ static uint64_t __pyx_f_7minispn__bits2int(PyObject *__pyx_v_bits) {
  *     cdef int i
 */
 
-static PyObject *__pyx_f_7minispn__int2bits(uint64_t __pyx_v_x) {
+static PyObject *__pyx_f_17optimized_minispn__int2bits(uint64_t __pyx_v_x) {
   PyObject *__pyx_v_out = 0;
   int __pyx_v_i;
   PyObject *__pyx_r = NULL;
@@ -18540,7 +18540,7 @@ static PyObject *__pyx_f_7minispn__int2bits(uint64_t __pyx_v_x) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_int2bits", 0);
 
-  /* "minispn.pyx":82
+  /* "optimized_minispn.pyx":82
  * 
  * cdef list _int2bits(uint64_t x):
  *     cdef list out = [0] * 48             # <<<<<<<<<<<<<<
@@ -18559,7 +18559,7 @@ static PyObject *__pyx_f_7minispn__int2bits(uint64_t __pyx_v_x) {
   __pyx_v_out = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "minispn.pyx":84
+  /* "optimized_minispn.pyx":84
  *     cdef list out = [0] * 48
  *     cdef int i
  *     for i in range(48):             # <<<<<<<<<<<<<<
@@ -18569,7 +18569,7 @@ static PyObject *__pyx_f_7minispn__int2bits(uint64_t __pyx_v_x) {
   for (__pyx_t_2 = 0; __pyx_t_2 < 48; __pyx_t_2+=1) {
     __pyx_v_i = __pyx_t_2;
 
-    /* "minispn.pyx":85
+    /* "optimized_minispn.pyx":85
  *     cdef int i
  *     for i in range(48):
  *         out[i] = <int>((x >> (47 - i)) & 1)             # <<<<<<<<<<<<<<
@@ -18582,7 +18582,7 @@ static PyObject *__pyx_f_7minispn__int2bits(uint64_t __pyx_v_x) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "minispn.pyx":86
+  /* "optimized_minispn.pyx":86
  *     for i in range(48):
  *         out[i] = <int>((x >> (47 - i)) & 1)
  *     return out             # <<<<<<<<<<<<<<
@@ -18594,7 +18594,7 @@ static PyObject *__pyx_f_7minispn__int2bits(uint64_t __pyx_v_x) {
   __pyx_r = __pyx_v_out;
   goto __pyx_L0;
 
-  /* "minispn.pyx":81
+  /* "optimized_minispn.pyx":81
  *     return x
  * 
  * cdef list _int2bits(uint64_t x):             # <<<<<<<<<<<<<<
@@ -18605,7 +18605,7 @@ static PyObject *__pyx_f_7minispn__int2bits(uint64_t __pyx_v_x) {
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("minispn._int2bits", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn._int2bits", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_out);
@@ -18614,7 +18614,7 @@ static PyObject *__pyx_f_7minispn__int2bits(uint64_t __pyx_v_x) {
   return __pyx_r;
 }
 
-/* "minispn.pyx":91
+/* "optimized_minispn.pyx":91
  *     cdef uint64_t rk[7]
  * 
  *     def set_round_keys(self, keys):             # <<<<<<<<<<<<<<
@@ -18623,15 +18623,15 @@ static PyObject *__pyx_f_7minispn__int2bits(uint64_t __pyx_v_x) {
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_6Cipher_1set_round_keys(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_1set_round_keys(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_6Cipher_1set_round_keys = {"set_round_keys", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_1set_round_keys, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_6Cipher_1set_round_keys(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_6Cipher_1set_round_keys = {"set_round_keys", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_1set_round_keys, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_1set_round_keys(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -18693,11 +18693,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.Cipher.set_round_keys", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.set_round_keys", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_6Cipher_set_round_keys(((struct __pyx_obj_7minispn_Cipher *)__pyx_v_self), __pyx_v_keys);
+  __pyx_r = __pyx_pf_17optimized_minispn_6Cipher_set_round_keys(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v_self), __pyx_v_keys);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -18707,7 +18707,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_6Cipher_set_round_keys(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_keys) {
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_set_round_keys(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_keys) {
   int __pyx_v_i;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -18724,7 +18724,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_set_round_keys(struct __pyx_obj_7mini
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("set_round_keys", 0);
 
-  /* "minispn.pyx":92
+  /* "optimized_minispn.pyx":92
  * 
  *     def set_round_keys(self, keys):
  *         if len(keys) != 7:             # <<<<<<<<<<<<<<
@@ -18735,7 +18735,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_set_round_keys(struct __pyx_obj_7mini
   __pyx_t_2 = (__pyx_t_1 != 7);
   if (unlikely(__pyx_t_2)) {
 
-    /* "minispn.pyx":93
+    /* "optimized_minispn.pyx":93
  *     def set_round_keys(self, keys):
  *         if len(keys) != 7:
  *             raise ValueError("need 7 round keys")             # <<<<<<<<<<<<<<
@@ -18758,7 +18758,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_set_round_keys(struct __pyx_obj_7mini
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(0, 93, __pyx_L1_error)
 
-    /* "minispn.pyx":92
+    /* "optimized_minispn.pyx":92
  * 
  *     def set_round_keys(self, keys):
  *         if len(keys) != 7:             # <<<<<<<<<<<<<<
@@ -18767,7 +18767,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_set_round_keys(struct __pyx_obj_7mini
 */
   }
 
-  /* "minispn.pyx":95
+  /* "optimized_minispn.pyx":95
  *             raise ValueError("need 7 round keys")
  *         cdef int i
  *         for i in range(7):             # <<<<<<<<<<<<<<
@@ -18777,7 +18777,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_set_round_keys(struct __pyx_obj_7mini
   for (__pyx_t_7 = 0; __pyx_t_7 < 7; __pyx_t_7+=1) {
     __pyx_v_i = __pyx_t_7;
 
-    /* "minispn.pyx":96
+    /* "optimized_minispn.pyx":96
  *         cdef int i
  *         for i in range(7):
  *             self.rk[i] = <uint64_t>keys[i] & MASK             # <<<<<<<<<<<<<<
@@ -18788,10 +18788,10 @@ static PyObject *__pyx_pf_7minispn_6Cipher_set_round_keys(struct __pyx_obj_7mini
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_8 = __Pyx_PyLong_As_uint64_t(__pyx_t_3); if (unlikely((__pyx_t_8 == ((uint64_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 96, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    (__pyx_v_self->rk[__pyx_v_i]) = (((uint64_t)__pyx_t_8) & __pyx_v_7minispn_MASK);
+    (__pyx_v_self->rk[__pyx_v_i]) = (((uint64_t)__pyx_t_8) & __pyx_v_17optimized_minispn_MASK);
   }
 
-  /* "minispn.pyx":91
+  /* "optimized_minispn.pyx":91
  *     cdef uint64_t rk[7]
  * 
  *     def set_round_keys(self, keys):             # <<<<<<<<<<<<<<
@@ -18806,7 +18806,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_set_round_keys(struct __pyx_obj_7mini
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("minispn.Cipher.set_round_keys", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.set_round_keys", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -18814,7 +18814,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_set_round_keys(struct __pyx_obj_7mini
   return __pyx_r;
 }
 
-/* "minispn.pyx":98
+/* "optimized_minispn.pyx":98
  *             self.rk[i] = <uint64_t>keys[i] & MASK
  * 
  *     cpdef uint64_t encrypt_int(self, uint64_t x):             # <<<<<<<<<<<<<<
@@ -18822,14 +18822,14 @@ static PyObject *__pyx_pf_7minispn_6Cipher_set_round_keys(struct __pyx_obj_7mini
  * 
 */
 
-static PyObject *__pyx_pw_7minispn_6Cipher_3encrypt_int(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_3encrypt_int(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static uint64_t __pyx_f_7minispn_6Cipher_encrypt_int(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x, int __pyx_skip_dispatch) {
+static uint64_t __pyx_f_17optimized_minispn_6Cipher_encrypt_int(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x, int __pyx_skip_dispatch) {
   uint64_t __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -18848,7 +18848,7 @@ static uint64_t __pyx_f_7minispn_6Cipher_encrypt_int(struct __pyx_obj_7minispn_C
   /* Check if overridden in Python */
   else if (
   #if !CYTHON_USE_TYPE_SLOTS
-  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_7minispn_Cipher &&
+  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher &&
   __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), Py_TPFLAGS_HAVE_GC))
   #else
   unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0 || __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), (Py_TPFLAGS_IS_ABSTRACT | Py_TPFLAGS_HEAPTYPE)))
@@ -18861,7 +18861,7 @@ static uint64_t __pyx_f_7minispn_6Cipher_encrypt_int(struct __pyx_obj_7minispn_C
       #endif
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_mstate_global->__pyx_n_u_encrypt_int); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_7minispn_6Cipher_3encrypt_int)) {
+      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_17optimized_minispn_6Cipher_3encrypt_int)) {
         __pyx_t_3 = NULL;
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; 
@@ -18907,17 +18907,17 @@ static uint64_t __pyx_f_7minispn_6Cipher_encrypt_int(struct __pyx_obj_7minispn_C
     #endif
   }
 
-  /* "minispn.pyx":99
+  /* "optimized_minispn.pyx":99
  * 
  *     cpdef uint64_t encrypt_int(self, uint64_t x):
  *         return _enc(x & MASK, self.rk)             # <<<<<<<<<<<<<<
  * 
  *     cpdef uint64_t decrypt_int(self, uint64_t x):
 */
-  __pyx_r = __pyx_f_7minispn__enc((__pyx_v_x & __pyx_v_7minispn_MASK), __pyx_v_self->rk);
+  __pyx_r = __pyx_f_17optimized_minispn__enc((__pyx_v_x & __pyx_v_17optimized_minispn_MASK), __pyx_v_self->rk);
   goto __pyx_L0;
 
-  /* "minispn.pyx":98
+  /* "optimized_minispn.pyx":98
  *             self.rk[i] = <uint64_t>keys[i] & MASK
  * 
  *     cpdef uint64_t encrypt_int(self, uint64_t x):             # <<<<<<<<<<<<<<
@@ -18932,7 +18932,7 @@ static uint64_t __pyx_f_7minispn_6Cipher_encrypt_int(struct __pyx_obj_7minispn_C
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("minispn.Cipher.encrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.encrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -18940,15 +18940,15 @@ static uint64_t __pyx_f_7minispn_6Cipher_encrypt_int(struct __pyx_obj_7minispn_C
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_6Cipher_3encrypt_int(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_3encrypt_int(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_6Cipher_3encrypt_int = {"encrypt_int", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_3encrypt_int, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_6Cipher_3encrypt_int(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_6Cipher_3encrypt_int = {"encrypt_int", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_3encrypt_int, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_3encrypt_int(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -19010,11 +19010,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.Cipher.encrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.encrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_6Cipher_2encrypt_int(((struct __pyx_obj_7minispn_Cipher *)__pyx_v_self), __pyx_v_x);
+  __pyx_r = __pyx_pf_17optimized_minispn_6Cipher_2encrypt_int(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v_self), __pyx_v_x);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -19024,7 +19024,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_6Cipher_2encrypt_int(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x) {
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_2encrypt_int(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   uint64_t __pyx_t_1;
@@ -19034,7 +19034,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_2encrypt_int(struct __pyx_obj_7minisp
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("encrypt_int", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_7minispn_6Cipher_encrypt_int(__pyx_v_self, __pyx_v_x, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 98, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_17optimized_minispn_6Cipher_encrypt_int(__pyx_v_self, __pyx_v_x, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 98, __pyx_L1_error)
   __pyx_t_2 = __Pyx_PyLong_From_uint64_t(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
@@ -19044,7 +19044,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_2encrypt_int(struct __pyx_obj_7minisp
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("minispn.Cipher.encrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.encrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -19052,7 +19052,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_2encrypt_int(struct __pyx_obj_7minisp
   return __pyx_r;
 }
 
-/* "minispn.pyx":101
+/* "optimized_minispn.pyx":101
  *         return _enc(x & MASK, self.rk)
  * 
  *     cpdef uint64_t decrypt_int(self, uint64_t x):             # <<<<<<<<<<<<<<
@@ -19060,14 +19060,14 @@ static PyObject *__pyx_pf_7minispn_6Cipher_2encrypt_int(struct __pyx_obj_7minisp
  * 
 */
 
-static PyObject *__pyx_pw_7minispn_6Cipher_5decrypt_int(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_5decrypt_int(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static uint64_t __pyx_f_7minispn_6Cipher_decrypt_int(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x, int __pyx_skip_dispatch) {
+static uint64_t __pyx_f_17optimized_minispn_6Cipher_decrypt_int(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x, int __pyx_skip_dispatch) {
   uint64_t __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -19086,7 +19086,7 @@ static uint64_t __pyx_f_7minispn_6Cipher_decrypt_int(struct __pyx_obj_7minispn_C
   /* Check if overridden in Python */
   else if (
   #if !CYTHON_USE_TYPE_SLOTS
-  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_7minispn_Cipher &&
+  unlikely(Py_TYPE(((PyObject *)__pyx_v_self)) != __pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher &&
   __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), Py_TPFLAGS_HAVE_GC))
   #else
   unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0 || __Pyx_PyType_HasFeature(Py_TYPE(((PyObject *)__pyx_v_self)), (Py_TPFLAGS_IS_ABSTRACT | Py_TPFLAGS_HEAPTYPE)))
@@ -19099,7 +19099,7 @@ static uint64_t __pyx_f_7minispn_6Cipher_decrypt_int(struct __pyx_obj_7minispn_C
       #endif
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_mstate_global->__pyx_n_u_decrypt_int); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_7minispn_6Cipher_5decrypt_int)) {
+      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void(*)(void)) __pyx_pw_17optimized_minispn_6Cipher_5decrypt_int)) {
         __pyx_t_3 = NULL;
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; 
@@ -19145,17 +19145,17 @@ static uint64_t __pyx_f_7minispn_6Cipher_decrypt_int(struct __pyx_obj_7minispn_C
     #endif
   }
 
-  /* "minispn.pyx":102
+  /* "optimized_minispn.pyx":102
  * 
  *     cpdef uint64_t decrypt_int(self, uint64_t x):
  *         return _dec(x & MASK, self.rk)             # <<<<<<<<<<<<<<
  * 
  *     def encrypt_bits(self, list bits):
 */
-  __pyx_r = __pyx_f_7minispn__dec((__pyx_v_x & __pyx_v_7minispn_MASK), __pyx_v_self->rk);
+  __pyx_r = __pyx_f_17optimized_minispn__dec((__pyx_v_x & __pyx_v_17optimized_minispn_MASK), __pyx_v_self->rk);
   goto __pyx_L0;
 
-  /* "minispn.pyx":101
+  /* "optimized_minispn.pyx":101
  *         return _enc(x & MASK, self.rk)
  * 
  *     cpdef uint64_t decrypt_int(self, uint64_t x):             # <<<<<<<<<<<<<<
@@ -19170,7 +19170,7 @@ static uint64_t __pyx_f_7minispn_6Cipher_decrypt_int(struct __pyx_obj_7minispn_C
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("minispn.Cipher.decrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.decrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -19178,15 +19178,15 @@ static uint64_t __pyx_f_7minispn_6Cipher_decrypt_int(struct __pyx_obj_7minispn_C
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_6Cipher_5decrypt_int(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_5decrypt_int(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_6Cipher_5decrypt_int = {"decrypt_int", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_5decrypt_int, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_6Cipher_5decrypt_int(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_6Cipher_5decrypt_int = {"decrypt_int", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_5decrypt_int, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_5decrypt_int(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -19248,11 +19248,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.Cipher.decrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.decrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_6Cipher_4decrypt_int(((struct __pyx_obj_7minispn_Cipher *)__pyx_v_self), __pyx_v_x);
+  __pyx_r = __pyx_pf_17optimized_minispn_6Cipher_4decrypt_int(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v_self), __pyx_v_x);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -19262,7 +19262,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_6Cipher_4decrypt_int(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x) {
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_4decrypt_int(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, uint64_t __pyx_v_x) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   uint64_t __pyx_t_1;
@@ -19272,7 +19272,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_4decrypt_int(struct __pyx_obj_7minisp
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decrypt_int", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_7minispn_6Cipher_decrypt_int(__pyx_v_self, __pyx_v_x, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_17optimized_minispn_6Cipher_decrypt_int(__pyx_v_self, __pyx_v_x, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 101, __pyx_L1_error)
   __pyx_t_2 = __Pyx_PyLong_From_uint64_t(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
@@ -19282,7 +19282,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_4decrypt_int(struct __pyx_obj_7minisp
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("minispn.Cipher.decrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.decrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -19290,7 +19290,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_4decrypt_int(struct __pyx_obj_7minisp
   return __pyx_r;
 }
 
-/* "minispn.pyx":104
+/* "optimized_minispn.pyx":104
  *         return _dec(x & MASK, self.rk)
  * 
  *     def encrypt_bits(self, list bits):             # <<<<<<<<<<<<<<
@@ -19299,15 +19299,15 @@ static PyObject *__pyx_pf_7minispn_6Cipher_4decrypt_int(struct __pyx_obj_7minisp
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_6Cipher_7encrypt_bits(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_7encrypt_bits(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_6Cipher_7encrypt_bits = {"encrypt_bits", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_7encrypt_bits, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_6Cipher_7encrypt_bits(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_6Cipher_7encrypt_bits = {"encrypt_bits", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_7encrypt_bits, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_7encrypt_bits(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -19369,12 +19369,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.Cipher.encrypt_bits", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.encrypt_bits", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_bits), (&PyList_Type), 1, "bits", 1))) __PYX_ERR(0, 104, __pyx_L1_error)
-  __pyx_r = __pyx_pf_7minispn_6Cipher_6encrypt_bits(((struct __pyx_obj_7minispn_Cipher *)__pyx_v_self), __pyx_v_bits);
+  __pyx_r = __pyx_pf_17optimized_minispn_6Cipher_6encrypt_bits(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v_self), __pyx_v_bits);
 
   /* function exit code */
   goto __pyx_L0;
@@ -19393,7 +19393,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_6Cipher_6encrypt_bits(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_bits) {
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_6encrypt_bits(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_bits) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   uint64_t __pyx_t_1;
@@ -19403,7 +19403,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_6encrypt_bits(struct __pyx_obj_7minis
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("encrypt_bits", 0);
 
-  /* "minispn.pyx":105
+  /* "optimized_minispn.pyx":105
  * 
  *     def encrypt_bits(self, list bits):
  *         return _int2bits(_enc(_bits2int(bits), self.rk))             # <<<<<<<<<<<<<<
@@ -19411,14 +19411,14 @@ static PyObject *__pyx_pf_7minispn_6Cipher_6encrypt_bits(struct __pyx_obj_7minis
  *     def decrypt_bits(self, list bits):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_7minispn__bits2int(__pyx_v_bits); if (unlikely(__pyx_t_1 == ((uint64_t)18446744073709551615) && PyErr_Occurred())) __PYX_ERR(0, 105, __pyx_L1_error)
-  __pyx_t_2 = __pyx_f_7minispn__int2bits(__pyx_f_7minispn__enc(__pyx_t_1, __pyx_v_self->rk)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_17optimized_minispn__bits2int(__pyx_v_bits); if (unlikely(__pyx_t_1 == ((uint64_t)18446744073709551615) && PyErr_Occurred())) __PYX_ERR(0, 105, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_17optimized_minispn__int2bits(__pyx_f_17optimized_minispn__enc(__pyx_t_1, __pyx_v_self->rk)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "minispn.pyx":104
+  /* "optimized_minispn.pyx":104
  *         return _dec(x & MASK, self.rk)
  * 
  *     def encrypt_bits(self, list bits):             # <<<<<<<<<<<<<<
@@ -19429,7 +19429,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_6encrypt_bits(struct __pyx_obj_7minis
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("minispn.Cipher.encrypt_bits", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.encrypt_bits", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -19437,7 +19437,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_6encrypt_bits(struct __pyx_obj_7minis
   return __pyx_r;
 }
 
-/* "minispn.pyx":107
+/* "optimized_minispn.pyx":107
  *         return _int2bits(_enc(_bits2int(bits), self.rk))
  * 
  *     def decrypt_bits(self, list bits):             # <<<<<<<<<<<<<<
@@ -19446,15 +19446,15 @@ static PyObject *__pyx_pf_7minispn_6Cipher_6encrypt_bits(struct __pyx_obj_7minis
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_6Cipher_9decrypt_bits(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_9decrypt_bits(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_6Cipher_9decrypt_bits = {"decrypt_bits", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_9decrypt_bits, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_6Cipher_9decrypt_bits(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_6Cipher_9decrypt_bits = {"decrypt_bits", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_9decrypt_bits, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_9decrypt_bits(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -19516,12 +19516,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.Cipher.decrypt_bits", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.decrypt_bits", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_bits), (&PyList_Type), 1, "bits", 1))) __PYX_ERR(0, 107, __pyx_L1_error)
-  __pyx_r = __pyx_pf_7minispn_6Cipher_8decrypt_bits(((struct __pyx_obj_7minispn_Cipher *)__pyx_v_self), __pyx_v_bits);
+  __pyx_r = __pyx_pf_17optimized_minispn_6Cipher_8decrypt_bits(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v_self), __pyx_v_bits);
 
   /* function exit code */
   goto __pyx_L0;
@@ -19540,7 +19540,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_6Cipher_8decrypt_bits(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_bits) {
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_8decrypt_bits(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_bits) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   uint64_t __pyx_t_1;
@@ -19550,7 +19550,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_8decrypt_bits(struct __pyx_obj_7minis
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decrypt_bits", 0);
 
-  /* "minispn.pyx":108
+  /* "optimized_minispn.pyx":108
  * 
  *     def decrypt_bits(self, list bits):
  *         return _int2bits(_dec(_bits2int(bits), self.rk))             # <<<<<<<<<<<<<<
@@ -19558,14 +19558,14 @@ static PyObject *__pyx_pf_7minispn_6Cipher_8decrypt_bits(struct __pyx_obj_7minis
  *     def encrypt_many(self, xs):
 */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_7minispn__bits2int(__pyx_v_bits); if (unlikely(__pyx_t_1 == ((uint64_t)18446744073709551615) && PyErr_Occurred())) __PYX_ERR(0, 108, __pyx_L1_error)
-  __pyx_t_2 = __pyx_f_7minispn__int2bits(__pyx_f_7minispn__dec(__pyx_t_1, __pyx_v_self->rk)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_17optimized_minispn__bits2int(__pyx_v_bits); if (unlikely(__pyx_t_1 == ((uint64_t)18446744073709551615) && PyErr_Occurred())) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_t_2 = __pyx_f_17optimized_minispn__int2bits(__pyx_f_17optimized_minispn__dec(__pyx_t_1, __pyx_v_self->rk)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "minispn.pyx":107
+  /* "optimized_minispn.pyx":107
  *         return _int2bits(_enc(_bits2int(bits), self.rk))
  * 
  *     def decrypt_bits(self, list bits):             # <<<<<<<<<<<<<<
@@ -19576,7 +19576,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_8decrypt_bits(struct __pyx_obj_7minis
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("minispn.Cipher.decrypt_bits", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.decrypt_bits", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -19584,7 +19584,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_8decrypt_bits(struct __pyx_obj_7minis
   return __pyx_r;
 }
 
-/* "minispn.pyx":110
+/* "optimized_minispn.pyx":110
  *         return _int2bits(_dec(_bits2int(bits), self.rk))
  * 
  *     def encrypt_many(self, xs):             # <<<<<<<<<<<<<<
@@ -19593,15 +19593,15 @@ static PyObject *__pyx_pf_7minispn_6Cipher_8decrypt_bits(struct __pyx_obj_7minis
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_6Cipher_11encrypt_many(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_11encrypt_many(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_6Cipher_11encrypt_many = {"encrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_11encrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_6Cipher_11encrypt_many(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_6Cipher_11encrypt_many = {"encrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_11encrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_11encrypt_many(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -19663,11 +19663,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.Cipher.encrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.encrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_6Cipher_10encrypt_many(((struct __pyx_obj_7minispn_Cipher *)__pyx_v_self), __pyx_v_xs);
+  __pyx_r = __pyx_pf_17optimized_minispn_6Cipher_10encrypt_many(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v_self), __pyx_v_xs);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -19677,7 +19677,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_6Cipher_10encrypt_many(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_xs) {
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_10encrypt_many(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_xs) {
   PyObject *__pyx_v_out = 0;
   uint64_t __pyx_v_x;
   PyObject *__pyx_r = NULL;
@@ -19693,7 +19693,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_10encrypt_many(struct __pyx_obj_7mini
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("encrypt_many", 0);
 
-  /* "minispn.pyx":111
+  /* "optimized_minispn.pyx":111
  * 
  *     def encrypt_many(self, xs):
  *         cdef list out = []             # <<<<<<<<<<<<<<
@@ -19705,7 +19705,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_10encrypt_many(struct __pyx_obj_7mini
   __pyx_v_out = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "minispn.pyx":113
+  /* "optimized_minispn.pyx":113
  *         cdef list out = []
  *         cdef uint64_t x
  *         for x in xs:             # <<<<<<<<<<<<<<
@@ -19765,19 +19765,19 @@ static PyObject *__pyx_pf_7minispn_6Cipher_10encrypt_many(struct __pyx_obj_7mini
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_x = __pyx_t_5;
 
-    /* "minispn.pyx":114
+    /* "optimized_minispn.pyx":114
  *         cdef uint64_t x
  *         for x in xs:
  *             out.append(_enc(x & MASK, self.rk))             # <<<<<<<<<<<<<<
  *         return out
  * 
 */
-    __pyx_t_4 = __Pyx_PyLong_From_uint64_t(__pyx_f_7minispn__enc((__pyx_v_x & __pyx_v_7minispn_MASK), __pyx_v_self->rk)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 114, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyLong_From_uint64_t(__pyx_f_17optimized_minispn__enc((__pyx_v_x & __pyx_v_17optimized_minispn_MASK), __pyx_v_self->rk)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_6 = __Pyx_PyList_Append(__pyx_v_out, __pyx_t_4); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "minispn.pyx":113
+    /* "optimized_minispn.pyx":113
  *         cdef list out = []
  *         cdef uint64_t x
  *         for x in xs:             # <<<<<<<<<<<<<<
@@ -19787,7 +19787,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_10encrypt_many(struct __pyx_obj_7mini
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "minispn.pyx":115
+  /* "optimized_minispn.pyx":115
  *         for x in xs:
  *             out.append(_enc(x & MASK, self.rk))
  *         return out             # <<<<<<<<<<<<<<
@@ -19799,7 +19799,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_10encrypt_many(struct __pyx_obj_7mini
   __pyx_r = __pyx_v_out;
   goto __pyx_L0;
 
-  /* "minispn.pyx":110
+  /* "optimized_minispn.pyx":110
  *         return _int2bits(_dec(_bits2int(bits), self.rk))
  * 
  *     def encrypt_many(self, xs):             # <<<<<<<<<<<<<<
@@ -19811,7 +19811,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_10encrypt_many(struct __pyx_obj_7mini
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.Cipher.encrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.encrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_out);
@@ -19820,7 +19820,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_10encrypt_many(struct __pyx_obj_7mini
   return __pyx_r;
 }
 
-/* "minispn.pyx":117
+/* "optimized_minispn.pyx":117
  *         return out
  * 
  *     def decrypt_many(self, xs):             # <<<<<<<<<<<<<<
@@ -19829,15 +19829,15 @@ static PyObject *__pyx_pf_7minispn_6Cipher_10encrypt_many(struct __pyx_obj_7mini
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_6Cipher_13decrypt_many(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_13decrypt_many(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_6Cipher_13decrypt_many = {"decrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_13decrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_6Cipher_13decrypt_many(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_6Cipher_13decrypt_many = {"decrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_13decrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_13decrypt_many(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -19899,11 +19899,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.Cipher.decrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.decrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_6Cipher_12decrypt_many(((struct __pyx_obj_7minispn_Cipher *)__pyx_v_self), __pyx_v_xs);
+  __pyx_r = __pyx_pf_17optimized_minispn_6Cipher_12decrypt_many(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v_self), __pyx_v_xs);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -19913,7 +19913,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_6Cipher_12decrypt_many(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_xs) {
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_12decrypt_many(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v_xs) {
   PyObject *__pyx_v_out = 0;
   uint64_t __pyx_v_x;
   PyObject *__pyx_r = NULL;
@@ -19929,7 +19929,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_12decrypt_many(struct __pyx_obj_7mini
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decrypt_many", 0);
 
-  /* "minispn.pyx":118
+  /* "optimized_minispn.pyx":118
  * 
  *     def decrypt_many(self, xs):
  *         cdef list out = []             # <<<<<<<<<<<<<<
@@ -19941,7 +19941,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_12decrypt_many(struct __pyx_obj_7mini
   __pyx_v_out = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "minispn.pyx":120
+  /* "optimized_minispn.pyx":120
  *         cdef list out = []
  *         cdef uint64_t x
  *         for x in xs:             # <<<<<<<<<<<<<<
@@ -20001,19 +20001,19 @@ static PyObject *__pyx_pf_7minispn_6Cipher_12decrypt_many(struct __pyx_obj_7mini
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_x = __pyx_t_5;
 
-    /* "minispn.pyx":121
+    /* "optimized_minispn.pyx":121
  *         cdef uint64_t x
  *         for x in xs:
  *             out.append(_dec(x & MASK, self.rk))             # <<<<<<<<<<<<<<
  *         return out
  * 
 */
-    __pyx_t_4 = __Pyx_PyLong_From_uint64_t(__pyx_f_7minispn__dec((__pyx_v_x & __pyx_v_7minispn_MASK), __pyx_v_self->rk)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyLong_From_uint64_t(__pyx_f_17optimized_minispn__dec((__pyx_v_x & __pyx_v_17optimized_minispn_MASK), __pyx_v_self->rk)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_6 = __Pyx_PyList_Append(__pyx_v_out, __pyx_t_4); if (unlikely(__pyx_t_6 == ((int)-1))) __PYX_ERR(0, 121, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "minispn.pyx":120
+    /* "optimized_minispn.pyx":120
  *         cdef list out = []
  *         cdef uint64_t x
  *         for x in xs:             # <<<<<<<<<<<<<<
@@ -20023,7 +20023,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_12decrypt_many(struct __pyx_obj_7mini
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "minispn.pyx":122
+  /* "optimized_minispn.pyx":122
  *         for x in xs:
  *             out.append(_dec(x & MASK, self.rk))
  *         return out             # <<<<<<<<<<<<<<
@@ -20035,7 +20035,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_12decrypt_many(struct __pyx_obj_7mini
   __pyx_r = __pyx_v_out;
   goto __pyx_L0;
 
-  /* "minispn.pyx":117
+  /* "optimized_minispn.pyx":117
  *         return out
  * 
  *     def decrypt_many(self, xs):             # <<<<<<<<<<<<<<
@@ -20047,7 +20047,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_12decrypt_many(struct __pyx_obj_7mini
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.Cipher.decrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.decrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_out);
@@ -20056,7 +20056,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_12decrypt_many(struct __pyx_obj_7mini
   return __pyx_r;
 }
 
-/* "minispn.pyx":124
+/* "optimized_minispn.pyx":124
  *         return out
  * 
  *     def encrypt_inplace(self, uint64_t[::1] buf):             # <<<<<<<<<<<<<<
@@ -20065,15 +20065,15 @@ static PyObject *__pyx_pf_7minispn_6Cipher_12decrypt_many(struct __pyx_obj_7mini
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_6Cipher_15encrypt_inplace(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_15encrypt_inplace(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_6Cipher_15encrypt_inplace = {"encrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_15encrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_6Cipher_15encrypt_inplace(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_6Cipher_15encrypt_inplace = {"encrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_15encrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_15encrypt_inplace(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -20136,11 +20136,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     Py_XDECREF(values[__pyx_temp]);
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_buf, 1);
-  __Pyx_AddTraceback("minispn.Cipher.encrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.encrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_6Cipher_14encrypt_inplace(((struct __pyx_obj_7minispn_Cipher *)__pyx_v_self), __pyx_v_buf);
+  __pyx_r = __pyx_pf_17optimized_minispn_6Cipher_14encrypt_inplace(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v_self), __pyx_v_buf);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -20151,7 +20151,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, __Pyx_memviewslice __pyx_v_buf) {
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, __Pyx_memviewslice __pyx_v_buf) {
   Py_ssize_t __pyx_v_i;
   Py_ssize_t __pyx_v_n;
   PyObject *__pyx_r = NULL;
@@ -20163,7 +20163,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_7m
   Py_ssize_t __pyx_t_5;
   __Pyx_RefNannySetupContext("encrypt_inplace", 0);
 
-  /* "minispn.pyx":125
+  /* "optimized_minispn.pyx":125
  * 
  *     def encrypt_inplace(self, uint64_t[::1] buf):
  *         cdef Py_ssize_t i, n = buf.shape[0]             # <<<<<<<<<<<<<<
@@ -20172,7 +20172,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_7m
 */
   __pyx_v_n = (__pyx_v_buf.shape[0]);
 
-  /* "minispn.pyx":126
+  /* "optimized_minispn.pyx":126
  *     def encrypt_inplace(self, uint64_t[::1] buf):
  *         cdef Py_ssize_t i, n = buf.shape[0]
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -20186,7 +20186,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_7m
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "minispn.pyx":127
+        /* "optimized_minispn.pyx":127
  *         cdef Py_ssize_t i, n = buf.shape[0]
  *         with nogil:
  *             for i in range(n):             # <<<<<<<<<<<<<<
@@ -20198,7 +20198,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_7m
         for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
           __pyx_v_i = __pyx_t_3;
 
-          /* "minispn.pyx":128
+          /* "optimized_minispn.pyx":128
  *         with nogil:
  *             for i in range(n):
  *                 buf[i] = _enc(buf[i] & MASK, self.rk)             # <<<<<<<<<<<<<<
@@ -20207,11 +20207,11 @@ static PyObject *__pyx_pf_7minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_7m
 */
           __pyx_t_4 = __pyx_v_i;
           __pyx_t_5 = __pyx_v_i;
-          *((uint64_t *) ( /* dim=0 */ ((char *) (((uint64_t *) __pyx_v_buf.data) + __pyx_t_5)) )) = __pyx_f_7minispn__enc(((*((uint64_t *) ( /* dim=0 */ ((char *) (((uint64_t *) __pyx_v_buf.data) + __pyx_t_4)) ))) & __pyx_v_7minispn_MASK), __pyx_v_self->rk);
+          *((uint64_t *) ( /* dim=0 */ ((char *) (((uint64_t *) __pyx_v_buf.data) + __pyx_t_5)) )) = __pyx_f_17optimized_minispn__enc(((*((uint64_t *) ( /* dim=0 */ ((char *) (((uint64_t *) __pyx_v_buf.data) + __pyx_t_4)) ))) & __pyx_v_17optimized_minispn_MASK), __pyx_v_self->rk);
         }
       }
 
-      /* "minispn.pyx":126
+      /* "optimized_minispn.pyx":126
  *     def encrypt_inplace(self, uint64_t[::1] buf):
  *         cdef Py_ssize_t i, n = buf.shape[0]
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -20228,7 +20228,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_7m
       }
   }
 
-  /* "minispn.pyx":124
+  /* "optimized_minispn.pyx":124
  *         return out
  * 
  *     def encrypt_inplace(self, uint64_t[::1] buf):             # <<<<<<<<<<<<<<
@@ -20243,7 +20243,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_7m
   return __pyx_r;
 }
 
-/* "minispn.pyx":130
+/* "optimized_minispn.pyx":130
  *                 buf[i] = _enc(buf[i] & MASK, self.rk)
  * 
  *     def decrypt_inplace(self, uint64_t[::1] buf):             # <<<<<<<<<<<<<<
@@ -20252,15 +20252,15 @@ static PyObject *__pyx_pf_7minispn_6Cipher_14encrypt_inplace(struct __pyx_obj_7m
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_6Cipher_17decrypt_inplace(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_17decrypt_inplace(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_6Cipher_17decrypt_inplace = {"decrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_17decrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_6Cipher_17decrypt_inplace(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_6Cipher_17decrypt_inplace = {"decrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_17decrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_17decrypt_inplace(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -20323,11 +20323,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     Py_XDECREF(values[__pyx_temp]);
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_buf, 1);
-  __Pyx_AddTraceback("minispn.Cipher.decrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.decrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_6Cipher_16decrypt_inplace(((struct __pyx_obj_7minispn_Cipher *)__pyx_v_self), __pyx_v_buf);
+  __pyx_r = __pyx_pf_17optimized_minispn_6Cipher_16decrypt_inplace(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v_self), __pyx_v_buf);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -20338,7 +20338,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_6Cipher_16decrypt_inplace(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, __Pyx_memviewslice __pyx_v_buf) {
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_16decrypt_inplace(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, __Pyx_memviewslice __pyx_v_buf) {
   Py_ssize_t __pyx_v_i;
   Py_ssize_t __pyx_v_n;
   PyObject *__pyx_r = NULL;
@@ -20350,7 +20350,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_16decrypt_inplace(struct __pyx_obj_7m
   Py_ssize_t __pyx_t_5;
   __Pyx_RefNannySetupContext("decrypt_inplace", 0);
 
-  /* "minispn.pyx":131
+  /* "optimized_minispn.pyx":131
  * 
  *     def decrypt_inplace(self, uint64_t[::1] buf):
  *         cdef Py_ssize_t i, n = buf.shape[0]             # <<<<<<<<<<<<<<
@@ -20359,7 +20359,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_16decrypt_inplace(struct __pyx_obj_7m
 */
   __pyx_v_n = (__pyx_v_buf.shape[0]);
 
-  /* "minispn.pyx":132
+  /* "optimized_minispn.pyx":132
  *     def decrypt_inplace(self, uint64_t[::1] buf):
  *         cdef Py_ssize_t i, n = buf.shape[0]
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -20373,7 +20373,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_16decrypt_inplace(struct __pyx_obj_7m
       __Pyx_FastGIL_Remember();
       /*try:*/ {
 
-        /* "minispn.pyx":133
+        /* "optimized_minispn.pyx":133
  *         cdef Py_ssize_t i, n = buf.shape[0]
  *         with nogil:
  *             for i in range(n):             # <<<<<<<<<<<<<<
@@ -20385,7 +20385,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_16decrypt_inplace(struct __pyx_obj_7m
         for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
           __pyx_v_i = __pyx_t_3;
 
-          /* "minispn.pyx":134
+          /* "optimized_minispn.pyx":134
  *         with nogil:
  *             for i in range(n):
  *                 buf[i] = _dec(buf[i] & MASK, self.rk)             # <<<<<<<<<<<<<<
@@ -20394,11 +20394,11 @@ static PyObject *__pyx_pf_7minispn_6Cipher_16decrypt_inplace(struct __pyx_obj_7m
 */
           __pyx_t_4 = __pyx_v_i;
           __pyx_t_5 = __pyx_v_i;
-          *((uint64_t *) ( /* dim=0 */ ((char *) (((uint64_t *) __pyx_v_buf.data) + __pyx_t_5)) )) = __pyx_f_7minispn__dec(((*((uint64_t *) ( /* dim=0 */ ((char *) (((uint64_t *) __pyx_v_buf.data) + __pyx_t_4)) ))) & __pyx_v_7minispn_MASK), __pyx_v_self->rk);
+          *((uint64_t *) ( /* dim=0 */ ((char *) (((uint64_t *) __pyx_v_buf.data) + __pyx_t_5)) )) = __pyx_f_17optimized_minispn__dec(((*((uint64_t *) ( /* dim=0 */ ((char *) (((uint64_t *) __pyx_v_buf.data) + __pyx_t_4)) ))) & __pyx_v_17optimized_minispn_MASK), __pyx_v_self->rk);
         }
       }
 
-      /* "minispn.pyx":132
+      /* "optimized_minispn.pyx":132
  *     def decrypt_inplace(self, uint64_t[::1] buf):
  *         cdef Py_ssize_t i, n = buf.shape[0]
  *         with nogil:             # <<<<<<<<<<<<<<
@@ -20415,7 +20415,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_16decrypt_inplace(struct __pyx_obj_7m
       }
   }
 
-  /* "minispn.pyx":130
+  /* "optimized_minispn.pyx":130
  *                 buf[i] = _enc(buf[i] & MASK, self.rk)
  * 
  *     def decrypt_inplace(self, uint64_t[::1] buf):             # <<<<<<<<<<<<<<
@@ -20437,15 +20437,15 @@ static PyObject *__pyx_pf_7minispn_6Cipher_16decrypt_inplace(struct __pyx_obj_7m
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_6Cipher_19__reduce_cython__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_19__reduce_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_6Cipher_19__reduce_cython__ = {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_19__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_6Cipher_19__reduce_cython__(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_6Cipher_19__reduce_cython__ = {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_19__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_19__reduce_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -20471,14 +20471,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   const Py_ssize_t __pyx_kwds_len = unlikely(__pyx_kwds) ? __Pyx_NumKwargs_FASTCALL(__pyx_kwds) : 0;
   if (unlikely(__pyx_kwds_len < 0)) return NULL;
   if (unlikely(__pyx_kwds_len > 0)) {__Pyx_RejectKeywords("__reduce_cython__", __pyx_kwds); return NULL;}
-  __pyx_r = __pyx_pf_7minispn_6Cipher_18__reduce_cython__(((struct __pyx_obj_7minispn_Cipher *)__pyx_v_self));
+  __pyx_r = __pyx_pf_17optimized_minispn_6Cipher_18__reduce_cython__(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_6Cipher_18__reduce_cython__(struct __pyx_obj_7minispn_Cipher *__pyx_v_self) {
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_18__reduce_cython__(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self) {
   PyObject *__pyx_v_state = 0;
   PyObject *__pyx_v__dict = 0;
   int __pyx_v_use_setstate;
@@ -20681,7 +20681,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_18__reduce_cython__(struct __pyx_obj_
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.Cipher.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_state);
@@ -20699,15 +20699,15 @@ static PyObject *__pyx_pf_7minispn_6Cipher_18__reduce_cython__(struct __pyx_obj_
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_6Cipher_21__setstate_cython__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_21__setstate_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_6Cipher_21__setstate_cython__ = {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_21__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_6Cipher_21__setstate_cython__(PyObject *__pyx_v_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_6Cipher_21__setstate_cython__ = {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_21__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_6Cipher_21__setstate_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -20769,11 +20769,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.Cipher.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_6Cipher_20__setstate_cython__(((struct __pyx_obj_7minispn_Cipher *)__pyx_v_self), __pyx_v___pyx_state);
+  __pyx_r = __pyx_pf_17optimized_minispn_6Cipher_20__setstate_cython__(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v_self), __pyx_v___pyx_state);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -20783,7 +20783,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_6Cipher_20__setstate_cython__(struct __pyx_obj_7minispn_Cipher *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_17optimized_minispn_6Cipher_20__setstate_cython__(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -20798,7 +20798,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_20__setstate_cython__(struct __pyx_ob
  *     __pyx_unpickle_Cipher__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
 */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None) || __Pyx_RaiseUnexpectedTypeError("tuple", __pyx_v___pyx_state))) __PYX_ERR(1, 17, __pyx_L1_error)
-  __pyx_t_1 = __pyx_f_7minispn___pyx_unpickle_Cipher__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_17optimized_minispn___pyx_unpickle_Cipher__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
@@ -20814,7 +20814,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_20__setstate_cython__(struct __pyx_ob
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("minispn.Cipher.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.Cipher.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -20822,7 +20822,7 @@ static PyObject *__pyx_pf_7minispn_6Cipher_20__setstate_cython__(struct __pyx_ob
   return __pyx_r;
 }
 
-/* "minispn.pyx":138
+/* "optimized_minispn.pyx":138
  * _BLOCK, _SBOX_BITS, _ROUNDS = 48, 6, 6
  * 
  * def _b2i(bits):             # <<<<<<<<<<<<<<
@@ -20831,15 +20831,15 @@ static PyObject *__pyx_pf_7minispn_6Cipher_20__setstate_cython__(struct __pyx_ob
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_3_b2i(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_3_b2i(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_3_b2i = {"_b2i", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_3_b2i, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_3_b2i(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_3_b2i = {"_b2i", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_3_b2i, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_3_b2i(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -20901,11 +20901,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn._b2i", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn._b2i", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_2_b2i(__pyx_self, __pyx_v_bits);
+  __pyx_r = __pyx_pf_17optimized_minispn_2_b2i(__pyx_self, __pyx_v_bits);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -20915,7 +20915,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_bits) {
+static PyObject *__pyx_pf_17optimized_minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_bits) {
   PyObject *__pyx_v_v = NULL;
   PyObject *__pyx_v_b = NULL;
   PyObject *__pyx_r = NULL;
@@ -20930,7 +20930,7 @@ static PyObject *__pyx_pf_7minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyO
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_b2i", 0);
 
-  /* "minispn.pyx":139
+  /* "optimized_minispn.pyx":139
  * 
  * def _b2i(bits):
  *     v = 0             # <<<<<<<<<<<<<<
@@ -20940,7 +20940,7 @@ static PyObject *__pyx_pf_7minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyO
   __Pyx_INCREF(__pyx_mstate_global->__pyx_int_0);
   __pyx_v_v = __pyx_mstate_global->__pyx_int_0;
 
-  /* "minispn.pyx":140
+  /* "optimized_minispn.pyx":140
  * def _b2i(bits):
  *     v = 0
  *     for b in bits:             # <<<<<<<<<<<<<<
@@ -20999,7 +20999,7 @@ static PyObject *__pyx_pf_7minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyO
     __Pyx_XDECREF_SET(__pyx_v_b, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "minispn.pyx":141
+    /* "optimized_minispn.pyx":141
  *     v = 0
  *     for b in bits:
  *         v = (v << 1) | b             # <<<<<<<<<<<<<<
@@ -21014,7 +21014,7 @@ static PyObject *__pyx_pf_7minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyO
     __Pyx_DECREF_SET(__pyx_v_v, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "minispn.pyx":140
+    /* "optimized_minispn.pyx":140
  * def _b2i(bits):
  *     v = 0
  *     for b in bits:             # <<<<<<<<<<<<<<
@@ -21024,7 +21024,7 @@ static PyObject *__pyx_pf_7minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyO
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "minispn.pyx":142
+  /* "optimized_minispn.pyx":142
  *     for b in bits:
  *         v = (v << 1) | b
  *     return v             # <<<<<<<<<<<<<<
@@ -21036,7 +21036,7 @@ static PyObject *__pyx_pf_7minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyO
   __pyx_r = __pyx_v_v;
   goto __pyx_L0;
 
-  /* "minispn.pyx":138
+  /* "optimized_minispn.pyx":138
  * _BLOCK, _SBOX_BITS, _ROUNDS = 48, 6, 6
  * 
  * def _b2i(bits):             # <<<<<<<<<<<<<<
@@ -21049,7 +21049,7 @@ static PyObject *__pyx_pf_7minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyO
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("minispn._b2i", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn._b2i", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_v);
@@ -21059,7 +21059,7 @@ static PyObject *__pyx_pf_7minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyO
   return __pyx_r;
 }
 
-/* "minispn.pyx":145
+/* "optimized_minispn.pyx":145
  * 
  * class MiniSPN:
  *     def __init__(self, block_size=_BLOCK, sbox_size=_SBOX_BITS, num_rounds=_ROUNDS, /,             # <<<<<<<<<<<<<<
@@ -21067,7 +21067,7 @@ static PyObject *__pyx_pf_7minispn_2_b2i(CYTHON_UNUSED PyObject *__pyx_self, PyO
  *         if (block_size, sbox_size, num_rounds) != (_BLOCK, _SBOX_BITS, _ROUNDS):
 */
 
-static PyObject *__pyx_pf_7minispn_6__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_17optimized_minispn_6__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -21078,7 +21078,7 @@ static PyObject *__pyx_pf_7minispn_6__defaults__(CYTHON_UNUSED PyObject *__pyx_s
   __Pyx_RefNannySetupContext("__defaults__", 0);
   __Pyx_XDECREF(__pyx_r);
 
-  /* "minispn.pyx":146
+  /* "optimized_minispn.pyx":146
  * class MiniSPN:
  *     def __init__(self, block_size=_BLOCK, sbox_size=_SBOX_BITS, num_rounds=_ROUNDS, /,
  *                  sbox=None, perm=None):             # <<<<<<<<<<<<<<
@@ -21103,7 +21103,7 @@ static PyObject *__pyx_pf_7minispn_6__defaults__(CYTHON_UNUSED PyObject *__pyx_s
   __Pyx_GIVEREF(Py_None);
   if (__Pyx_PyTuple_SET_ITEM(__pyx_t_1, 4, Py_None) != (0)) __PYX_ERR(0, 145, __pyx_L1_error);
 
-  /* "minispn.pyx":145
+  /* "optimized_minispn.pyx":145
  * 
  * class MiniSPN:
  *     def __init__(self, block_size=_BLOCK, sbox_size=_SBOX_BITS, num_rounds=_ROUNDS, /,             # <<<<<<<<<<<<<<
@@ -21126,7 +21126,7 @@ static PyObject *__pyx_pf_7minispn_6__defaults__(CYTHON_UNUSED PyObject *__pyx_s
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("minispn.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -21135,15 +21135,15 @@ static PyObject *__pyx_pf_7minispn_6__defaults__(CYTHON_UNUSED PyObject *__pyx_s
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_1__init__(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_1__init__(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_1__init__ = {"__init__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_1__init__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_1__init__(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_1__init__ = {"__init__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_1__init__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_1__init__(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -21214,7 +21214,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       if (!values[2]) values[2] = __Pyx_NewRef(__pyx_dynamic_args->arg1);
       if (!values[3]) values[3] = __Pyx_NewRef(__pyx_dynamic_args->arg2);
 
-      /* "minispn.pyx":146
+      /* "optimized_minispn.pyx":146
  * class MiniSPN:
  *     def __init__(self, block_size=_BLOCK, sbox_size=_SBOX_BITS, num_rounds=_ROUNDS, /,
  *                  sbox=None, perm=None):             # <<<<<<<<<<<<<<
@@ -21273,13 +21273,13 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN___init__(__pyx_self, __pyx_v_self, __pyx_v_block_size, __pyx_v_sbox_size, __pyx_v_num_rounds, __pyx_v_sbox, __pyx_v_perm);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN___init__(__pyx_self, __pyx_v_self, __pyx_v_block_size, __pyx_v_sbox_size, __pyx_v_num_rounds, __pyx_v_sbox, __pyx_v_perm);
 
-  /* "minispn.pyx":145
+  /* "optimized_minispn.pyx":145
  * 
  * class MiniSPN:
  *     def __init__(self, block_size=_BLOCK, sbox_size=_SBOX_BITS, num_rounds=_ROUNDS, /,             # <<<<<<<<<<<<<<
@@ -21295,7 +21295,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block_size, PyObject *__pyx_v_sbox_size, PyObject *__pyx_v_num_rounds, PyObject *__pyx_v_sbox, PyObject *__pyx_v_perm) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block_size, PyObject *__pyx_v_sbox_size, PyObject *__pyx_v_num_rounds, PyObject *__pyx_v_sbox, PyObject *__pyx_v_perm) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -21311,7 +21311,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "minispn.pyx":147
+  /* "optimized_minispn.pyx":147
  *     def __init__(self, block_size=_BLOCK, sbox_size=_SBOX_BITS, num_rounds=_ROUNDS, /,
  *                  sbox=None, perm=None):
  *         if (block_size, sbox_size, num_rounds) != (_BLOCK, _SBOX_BITS, _ROUNDS):             # <<<<<<<<<<<<<<
@@ -21353,7 +21353,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (unlikely(__pyx_t_6)) {
 
-    /* "minispn.pyx":148
+    /* "optimized_minispn.pyx":148
  *                  sbox=None, perm=None):
  *         if (block_size, sbox_size, num_rounds) != (_BLOCK, _SBOX_BITS, _ROUNDS):
  *             raise NotImplementedError("only the 48/6/6 configuration is supported")             # <<<<<<<<<<<<<<
@@ -21376,7 +21376,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __PYX_ERR(0, 148, __pyx_L1_error)
 
-    /* "minispn.pyx":147
+    /* "optimized_minispn.pyx":147
  *     def __init__(self, block_size=_BLOCK, sbox_size=_SBOX_BITS, num_rounds=_ROUNDS, /,
  *                  sbox=None, perm=None):
  *         if (block_size, sbox_size, num_rounds) != (_BLOCK, _SBOX_BITS, _ROUNDS):             # <<<<<<<<<<<<<<
@@ -21385,7 +21385,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
 */
   }
 
-  /* "minispn.pyx":149
+  /* "optimized_minispn.pyx":149
  *         if (block_size, sbox_size, num_rounds) != (_BLOCK, _SBOX_BITS, _ROUNDS):
  *             raise NotImplementedError("only the 48/6/6 configuration is supported")
  *         if sbox is not None and list(sbox) != SBOX:             # <<<<<<<<<<<<<<
@@ -21411,7 +21411,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
   __pyx_L5_bool_binop_done:;
   if (unlikely(__pyx_t_6)) {
 
-    /* "minispn.pyx":150
+    /* "optimized_minispn.pyx":150
  *             raise NotImplementedError("only the 48/6/6 configuration is supported")
  *         if sbox is not None and list(sbox) != SBOX:
  *             raise NotImplementedError("only the built-in SBOX is supported")             # <<<<<<<<<<<<<<
@@ -21434,7 +21434,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __PYX_ERR(0, 150, __pyx_L1_error)
 
-    /* "minispn.pyx":149
+    /* "optimized_minispn.pyx":149
  *         if (block_size, sbox_size, num_rounds) != (_BLOCK, _SBOX_BITS, _ROUNDS):
  *             raise NotImplementedError("only the 48/6/6 configuration is supported")
  *         if sbox is not None and list(sbox) != SBOX:             # <<<<<<<<<<<<<<
@@ -21443,7 +21443,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
 */
   }
 
-  /* "minispn.pyx":151
+  /* "optimized_minispn.pyx":151
  *         if sbox is not None and list(sbox) != SBOX:
  *             raise NotImplementedError("only the built-in SBOX is supported")
  *         if perm is not None and list(perm) != PERM:             # <<<<<<<<<<<<<<
@@ -21469,7 +21469,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
   __pyx_L8_bool_binop_done:;
   if (unlikely(__pyx_t_6)) {
 
-    /* "minispn.pyx":152
+    /* "optimized_minispn.pyx":152
  *             raise NotImplementedError("only the built-in SBOX is supported")
  *         if perm is not None and list(perm) != PERM:
  *             raise NotImplementedError("only the built-in PERM is supported")             # <<<<<<<<<<<<<<
@@ -21492,7 +21492,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __PYX_ERR(0, 152, __pyx_L1_error)
 
-    /* "minispn.pyx":151
+    /* "optimized_minispn.pyx":151
  *         if sbox is not None and list(sbox) != SBOX:
  *             raise NotImplementedError("only the built-in SBOX is supported")
  *         if perm is not None and list(perm) != PERM:             # <<<<<<<<<<<<<<
@@ -21501,7 +21501,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
 */
   }
 
-  /* "minispn.pyx":154
+  /* "optimized_minispn.pyx":154
  *             raise NotImplementedError("only the built-in PERM is supported")
  * 
  *         self.block_size = block_size             # <<<<<<<<<<<<<<
@@ -21510,7 +21510,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
 */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_mstate_global->__pyx_n_u_block_size, __pyx_v_block_size) < (0)) __PYX_ERR(0, 154, __pyx_L1_error)
 
-  /* "minispn.pyx":155
+  /* "optimized_minispn.pyx":155
  * 
  *         self.block_size = block_size
  *         self.sbox_size = sbox_size             # <<<<<<<<<<<<<<
@@ -21519,7 +21519,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
 */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_mstate_global->__pyx_n_u_sbox_size, __pyx_v_sbox_size) < (0)) __PYX_ERR(0, 155, __pyx_L1_error)
 
-  /* "minispn.pyx":156
+  /* "optimized_minispn.pyx":156
  *         self.block_size = block_size
  *         self.sbox_size = sbox_size
  *         self.num_rounds = num_rounds             # <<<<<<<<<<<<<<
@@ -21528,7 +21528,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
 */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_mstate_global->__pyx_n_u_num_rounds, __pyx_v_num_rounds) < (0)) __PYX_ERR(0, 156, __pyx_L1_error)
 
-  /* "minispn.pyx":157
+  /* "optimized_minispn.pyx":157
  *         self.sbox_size = sbox_size
  *         self.num_rounds = num_rounds
  *         self.sbox = list(SBOX)             # <<<<<<<<<<<<<<
@@ -21543,7 +21543,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_mstate_global->__pyx_n_u_sbox, __pyx_t_5) < (0)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":158
+  /* "optimized_minispn.pyx":158
  *         self.num_rounds = num_rounds
  *         self.sbox = list(SBOX)
  *         self.perm = list(PERM)             # <<<<<<<<<<<<<<
@@ -21558,7 +21558,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_mstate_global->__pyx_n_u_perm, __pyx_t_1) < (0)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "minispn.pyx":160
+  /* "optimized_minispn.pyx":160
  *         self.perm = list(PERM)
  * 
  *         self.key = None             # <<<<<<<<<<<<<<
@@ -21567,7 +21567,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
 */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_mstate_global->__pyx_n_u_key, Py_None) < (0)) __PYX_ERR(0, 160, __pyx_L1_error)
 
-  /* "minispn.pyx":161
+  /* "optimized_minispn.pyx":161
  * 
  *         self.key = None
  *         self.round_keys = None             # <<<<<<<<<<<<<<
@@ -21576,7 +21576,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
 */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_mstate_global->__pyx_n_u_round_keys, Py_None) < (0)) __PYX_ERR(0, 161, __pyx_L1_error)
 
-  /* "minispn.pyx":162
+  /* "optimized_minispn.pyx":162
  *         self.key = None
  *         self.round_keys = None
  *         self._c = Cipher()             # <<<<<<<<<<<<<<
@@ -21584,8 +21584,8 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
  *     def add_key(self, key):
 */
   __pyx_t_5 = NULL;
-  __Pyx_INCREF((PyObject *)__pyx_mstate_global->__pyx_ptype_7minispn_Cipher);
-  __pyx_t_4 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_7minispn_Cipher); 
+  __Pyx_INCREF((PyObject *)__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher);
+  __pyx_t_4 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher); 
   __pyx_t_7 = 1;
   {
     PyObject *__pyx_callargs[2] = {__pyx_t_5, NULL};
@@ -21598,7 +21598,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_mstate_global->__pyx_n_u_c_2, ((PyObject *)__pyx_t_1)) < (0)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_DECREF((PyObject *)__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "minispn.pyx":145
+  /* "optimized_minispn.pyx":145
  * 
  * class MiniSPN:
  *     def __init__(self, block_size=_BLOCK, sbox_size=_SBOX_BITS, num_rounds=_ROUNDS, /,             # <<<<<<<<<<<<<<
@@ -21615,7 +21615,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("minispn.MiniSPN.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -21623,7 +21623,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
   return __pyx_r;
 }
 
-/* "minispn.pyx":164
+/* "optimized_minispn.pyx":164
  *         self._c = Cipher()
  * 
  *     def add_key(self, key):             # <<<<<<<<<<<<<<
@@ -21632,15 +21632,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN___init__(CYTHON_UNUSED PyObject *__p
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_3add_key(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_3add_key(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_3add_key = {"add_key", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_3add_key, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_3add_key(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_3add_key = {"add_key", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_3add_key, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_3add_key(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -21710,11 +21710,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN.add_key", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.add_key", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_2add_key(__pyx_self, __pyx_v_self, __pyx_v_key);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_2add_key(__pyx_self, __pyx_v_self, __pyx_v_key);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -21724,7 +21724,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   PyObject *__pyx_7genexpr__pyx_v_k = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -21745,7 +21745,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("add_key", 0);
 
-  /* "minispn.pyx":165
+  /* "optimized_minispn.pyx":165
  * 
  *     def add_key(self, key):
  *         assert len(key) == self.block_size, "Length of key must be equal block size"             # <<<<<<<<<<<<<<
@@ -21773,7 +21773,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__p
   if ((1)); else __PYX_ERR(0, 165, __pyx_L1_error)
   #endif
 
-  /* "minispn.pyx":166
+  /* "optimized_minispn.pyx":166
  *     def add_key(self, key):
  *         assert len(key) == self.block_size, "Length of key must be equal block size"
  *         self.key = key             # <<<<<<<<<<<<<<
@@ -21782,7 +21782,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__p
 */
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_mstate_global->__pyx_n_u_key, __pyx_v_key) < (0)) __PYX_ERR(0, 166, __pyx_L1_error)
 
-  /* "minispn.pyx":167
+  /* "optimized_minispn.pyx":167
  *         assert len(key) == self.block_size, "Length of key must be equal block size"
  *         self.key = key
  *         self.round_keys = self._expand_key(key)             # <<<<<<<<<<<<<<
@@ -21802,7 +21802,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__p
   if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_mstate_global->__pyx_n_u_round_keys, __pyx_t_4) < (0)) __PYX_ERR(0, 167, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "minispn.pyx":168
+  /* "optimized_minispn.pyx":168
  *         self.key = key
  *         self.round_keys = self._expand_key(key)
  *         self._c.set_round_keys([_b2i(k) for k in self.round_keys])             # <<<<<<<<<<<<<<
@@ -21916,7 +21916,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__p
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "minispn.pyx":164
+  /* "optimized_minispn.pyx":164
  *         self._c = Cipher()
  * 
  *     def add_key(self, key):             # <<<<<<<<<<<<<<
@@ -21936,7 +21936,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__p
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("minispn.MiniSPN.add_key", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.add_key", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_7genexpr__pyx_v_k);
@@ -21945,7 +21945,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__p
   return __pyx_r;
 }
 
-/* "minispn.pyx":170
+/* "optimized_minispn.pyx":170
  *         self._c.set_round_keys([_b2i(k) for k in self.round_keys])
  * 
  *     def _expand_key(self, key):             # <<<<<<<<<<<<<<
@@ -21954,15 +21954,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_2add_key(CYTHON_UNUSED PyObject *__p
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_5_expand_key(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_5_expand_key(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_5_expand_key = {"_expand_key", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_5_expand_key, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_5_expand_key(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_5_expand_key = {"_expand_key", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_5_expand_key, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_5_expand_key(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -22032,11 +22032,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN._expand_key", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._expand_key", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_4_expand_key(__pyx_self, __pyx_v_self, __pyx_v_key);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_4_expand_key(__pyx_self, __pyx_v_self, __pyx_v_key);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -22046,7 +22046,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_key) {
   PyObject *__pyx_v_round_keys = NULL;
   PyObject *__pyx_v_state = NULL;
   PyObject *__pyx_v_i = NULL;
@@ -22069,7 +22069,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_expand_key", 0);
 
-  /* "minispn.pyx":171
+  /* "optimized_minispn.pyx":171
  * 
  *     def _expand_key(self, key):
  *         round_keys = []             # <<<<<<<<<<<<<<
@@ -22081,7 +22081,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
   __pyx_v_round_keys = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "minispn.pyx":172
+  /* "optimized_minispn.pyx":172
  *     def _expand_key(self, key):
  *         round_keys = []
  *         state = key             # <<<<<<<<<<<<<<
@@ -22091,7 +22091,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
   __Pyx_INCREF(__pyx_v_key);
   __pyx_v_state = __pyx_v_key;
 
-  /* "minispn.pyx":173
+  /* "optimized_minispn.pyx":173
  *         round_keys = []
  *         state = key
  *         for i in range(self.num_rounds + 1):             # <<<<<<<<<<<<<<
@@ -22169,7 +22169,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "minispn.pyx":174
+    /* "optimized_minispn.pyx":174
  *         state = key
  *         for i in range(self.num_rounds + 1):
  *             round_constant = self._num2bit((i + 1) * 1337, self.block_size)             # <<<<<<<<<<<<<<
@@ -22198,7 +22198,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
     __Pyx_XDECREF_SET(__pyx_v_round_constant, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "minispn.pyx":175
+    /* "optimized_minispn.pyx":175
  *         for i in range(self.num_rounds + 1):
  *             round_constant = self._num2bit((i + 1) * 1337, self.block_size)
  *             state = self._substitute(self._xor(self._rotate(state, 13), round_constant))             # <<<<<<<<<<<<<<
@@ -22240,7 +22240,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
     __Pyx_DECREF_SET(__pyx_v_state, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "minispn.pyx":176
+    /* "optimized_minispn.pyx":176
  *             round_constant = self._num2bit((i + 1) * 1337, self.block_size)
  *             state = self._substitute(self._xor(self._rotate(state, 13), round_constant))
  *             round_keys.append(state)             # <<<<<<<<<<<<<<
@@ -22249,7 +22249,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
 */
     __pyx_t_11 = __Pyx_PyList_Append(__pyx_v_round_keys, __pyx_v_state); if (unlikely(__pyx_t_11 == ((int)-1))) __PYX_ERR(0, 176, __pyx_L1_error)
 
-    /* "minispn.pyx":173
+    /* "optimized_minispn.pyx":173
  *         round_keys = []
  *         state = key
  *         for i in range(self.num_rounds + 1):             # <<<<<<<<<<<<<<
@@ -22259,7 +22259,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "minispn.pyx":177
+  /* "optimized_minispn.pyx":177
  *             state = self._substitute(self._xor(self._rotate(state, 13), round_constant))
  *             round_keys.append(state)
  *         return round_keys             # <<<<<<<<<<<<<<
@@ -22271,7 +22271,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
   __pyx_r = __pyx_v_round_keys;
   goto __pyx_L0;
 
-  /* "minispn.pyx":170
+  /* "optimized_minispn.pyx":170
  *         self._c.set_round_keys([_b2i(k) for k in self.round_keys])
  * 
  *     def _expand_key(self, key):             # <<<<<<<<<<<<<<
@@ -22288,7 +22288,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("minispn.MiniSPN._expand_key", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._expand_key", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_round_keys);
@@ -22300,7 +22300,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
   return __pyx_r;
 }
 
-/* "minispn.pyx":179
+/* "optimized_minispn.pyx":179
  *         return round_keys
  * 
  *     def _num2bit(self, num, size):             # <<<<<<<<<<<<<<
@@ -22309,15 +22309,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_4_expand_key(CYTHON_UNUSED PyObject 
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_7_num2bit(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_7_num2bit(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_7_num2bit = {"_num2bit", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_7_num2bit, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_7_num2bit(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_7_num2bit = {"_num2bit", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_7_num2bit, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_7_num2bit(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -22395,11 +22395,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN._num2bit", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._num2bit", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_6_num2bit(__pyx_self, __pyx_v_self, __pyx_v_num, __pyx_v_size);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_6_num2bit(__pyx_self, __pyx_v_self, __pyx_v_num, __pyx_v_size);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -22409,7 +22409,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_6_num2bit(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, PyObject *__pyx_v_num, PyObject *__pyx_v_size) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_6_num2bit(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, PyObject *__pyx_v_num, PyObject *__pyx_v_size) {
   PyObject *__pyx_v_bits = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -22426,7 +22426,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_6_num2bit(CYTHON_UNUSED PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_num2bit", 0);
 
-  /* "minispn.pyx":180
+  /* "optimized_minispn.pyx":180
  * 
  *     def _num2bit(self, num, size):
  *         bits = list(map(int, f"{num:b}"))             # <<<<<<<<<<<<<<
@@ -22454,7 +22454,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_6_num2bit(CYTHON_UNUSED PyObject *__
   __pyx_v_bits = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "minispn.pyx":181
+  /* "optimized_minispn.pyx":181
  *     def _num2bit(self, num, size):
  *         bits = list(map(int, f"{num:b}"))
  *         return ([0] * (size - len(bits)) + bits)[:size]             # <<<<<<<<<<<<<<
@@ -22499,7 +22499,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_6_num2bit(CYTHON_UNUSED PyObject *__
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "minispn.pyx":179
+  /* "optimized_minispn.pyx":179
  *         return round_keys
  * 
  *     def _num2bit(self, num, size):             # <<<<<<<<<<<<<<
@@ -22513,7 +22513,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_6_num2bit(CYTHON_UNUSED PyObject *__
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.MiniSPN._num2bit", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._num2bit", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_bits);
@@ -22522,7 +22522,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_6_num2bit(CYTHON_UNUSED PyObject *__
   return __pyx_r;
 }
 
-/* "minispn.pyx":183
+/* "optimized_minispn.pyx":183
  *         return ([0] * (size - len(bits)) + bits)[:size]
  * 
  *     def _substitute(self, block):             # <<<<<<<<<<<<<<
@@ -22531,15 +22531,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_6_num2bit(CYTHON_UNUSED PyObject *__
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_9_substitute(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_9_substitute(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_9_substitute = {"_substitute", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_9_substitute, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_9_substitute(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_9_substitute = {"_substitute", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_9_substitute, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_9_substitute(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -22609,11 +22609,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN._substitute", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._substitute", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_8_substitute(__pyx_self, __pyx_v_self, __pyx_v_block);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_8_substitute(__pyx_self, __pyx_v_self, __pyx_v_block);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -22623,7 +22623,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block) {
   PyObject *__pyx_v_new_block = NULL;
   PyObject *__pyx_v_s = NULL;
   PyObject *__pyx_v_index = NULL;
@@ -22647,7 +22647,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_substitute", 0);
 
-  /* "minispn.pyx":184
+  /* "optimized_minispn.pyx":184
  * 
  *     def _substitute(self, block):
  *         new_block = []             # <<<<<<<<<<<<<<
@@ -22659,7 +22659,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject 
   __pyx_v_new_block = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "minispn.pyx":185
+  /* "optimized_minispn.pyx":185
  *     def _substitute(self, block):
  *         new_block = []
  *         for s in range(0, self.block_size, self.sbox_size):             # <<<<<<<<<<<<<<
@@ -22737,7 +22737,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject 
     __Pyx_XDECREF_SET(__pyx_v_s, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "minispn.pyx":186
+    /* "optimized_minispn.pyx":186
  *         new_block = []
  *         for s in range(0, self.block_size, self.sbox_size):
  *             index = int("".join(map(str, block[s:s + self.sbox_size])), 2)             # <<<<<<<<<<<<<<
@@ -22784,7 +22784,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject 
     __Pyx_XDECREF_SET(__pyx_v_index, ((PyObject*)__pyx_t_1));
     __pyx_t_1 = 0;
 
-    /* "minispn.pyx":187
+    /* "optimized_minispn.pyx":187
  *         for s in range(0, self.block_size, self.sbox_size):
  *             index = int("".join(map(str, block[s:s + self.sbox_size])), 2)
  *             new_block.extend(self._num2bit(self.sbox[index], self.sbox_size))             # <<<<<<<<<<<<<<
@@ -22813,7 +22813,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject 
     __pyx_t_13 = __Pyx_PyList_Extend(__pyx_v_new_block, __pyx_t_1); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 187, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "minispn.pyx":185
+    /* "optimized_minispn.pyx":185
  *     def _substitute(self, block):
  *         new_block = []
  *         for s in range(0, self.block_size, self.sbox_size):             # <<<<<<<<<<<<<<
@@ -22823,7 +22823,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject 
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "minispn.pyx":188
+  /* "optimized_minispn.pyx":188
  *             index = int("".join(map(str, block[s:s + self.sbox_size])), 2)
  *             new_block.extend(self._num2bit(self.sbox[index], self.sbox_size))
  *         return new_block             # <<<<<<<<<<<<<<
@@ -22835,7 +22835,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject 
   __pyx_r = __pyx_v_new_block;
   goto __pyx_L0;
 
-  /* "minispn.pyx":183
+  /* "optimized_minispn.pyx":183
  *         return ([0] * (size - len(bits)) + bits)[:size]
  * 
  *     def _substitute(self, block):             # <<<<<<<<<<<<<<
@@ -22854,7 +22854,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject 
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("minispn.MiniSPN._substitute", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._substitute", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_new_block);
@@ -22865,7 +22865,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject 
   return __pyx_r;
 }
 
-/* "minispn.pyx":190
+/* "optimized_minispn.pyx":190
  *         return new_block
  * 
  *     def _xor(self, a, b):             # <<<<<<<<<<<<<<
@@ -22874,15 +22874,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_8_substitute(CYTHON_UNUSED PyObject 
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_11_xor(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_11_xor(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_11_xor = {"_xor", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_11_xor, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_11_xor(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_11_xor = {"_xor", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_11_xor, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_11_xor(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -22960,11 +22960,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN._xor", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._xor", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_10_xor(__pyx_self, __pyx_v_self, __pyx_v_a, __pyx_v_b);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_10_xor(__pyx_self, __pyx_v_self, __pyx_v_a, __pyx_v_b);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -22974,7 +22974,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_10_xor(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_10_xor(CYTHON_UNUSED PyObject *__pyx_self, CYTHON_UNUSED PyObject *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_b) {
   PyObject *__pyx_8genexpr1__pyx_v_x = NULL;
   PyObject *__pyx_8genexpr1__pyx_v_y = NULL;
   PyObject *__pyx_r = NULL;
@@ -22994,7 +22994,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_10_xor(CYTHON_UNUSED PyObject *__pyx
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_xor", 0);
 
-  /* "minispn.pyx":191
+  /* "optimized_minispn.pyx":191
  * 
  *     def _xor(self, a, b):
  *         return [x ^ y for x, y in zip(a, b)]             # <<<<<<<<<<<<<<
@@ -23140,7 +23140,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_10_xor(CYTHON_UNUSED PyObject *__pyx
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "minispn.pyx":190
+  /* "optimized_minispn.pyx":190
  *         return new_block
  * 
  *     def _xor(self, a, b):             # <<<<<<<<<<<<<<
@@ -23156,7 +23156,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_10_xor(CYTHON_UNUSED PyObject *__pyx
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("minispn.MiniSPN._xor", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._xor", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_8genexpr1__pyx_v_x);
@@ -23166,7 +23166,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_10_xor(CYTHON_UNUSED PyObject *__pyx
   return __pyx_r;
 }
 
-/* "minispn.pyx":193
+/* "optimized_minispn.pyx":193
  *         return [x ^ y for x, y in zip(a, b)]
  * 
  *     def _rotate(self, a, i):             # <<<<<<<<<<<<<<
@@ -23175,15 +23175,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_10_xor(CYTHON_UNUSED PyObject *__pyx
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_13_rotate(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_13_rotate(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_13_rotate = {"_rotate", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_13_rotate, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_13_rotate(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_13_rotate = {"_rotate", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_13_rotate, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_13_rotate(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -23261,11 +23261,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN._rotate", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._rotate", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_12_rotate(__pyx_self, __pyx_v_self, __pyx_v_a, __pyx_v_i);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_12_rotate(__pyx_self, __pyx_v_self, __pyx_v_a, __pyx_v_i);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -23275,7 +23275,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_12_rotate(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_i) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_12_rotate(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_a, PyObject *__pyx_v_i) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -23287,7 +23287,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_12_rotate(CYTHON_UNUSED PyObject *__
   __Pyx_RefNannySetupContext("_rotate", 0);
   __Pyx_INCREF(__pyx_v_i);
 
-  /* "minispn.pyx":194
+  /* "optimized_minispn.pyx":194
  * 
  *     def _rotate(self, a, i):
  *         i = i % self.block_size             # <<<<<<<<<<<<<<
@@ -23302,7 +23302,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_12_rotate(CYTHON_UNUSED PyObject *__
   __Pyx_DECREF_SET(__pyx_v_i, __pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "minispn.pyx":195
+  /* "optimized_minispn.pyx":195
  *     def _rotate(self, a, i):
  *         i = i % self.block_size
  *         return a[-i:] + a[:-i]             # <<<<<<<<<<<<<<
@@ -23328,7 +23328,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_12_rotate(CYTHON_UNUSED PyObject *__
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "minispn.pyx":193
+  /* "optimized_minispn.pyx":193
  *         return [x ^ y for x, y in zip(a, b)]
  * 
  *     def _rotate(self, a, i):             # <<<<<<<<<<<<<<
@@ -23341,7 +23341,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_12_rotate(CYTHON_UNUSED PyObject *__
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("minispn.MiniSPN._rotate", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._rotate", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_i);
@@ -23350,7 +23350,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_12_rotate(CYTHON_UNUSED PyObject *__
   return __pyx_r;
 }
 
-/* "minispn.pyx":197
+/* "optimized_minispn.pyx":197
  *         return a[-i:] + a[:-i]
  * 
  *     def encrypt_block(self, block):             # <<<<<<<<<<<<<<
@@ -23359,15 +23359,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_12_rotate(CYTHON_UNUSED PyObject *__
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_15encrypt_block(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_15encrypt_block(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_15encrypt_block = {"encrypt_block", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_15encrypt_block, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_15encrypt_block(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_15encrypt_block = {"encrypt_block", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_15encrypt_block, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_15encrypt_block(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -23437,11 +23437,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN.encrypt_block", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.encrypt_block", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_14encrypt_block(__pyx_self, __pyx_v_self, __pyx_v_block);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_14encrypt_block(__pyx_self, __pyx_v_self, __pyx_v_block);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -23451,7 +23451,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_14encrypt_block(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_14encrypt_block(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -23464,7 +23464,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_14encrypt_block(CYTHON_UNUSED PyObje
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("encrypt_block", 0);
 
-  /* "minispn.pyx":198
+  /* "optimized_minispn.pyx":198
  * 
  *     def encrypt_block(self, block):
  *         assert self.round_keys is not None, "Please add key before encrypting"             # <<<<<<<<<<<<<<
@@ -23486,7 +23486,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_14encrypt_block(CYTHON_UNUSED PyObje
   if ((1)); else __PYX_ERR(0, 198, __pyx_L1_error)
   #endif
 
-  /* "minispn.pyx":199
+  /* "optimized_minispn.pyx":199
  *     def encrypt_block(self, block):
  *         assert self.round_keys is not None, "Please add key before encrypting"
  *         return self._c.encrypt_bits(block)             # <<<<<<<<<<<<<<
@@ -23511,7 +23511,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_14encrypt_block(CYTHON_UNUSED PyObje
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "minispn.pyx":197
+  /* "optimized_minispn.pyx":197
  *         return a[-i:] + a[:-i]
  * 
  *     def encrypt_block(self, block):             # <<<<<<<<<<<<<<
@@ -23524,7 +23524,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_14encrypt_block(CYTHON_UNUSED PyObje
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.MiniSPN.encrypt_block", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.encrypt_block", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -23532,7 +23532,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_14encrypt_block(CYTHON_UNUSED PyObje
   return __pyx_r;
 }
 
-/* "minispn.pyx":201
+/* "optimized_minispn.pyx":201
  *         return self._c.encrypt_bits(block)
  * 
  *     def decrypt_block(self, block):             # <<<<<<<<<<<<<<
@@ -23541,15 +23541,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_14encrypt_block(CYTHON_UNUSED PyObje
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_17decrypt_block(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_17decrypt_block(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_17decrypt_block = {"decrypt_block", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_17decrypt_block, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_17decrypt_block(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_17decrypt_block = {"decrypt_block", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_17decrypt_block, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_17decrypt_block(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -23619,11 +23619,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN.decrypt_block", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.decrypt_block", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_16decrypt_block(__pyx_self, __pyx_v_self, __pyx_v_block);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_16decrypt_block(__pyx_self, __pyx_v_self, __pyx_v_block);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -23633,7 +23633,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_16decrypt_block(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_16decrypt_block(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_block) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -23646,7 +23646,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_16decrypt_block(CYTHON_UNUSED PyObje
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decrypt_block", 0);
 
-  /* "minispn.pyx":202
+  /* "optimized_minispn.pyx":202
  * 
  *     def decrypt_block(self, block):
  *         assert self.round_keys is not None, "Please add key before decrypting"             # <<<<<<<<<<<<<<
@@ -23668,7 +23668,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_16decrypt_block(CYTHON_UNUSED PyObje
   if ((1)); else __PYX_ERR(0, 202, __pyx_L1_error)
   #endif
 
-  /* "minispn.pyx":203
+  /* "optimized_minispn.pyx":203
  *     def decrypt_block(self, block):
  *         assert self.round_keys is not None, "Please add key before decrypting"
  *         return self._c.decrypt_bits(block)             # <<<<<<<<<<<<<<
@@ -23693,7 +23693,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_16decrypt_block(CYTHON_UNUSED PyObje
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "minispn.pyx":201
+  /* "optimized_minispn.pyx":201
  *         return self._c.encrypt_bits(block)
  * 
  *     def decrypt_block(self, block):             # <<<<<<<<<<<<<<
@@ -23706,7 +23706,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_16decrypt_block(CYTHON_UNUSED PyObje
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.MiniSPN.decrypt_block", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.decrypt_block", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -23714,7 +23714,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_16decrypt_block(CYTHON_UNUSED PyObje
   return __pyx_r;
 }
 
-/* "minispn.pyx":205
+/* "optimized_minispn.pyx":205
  *         return self._c.decrypt_bits(block)
  * 
  *     def _check(self):             # <<<<<<<<<<<<<<
@@ -23723,15 +23723,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_16decrypt_block(CYTHON_UNUSED PyObje
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_19_check(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_19_check(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_19_check = {"_check", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_19_check, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_19_check(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_19_check = {"_check", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_19_check, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_19_check(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -23793,11 +23793,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN._check", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._check", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_18_check(__pyx_self, __pyx_v_self);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_18_check(__pyx_self, __pyx_v_self);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -23807,7 +23807,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_18_check(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_18_check(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -23817,7 +23817,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_18_check(CYTHON_UNUSED PyObject *__p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_check", 0);
 
-  /* "minispn.pyx":206
+  /* "optimized_minispn.pyx":206
  * 
  *     def _check(self):
  *         assert self.round_keys is not None, "Please add key first"             # <<<<<<<<<<<<<<
@@ -23839,7 +23839,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_18_check(CYTHON_UNUSED PyObject *__p
   if ((1)); else __PYX_ERR(0, 206, __pyx_L1_error)
   #endif
 
-  /* "minispn.pyx":205
+  /* "optimized_minispn.pyx":205
  *         return self._c.decrypt_bits(block)
  * 
  *     def _check(self):             # <<<<<<<<<<<<<<
@@ -23852,7 +23852,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_18_check(CYTHON_UNUSED PyObject *__p
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("minispn.MiniSPN._check", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN._check", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -23860,7 +23860,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_18_check(CYTHON_UNUSED PyObject *__p
   return __pyx_r;
 }
 
-/* "minispn.pyx":208
+/* "optimized_minispn.pyx":208
  *         assert self.round_keys is not None, "Please add key first"
  * 
  *     def encrypt_int(self, x):             # <<<<<<<<<<<<<<
@@ -23869,15 +23869,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_18_check(CYTHON_UNUSED PyObject *__p
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_21encrypt_int(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_21encrypt_int(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_21encrypt_int = {"encrypt_int", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_21encrypt_int, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_21encrypt_int(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_21encrypt_int = {"encrypt_int", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_21encrypt_int, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_21encrypt_int(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -23947,11 +23947,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN.encrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.encrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_20encrypt_int(__pyx_self, __pyx_v_self, __pyx_v_x);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_20encrypt_int(__pyx_self, __pyx_v_self, __pyx_v_x);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -23961,7 +23961,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_20encrypt_int(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_x) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_20encrypt_int(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_x) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -23973,7 +23973,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_20encrypt_int(CYTHON_UNUSED PyObject
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("encrypt_int", 0);
 
-  /* "minispn.pyx":209
+  /* "optimized_minispn.pyx":209
  * 
  *     def encrypt_int(self, x):
  *         self._check(); return self._c.encrypt_int(x)             # <<<<<<<<<<<<<<
@@ -24009,7 +24009,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_20encrypt_int(CYTHON_UNUSED PyObject
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "minispn.pyx":208
+  /* "optimized_minispn.pyx":208
  *         assert self.round_keys is not None, "Please add key first"
  * 
  *     def encrypt_int(self, x):             # <<<<<<<<<<<<<<
@@ -24022,7 +24022,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_20encrypt_int(CYTHON_UNUSED PyObject
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.MiniSPN.encrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.encrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24030,7 +24030,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_20encrypt_int(CYTHON_UNUSED PyObject
   return __pyx_r;
 }
 
-/* "minispn.pyx":211
+/* "optimized_minispn.pyx":211
  *         self._check(); return self._c.encrypt_int(x)
  * 
  *     def decrypt_int(self, x):             # <<<<<<<<<<<<<<
@@ -24039,15 +24039,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_20encrypt_int(CYTHON_UNUSED PyObject
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_23decrypt_int(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_23decrypt_int(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_23decrypt_int = {"decrypt_int", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_23decrypt_int, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_23decrypt_int(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_23decrypt_int = {"decrypt_int", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_23decrypt_int, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_23decrypt_int(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24117,11 +24117,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN.decrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.decrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_22decrypt_int(__pyx_self, __pyx_v_self, __pyx_v_x);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_22decrypt_int(__pyx_self, __pyx_v_self, __pyx_v_x);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -24131,7 +24131,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_22decrypt_int(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_x) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_22decrypt_int(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_x) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -24143,7 +24143,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_22decrypt_int(CYTHON_UNUSED PyObject
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decrypt_int", 0);
 
-  /* "minispn.pyx":212
+  /* "optimized_minispn.pyx":212
  * 
  *     def decrypt_int(self, x):
  *         self._check(); return self._c.decrypt_int(x)             # <<<<<<<<<<<<<<
@@ -24179,7 +24179,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_22decrypt_int(CYTHON_UNUSED PyObject
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "minispn.pyx":211
+  /* "optimized_minispn.pyx":211
  *         self._check(); return self._c.encrypt_int(x)
  * 
  *     def decrypt_int(self, x):             # <<<<<<<<<<<<<<
@@ -24192,7 +24192,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_22decrypt_int(CYTHON_UNUSED PyObject
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.MiniSPN.decrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.decrypt_int", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24200,7 +24200,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_22decrypt_int(CYTHON_UNUSED PyObject
   return __pyx_r;
 }
 
-/* "minispn.pyx":214
+/* "optimized_minispn.pyx":214
  *         self._check(); return self._c.decrypt_int(x)
  * 
  *     def encrypt_many(self, xs):             # <<<<<<<<<<<<<<
@@ -24209,15 +24209,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_22decrypt_int(CYTHON_UNUSED PyObject
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_25encrypt_many(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_25encrypt_many(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_25encrypt_many = {"encrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_25encrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_25encrypt_many(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_25encrypt_many = {"encrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_25encrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_25encrypt_many(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24287,11 +24287,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN.encrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.encrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_24encrypt_many(__pyx_self, __pyx_v_self, __pyx_v_xs);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_24encrypt_many(__pyx_self, __pyx_v_self, __pyx_v_xs);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -24301,7 +24301,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_24encrypt_many(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_xs) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_24encrypt_many(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_xs) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -24313,7 +24313,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_24encrypt_many(CYTHON_UNUSED PyObjec
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("encrypt_many", 0);
 
-  /* "minispn.pyx":215
+  /* "optimized_minispn.pyx":215
  * 
  *     def encrypt_many(self, xs):
  *         self._check(); return self._c.encrypt_many(xs)             # <<<<<<<<<<<<<<
@@ -24349,7 +24349,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_24encrypt_many(CYTHON_UNUSED PyObjec
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "minispn.pyx":214
+  /* "optimized_minispn.pyx":214
  *         self._check(); return self._c.decrypt_int(x)
  * 
  *     def encrypt_many(self, xs):             # <<<<<<<<<<<<<<
@@ -24362,7 +24362,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_24encrypt_many(CYTHON_UNUSED PyObjec
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.MiniSPN.encrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.encrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24370,7 +24370,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_24encrypt_many(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "minispn.pyx":217
+/* "optimized_minispn.pyx":217
  *         self._check(); return self._c.encrypt_many(xs)
  * 
  *     def decrypt_many(self, xs):             # <<<<<<<<<<<<<<
@@ -24379,15 +24379,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_24encrypt_many(CYTHON_UNUSED PyObjec
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_27decrypt_many(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_27decrypt_many(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_27decrypt_many = {"decrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_27decrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_27decrypt_many(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_27decrypt_many = {"decrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_27decrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_27decrypt_many(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24457,11 +24457,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN.decrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.decrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_26decrypt_many(__pyx_self, __pyx_v_self, __pyx_v_xs);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_26decrypt_many(__pyx_self, __pyx_v_self, __pyx_v_xs);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -24471,7 +24471,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_26decrypt_many(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_xs) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_26decrypt_many(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_xs) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -24483,7 +24483,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_26decrypt_many(CYTHON_UNUSED PyObjec
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decrypt_many", 0);
 
-  /* "minispn.pyx":218
+  /* "optimized_minispn.pyx":218
  * 
  *     def decrypt_many(self, xs):
  *         self._check(); return self._c.decrypt_many(xs)             # <<<<<<<<<<<<<<
@@ -24519,7 +24519,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_26decrypt_many(CYTHON_UNUSED PyObjec
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "minispn.pyx":217
+  /* "optimized_minispn.pyx":217
  *         self._check(); return self._c.encrypt_many(xs)
  * 
  *     def decrypt_many(self, xs):             # <<<<<<<<<<<<<<
@@ -24532,7 +24532,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_26decrypt_many(CYTHON_UNUSED PyObjec
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.MiniSPN.decrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.decrypt_many", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24540,7 +24540,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_26decrypt_many(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "minispn.pyx":220
+/* "optimized_minispn.pyx":220
  *         self._check(); return self._c.decrypt_many(xs)
  * 
  *     def encrypt_inplace(self, buf):             # <<<<<<<<<<<<<<
@@ -24549,15 +24549,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_26decrypt_many(CYTHON_UNUSED PyObjec
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_29encrypt_inplace(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_29encrypt_inplace(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_29encrypt_inplace = {"encrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_29encrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_29encrypt_inplace(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_29encrypt_inplace = {"encrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_29encrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_29encrypt_inplace(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24627,11 +24627,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN.encrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.encrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_28encrypt_inplace(__pyx_self, __pyx_v_self, __pyx_v_buf);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_28encrypt_inplace(__pyx_self, __pyx_v_self, __pyx_v_buf);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -24641,7 +24641,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_28encrypt_inplace(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_buf) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_28encrypt_inplace(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_buf) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -24653,7 +24653,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_28encrypt_inplace(CYTHON_UNUSED PyOb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("encrypt_inplace", 0);
 
-  /* "minispn.pyx":221
+  /* "optimized_minispn.pyx":221
  * 
  *     def encrypt_inplace(self, buf):
  *         self._check(); self._c.encrypt_inplace(buf)             # <<<<<<<<<<<<<<
@@ -24686,7 +24686,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_28encrypt_inplace(CYTHON_UNUSED PyOb
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "minispn.pyx":220
+  /* "optimized_minispn.pyx":220
  *         self._check(); return self._c.decrypt_many(xs)
  * 
  *     def encrypt_inplace(self, buf):             # <<<<<<<<<<<<<<
@@ -24701,7 +24701,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_28encrypt_inplace(CYTHON_UNUSED PyOb
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.MiniSPN.encrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.encrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24709,7 +24709,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_28encrypt_inplace(CYTHON_UNUSED PyOb
   return __pyx_r;
 }
 
-/* "minispn.pyx":223
+/* "optimized_minispn.pyx":223
  *         self._check(); self._c.encrypt_inplace(buf)
  * 
  *     def decrypt_inplace(self, buf):             # <<<<<<<<<<<<<<
@@ -24718,15 +24718,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_28encrypt_inplace(CYTHON_UNUSED PyOb
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_7MiniSPN_31decrypt_inplace(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_31decrypt_inplace(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_7MiniSPN_31decrypt_inplace = {"decrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_7MiniSPN_31decrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_7MiniSPN_31decrypt_inplace(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_7MiniSPN_31decrypt_inplace = {"decrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_7MiniSPN_31decrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_7MiniSPN_31decrypt_inplace(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24796,11 +24796,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.MiniSPN.decrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.decrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_7MiniSPN_30decrypt_inplace(__pyx_self, __pyx_v_self, __pyx_v_buf);
+  __pyx_r = __pyx_pf_17optimized_minispn_7MiniSPN_30decrypt_inplace(__pyx_self, __pyx_v_self, __pyx_v_buf);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -24810,7 +24810,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_7MiniSPN_30decrypt_inplace(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_buf) {
+static PyObject *__pyx_pf_17optimized_minispn_7MiniSPN_30decrypt_inplace(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_buf) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -24822,7 +24822,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_30decrypt_inplace(CYTHON_UNUSED PyOb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decrypt_inplace", 0);
 
-  /* "minispn.pyx":224
+  /* "optimized_minispn.pyx":224
  * 
  *     def decrypt_inplace(self, buf):
  *         self._check(); self._c.decrypt_inplace(buf)             # <<<<<<<<<<<<<<
@@ -24855,7 +24855,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_30decrypt_inplace(CYTHON_UNUSED PyOb
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "minispn.pyx":223
+  /* "optimized_minispn.pyx":223
  *         self._check(); self._c.encrypt_inplace(buf)
  * 
  *     def decrypt_inplace(self, buf):             # <<<<<<<<<<<<<<
@@ -24870,7 +24870,7 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_30decrypt_inplace(CYTHON_UNUSED PyOb
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("minispn.MiniSPN.decrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.MiniSPN.decrypt_inplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24885,15 +24885,15 @@ static PyObject *__pyx_pf_7minispn_7MiniSPN_30decrypt_inplace(CYTHON_UNUSED PyOb
 */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7minispn_5__pyx_unpickle_Cipher(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_17optimized_minispn_5__pyx_unpickle_Cipher(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_7minispn_5__pyx_unpickle_Cipher = {"__pyx_unpickle_Cipher", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_5__pyx_unpickle_Cipher, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_7minispn_5__pyx_unpickle_Cipher(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_17optimized_minispn_5__pyx_unpickle_Cipher = {"__pyx_unpickle_Cipher", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_5__pyx_unpickle_Cipher, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_17optimized_minispn_5__pyx_unpickle_Cipher(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24971,11 +24971,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
     Py_XDECREF(values[__pyx_temp]);
   }
-  __Pyx_AddTraceback("minispn.__pyx_unpickle_Cipher", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.__pyx_unpickle_Cipher", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7minispn_4__pyx_unpickle_Cipher(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
+  __pyx_r = __pyx_pf_17optimized_minispn_4__pyx_unpickle_Cipher(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
 
   /* function exit code */
   for (Py_ssize_t __pyx_temp=0; __pyx_temp < (Py_ssize_t)(sizeof(values)/sizeof(values[0])); ++__pyx_temp) {
@@ -24985,7 +24985,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7minispn_4__pyx_unpickle_Cipher(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_17optimized_minispn_4__pyx_unpickle_Cipher(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_v___pyx_PickleError = 0;
   PyObject *__pyx_v___pyx_result = 0;
   PyObject *__pyx_r = NULL;
@@ -25066,7 +25066,7 @@ static PyObject *__pyx_pf_7minispn_4__pyx_unpickle_Cipher(CYTHON_UNUSED PyObject
  *     if __pyx_state is not None:
  *         __pyx_unpickle_Cipher__set_state(<Cipher> __pyx_result, __pyx_state)
 */
-  __pyx_t_3 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_7minispn_Cipher);
+  __pyx_t_3 = ((PyObject *)__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher);
   __Pyx_INCREF(__pyx_t_3);
   __pyx_t_4 = 0;
   {
@@ -25097,7 +25097,7 @@ static PyObject *__pyx_pf_7minispn_4__pyx_unpickle_Cipher(CYTHON_UNUSED PyObject
  * cdef __pyx_unpickle_Cipher__set_state(Cipher __pyx_result, tuple __pyx_state):
 */
     if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None) || __Pyx_RaiseUnexpectedTypeError("tuple", __pyx_v___pyx_state))) __PYX_ERR(1, 9, __pyx_L1_error)
-    __pyx_t_1 = __pyx_f_7minispn___pyx_unpickle_Cipher__set_state(((struct __pyx_obj_7minispn_Cipher *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 9, __pyx_L1_error)
+    __pyx_t_1 = __pyx_f_17optimized_minispn___pyx_unpickle_Cipher__set_state(((struct __pyx_obj_17optimized_minispn_Cipher *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
@@ -25132,7 +25132,7 @@ static PyObject *__pyx_pf_7minispn_4__pyx_unpickle_Cipher(CYTHON_UNUSED PyObject
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("minispn.__pyx_unpickle_Cipher", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.__pyx_unpickle_Cipher", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v___pyx_PickleError);
@@ -25150,7 +25150,7 @@ static PyObject *__pyx_pf_7minispn_4__pyx_unpickle_Cipher(CYTHON_UNUSED PyObject
  *     if len(__pyx_state) > 1 and hasattr(__pyx_result, '__dict__'):
 */
 
-static PyObject *__pyx_f_7minispn___pyx_unpickle_Cipher__set_state(struct __pyx_obj_7minispn_Cipher *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_f_17optimized_minispn___pyx_unpickle_Cipher__set_state(struct __pyx_obj_17optimized_minispn_Cipher *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   uint64_t __pyx_t_1[7];
@@ -25249,7 +25249,7 @@ static PyObject *__pyx_f_7minispn___pyx_unpickle_Cipher__set_state(struct __pyx_
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("minispn.__pyx_unpickle_Cipher__set_state", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("optimized_minispn.__pyx_unpickle_Cipher__set_state", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -25257,10 +25257,10 @@ static PyObject *__pyx_f_7minispn___pyx_unpickle_Cipher__set_state(struct __pyx_
   return __pyx_r;
 }
 /* #### Code section: module_exttypes ### */
-static struct __pyx_vtabstruct_7minispn_Cipher __pyx_vtable_7minispn_Cipher;
+static struct __pyx_vtabstruct_17optimized_minispn_Cipher __pyx_vtable_17optimized_minispn_Cipher;
 
-static PyObject *__pyx_tp_new_7minispn_Cipher(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_7minispn_Cipher *p;
+static PyObject *__pyx_tp_new_17optimized_minispn_Cipher(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_17optimized_minispn_Cipher *p;
   PyObject *o;
   #if CYTHON_COMPILING_IN_LIMITED_API
   allocfunc alloc_func = (allocfunc)PyType_GetSlot(t, Py_tp_alloc);
@@ -25273,15 +25273,15 @@ static PyObject *__pyx_tp_new_7minispn_Cipher(PyTypeObject *t, CYTHON_UNUSED PyO
   }
   if (unlikely(!o)) return 0;
   #endif
-  p = ((struct __pyx_obj_7minispn_Cipher *)o);
-  p->__pyx_vtab = __pyx_vtabptr_7minispn_Cipher;
+  p = ((struct __pyx_obj_17optimized_minispn_Cipher *)o);
+  p->__pyx_vtab = __pyx_vtabptr_17optimized_minispn_Cipher;
   return o;
 }
 
-static void __pyx_tp_dealloc_7minispn_Cipher(PyObject *o) {
+static void __pyx_tp_dealloc_17optimized_minispn_Cipher(PyObject *o) {
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely((PY_VERSION_HEX >= 0x03080000 || __Pyx_PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE)) && __Pyx_PyObject_GetSlot(o, tp_finalize, destructor)) && (!PyType_IS_GC(Py_TYPE(o)) || !__Pyx_PyObject_GC_IsFinalized(o))) {
-    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_7minispn_Cipher) {
+    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_17optimized_minispn_Cipher) {
       if (PyObject_CallFinalizerFromDealloc(o)) return;
     }
   }
@@ -25296,40 +25296,40 @@ static void __pyx_tp_dealloc_7minispn_Cipher(PyObject *o) {
   #endif
 }
 
-static PyMethodDef __pyx_methods_7minispn_Cipher[] = {
-  {"set_round_keys", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_1set_round_keys, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"encrypt_bits", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_7encrypt_bits, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"decrypt_bits", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_9decrypt_bits, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"encrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_11encrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"decrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_13decrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"encrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_15encrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"decrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_17decrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_19__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
-  {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_7minispn_6Cipher_21__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+static PyMethodDef __pyx_methods_17optimized_minispn_Cipher[] = {
+  {"set_round_keys", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_1set_round_keys, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"encrypt_bits", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_7encrypt_bits, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"decrypt_bits", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_9decrypt_bits, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"encrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_11encrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"decrypt_many", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_13decrypt_many, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"encrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_15encrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"decrypt_inplace", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_17decrypt_inplace, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"__reduce_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_19__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
+  {"__setstate_cython__", (PyCFunction)(void(*)(void))(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_17optimized_minispn_6Cipher_21__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0},
   {0, 0, 0, 0}
 };
 #if CYTHON_USE_TYPE_SPECS
-static PyType_Slot __pyx_type_7minispn_Cipher_slots[] = {
-  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_7minispn_Cipher},
-  {Py_tp_methods, (void *)__pyx_methods_7minispn_Cipher},
-  {Py_tp_new, (void *)__pyx_tp_new_7minispn_Cipher},
+static PyType_Slot __pyx_type_17optimized_minispn_Cipher_slots[] = {
+  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_17optimized_minispn_Cipher},
+  {Py_tp_methods, (void *)__pyx_methods_17optimized_minispn_Cipher},
+  {Py_tp_new, (void *)__pyx_tp_new_17optimized_minispn_Cipher},
   {0, 0},
 };
-static PyType_Spec __pyx_type_7minispn_Cipher_spec = {
-  "minispn.Cipher",
-  sizeof(struct __pyx_obj_7minispn_Cipher),
+static PyType_Spec __pyx_type_17optimized_minispn_Cipher_spec = {
+  "optimized_minispn.Cipher",
+  sizeof(struct __pyx_obj_17optimized_minispn_Cipher),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE,
-  __pyx_type_7minispn_Cipher_slots,
+  __pyx_type_17optimized_minispn_Cipher_slots,
 };
 #else
 
-static PyTypeObject __pyx_type_7minispn_Cipher = {
+static PyTypeObject __pyx_type_17optimized_minispn_Cipher = {
   PyVarObject_HEAD_INIT(0, 0)
-  "minispn.""Cipher", /*tp_name*/
-  sizeof(struct __pyx_obj_7minispn_Cipher), /*tp_basicsize*/
+  "optimized_minispn.""Cipher", /*tp_name*/
+  sizeof(struct __pyx_obj_17optimized_minispn_Cipher), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_7minispn_Cipher, /*tp_dealloc*/
+  __pyx_tp_dealloc_17optimized_minispn_Cipher, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -25357,7 +25357,7 @@ static PyTypeObject __pyx_type_7minispn_Cipher = {
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_7minispn_Cipher, /*tp_methods*/
+  __pyx_methods_17optimized_minispn_Cipher, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -25369,7 +25369,7 @@ static PyTypeObject __pyx_type_7minispn_Cipher = {
   #endif
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_7minispn_Cipher, /*tp_new*/
+  __pyx_tp_new_17optimized_minispn_Cipher, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -25402,7 +25402,7 @@ static PyTypeObject __pyx_type_7minispn_Cipher = {
 };
 #endif
 
-static PyObject *__pyx_tp_new_7minispn___pyx_defaults(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_17optimized_minispn___pyx_defaults(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
   #if CYTHON_COMPILING_IN_LIMITED_API
   allocfunc alloc_func = (allocfunc)PyType_GetSlot(t, Py_tp_alloc);
@@ -25414,11 +25414,11 @@ static PyObject *__pyx_tp_new_7minispn___pyx_defaults(PyTypeObject *t, CYTHON_UN
   return o;
 }
 
-static void __pyx_tp_dealloc_7minispn___pyx_defaults(PyObject *o) {
+static void __pyx_tp_dealloc_17optimized_minispn___pyx_defaults(PyObject *o) {
   struct __pyx_defaults *p = (struct __pyx_defaults *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely((PY_VERSION_HEX >= 0x03080000 || __Pyx_PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE)) && __Pyx_PyObject_GetSlot(o, tp_finalize, destructor)) && !__Pyx_PyObject_GC_IsFinalized(o)) {
-    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_7minispn___pyx_defaults) {
+    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_17optimized_minispn___pyx_defaults) {
       if (PyObject_CallFinalizerFromDealloc(o)) return;
     }
   }
@@ -25437,7 +25437,7 @@ static void __pyx_tp_dealloc_7minispn___pyx_defaults(PyObject *o) {
   #endif
 }
 
-static int __pyx_tp_traverse_7minispn___pyx_defaults(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_17optimized_minispn___pyx_defaults(PyObject *o, visitproc v, void *a) {
   int e;
   struct __pyx_defaults *p = (struct __pyx_defaults *)o;
   {
@@ -25456,7 +25456,7 @@ static int __pyx_tp_traverse_7minispn___pyx_defaults(PyObject *o, visitproc v, v
   return 0;
 }
 
-static int __pyx_tp_clear_7minispn___pyx_defaults(PyObject *o) {
+static int __pyx_tp_clear_17optimized_minispn___pyx_defaults(PyObject *o) {
   PyObject* tmp;
   struct __pyx_defaults *p = (struct __pyx_defaults *)o;
   tmp = ((PyObject*)p->arg0);
@@ -25471,28 +25471,28 @@ static int __pyx_tp_clear_7minispn___pyx_defaults(PyObject *o) {
   return 0;
 }
 #if CYTHON_USE_TYPE_SPECS
-static PyType_Slot __pyx_type_7minispn___pyx_defaults_slots[] = {
-  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_7minispn___pyx_defaults},
-  {Py_tp_traverse, (void *)__pyx_tp_traverse_7minispn___pyx_defaults},
-  {Py_tp_clear, (void *)__pyx_tp_clear_7minispn___pyx_defaults},
-  {Py_tp_new, (void *)__pyx_tp_new_7minispn___pyx_defaults},
+static PyType_Slot __pyx_type_17optimized_minispn___pyx_defaults_slots[] = {
+  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_17optimized_minispn___pyx_defaults},
+  {Py_tp_traverse, (void *)__pyx_tp_traverse_17optimized_minispn___pyx_defaults},
+  {Py_tp_clear, (void *)__pyx_tp_clear_17optimized_minispn___pyx_defaults},
+  {Py_tp_new, (void *)__pyx_tp_new_17optimized_minispn___pyx_defaults},
   {0, 0},
 };
-static PyType_Spec __pyx_type_7minispn___pyx_defaults_spec = {
-  "minispn.__pyx_defaults",
+static PyType_Spec __pyx_type_17optimized_minispn___pyx_defaults_spec = {
+  "optimized_minispn.__pyx_defaults",
   sizeof(struct __pyx_defaults),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_HAVE_FINALIZE,
-  __pyx_type_7minispn___pyx_defaults_slots,
+  __pyx_type_17optimized_minispn___pyx_defaults_slots,
 };
 #else
 
-static PyTypeObject __pyx_type_7minispn___pyx_defaults = {
+static PyTypeObject __pyx_type_17optimized_minispn___pyx_defaults = {
   PyVarObject_HEAD_INIT(0, 0)
-  "minispn.""__pyx_defaults", /*tp_name*/
+  "optimized_minispn.""__pyx_defaults", /*tp_name*/
   sizeof(struct __pyx_defaults), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_7minispn___pyx_defaults, /*tp_dealloc*/
+  __pyx_tp_dealloc_17optimized_minispn___pyx_defaults, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -25514,8 +25514,8 @@ static PyTypeObject __pyx_type_7minispn___pyx_defaults = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_HAVE_FINALIZE, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_7minispn___pyx_defaults, /*tp_traverse*/
-  __pyx_tp_clear_7minispn___pyx_defaults, /*tp_clear*/
+  __pyx_tp_traverse_17optimized_minispn___pyx_defaults, /*tp_traverse*/
+  __pyx_tp_clear_17optimized_minispn___pyx_defaults, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -25532,7 +25532,7 @@ static PyTypeObject __pyx_type_7minispn___pyx_defaults = {
   #endif
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_7minispn___pyx_defaults, /*tp_new*/
+  __pyx_tp_new_17optimized_minispn___pyx_defaults, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -25695,7 +25695,7 @@ static PyType_Slot __pyx_type___pyx_array_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_array_spec = {
-  "minispn.array",
+  "optimized_minispn.array",
   sizeof(struct __pyx_array_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_SEQUENCE,
@@ -25729,7 +25729,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "minispn.""array", /*tp_name*/
+  "optimized_minispn.""array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -25884,7 +25884,7 @@ static PyType_Slot __pyx_type___pyx_MemviewEnum_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_MemviewEnum_spec = {
-  "minispn.Enum",
+  "optimized_minispn.Enum",
   sizeof(struct __pyx_MemviewEnum_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,
@@ -25894,7 +25894,7 @@ static PyType_Spec __pyx_type___pyx_MemviewEnum_spec = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "minispn.""Enum", /*tp_name*/
+  "optimized_minispn.""Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -26179,7 +26179,7 @@ static PyType_Slot __pyx_type___pyx_memoryview_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_memoryview_spec = {
-  "minispn.memoryview",
+  "optimized_minispn.memoryview",
   sizeof(struct __pyx_memoryview_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,
@@ -26213,7 +26213,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "minispn.""memoryview", /*tp_name*/
+  "optimized_minispn.""memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -26361,7 +26361,7 @@ static PyType_Slot __pyx_type___pyx_memoryviewslice_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_memoryviewslice_spec = {
-  "minispn._memoryviewslice",
+  "optimized_minispn._memoryviewslice",
   sizeof(struct __pyx_memoryviewslice_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_SEQUENCE,
@@ -26371,7 +26371,7 @@ static PyType_Spec __pyx_type___pyx_memoryviewslice_spec = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "minispn.""_memoryviewslice", /*tp_name*/
+  "optimized_minispn.""_memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -26515,43 +26515,43 @@ static int __Pyx_modinit_type_init_code(__pyx_mstatetype *__pyx_mstate) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  __pyx_vtabptr_7minispn_Cipher = &__pyx_vtable_7minispn_Cipher;
-  __pyx_vtable_7minispn_Cipher.encrypt_int = (uint64_t (*)(struct __pyx_obj_7minispn_Cipher *, uint64_t, int __pyx_skip_dispatch))__pyx_f_7minispn_6Cipher_encrypt_int;
-  __pyx_vtable_7minispn_Cipher.decrypt_int = (uint64_t (*)(struct __pyx_obj_7minispn_Cipher *, uint64_t, int __pyx_skip_dispatch))__pyx_f_7minispn_6Cipher_decrypt_int;
+  __pyx_vtabptr_17optimized_minispn_Cipher = &__pyx_vtable_17optimized_minispn_Cipher;
+  __pyx_vtable_17optimized_minispn_Cipher.encrypt_int = (uint64_t (*)(struct __pyx_obj_17optimized_minispn_Cipher *, uint64_t, int __pyx_skip_dispatch))__pyx_f_17optimized_minispn_6Cipher_encrypt_int;
+  __pyx_vtable_17optimized_minispn_Cipher.decrypt_int = (uint64_t (*)(struct __pyx_obj_17optimized_minispn_Cipher *, uint64_t, int __pyx_skip_dispatch))__pyx_f_17optimized_minispn_6Cipher_decrypt_int;
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_7minispn_Cipher = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_7minispn_Cipher_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_7minispn_Cipher)) __PYX_ERR(0, 88, __pyx_L1_error)
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_7minispn_Cipher_spec, __pyx_mstate->__pyx_ptype_7minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_17optimized_minispn_Cipher_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher)) __PYX_ERR(0, 88, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_17optimized_minispn_Cipher_spec, __pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
   #else
-  __pyx_mstate->__pyx_ptype_7minispn_Cipher = &__pyx_type_7minispn_Cipher;
+  __pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher = &__pyx_type_17optimized_minispn_Cipher;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_7minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_7minispn_Cipher->tp_dictoffset && __pyx_mstate->__pyx_ptype_7minispn_Cipher->tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_mstate->__pyx_ptype_7minispn_Cipher->tp_getattro = PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher->tp_dictoffset && __pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher->tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_mstate->__pyx_ptype_7minispn_Cipher, __pyx_vtabptr_7minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
-  if (__Pyx_MergeVtables(__pyx_mstate->__pyx_ptype_7minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Cipher, (PyObject *) __pyx_mstate->__pyx_ptype_7minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_7minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher, __pyx_vtabptr_17optimized_minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
+  if (__Pyx_MergeVtables(__pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_Cipher, (PyObject *) __pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject *) __pyx_mstate->__pyx_ptype_17optimized_minispn_Cipher) < (0)) __PYX_ERR(0, 88, __pyx_L1_error)
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_mstate->__pyx_ptype_7minispn___pyx_defaults = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_7minispn___pyx_defaults_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_7minispn___pyx_defaults)) __PYX_ERR(0, 145, __pyx_L1_error)
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_7minispn___pyx_defaults_spec, __pyx_mstate->__pyx_ptype_7minispn___pyx_defaults) < (0)) __PYX_ERR(0, 145, __pyx_L1_error)
+  __pyx_mstate->__pyx_ptype_17optimized_minispn___pyx_defaults = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_17optimized_minispn___pyx_defaults_spec, NULL); if (unlikely(!__pyx_mstate->__pyx_ptype_17optimized_minispn___pyx_defaults)) __PYX_ERR(0, 145, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_17optimized_minispn___pyx_defaults_spec, __pyx_mstate->__pyx_ptype_17optimized_minispn___pyx_defaults) < (0)) __PYX_ERR(0, 145, __pyx_L1_error)
   #else
-  __pyx_mstate->__pyx_ptype_7minispn___pyx_defaults = &__pyx_type_7minispn___pyx_defaults;
+  __pyx_mstate->__pyx_ptype_17optimized_minispn___pyx_defaults = &__pyx_type_17optimized_minispn___pyx_defaults;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_7minispn___pyx_defaults) < (0)) __PYX_ERR(0, 145, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_mstate->__pyx_ptype_17optimized_minispn___pyx_defaults) < (0)) __PYX_ERR(0, 145, __pyx_L1_error)
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_7minispn___pyx_defaults->tp_dictoffset && __pyx_mstate->__pyx_ptype_7minispn___pyx_defaults->tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_mstate->__pyx_ptype_7minispn___pyx_defaults->tp_getattro = PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_mstate->__pyx_ptype_17optimized_minispn___pyx_defaults->tp_dictoffset && __pyx_mstate->__pyx_ptype_17optimized_minispn___pyx_defaults->tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_mstate->__pyx_ptype_17optimized_minispn___pyx_defaults->tp_getattro = PyObject_GenericGetAttr;
   }
   #endif
   __pyx_vtabptr_array = &__pyx_vtable_array;
@@ -26705,10 +26705,10 @@ static int __Pyx_modinit_function_import_code(__pyx_mstatetype *__pyx_mstate) {
 
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_minispn(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_optimized_minispn(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_minispn},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_optimized_minispn},
   #if CYTHON_COMPILING_IN_CPYTHON_FREETHREADING
   {Py_mod_gil, Py_MOD_GIL_USED},
   #endif
@@ -26727,7 +26727,7 @@ namespace {
   #endif
   {
       PyModuleDef_HEAD_INIT,
-      "minispn",
+      "optimized_minispn",
       0, /* m_doc */
     #if CYTHON_USE_MODULE_STATE
       sizeof(__pyx_mstatetype), /* m_size */
@@ -26765,8 +26765,8 @@ namespace {
   #endif
 #endif
 
-__Pyx_PyMODINIT_FUNC PyInit_minispn(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_minispn(void)
+__Pyx_PyMODINIT_FUNC PyInit_optimized_minispn(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_optimized_minispn(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -26869,7 +26869,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_minispn(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_optimized_minispn(PyObject *__pyx_pyinit_module)
 #endif
 {
   int stringtab_initialized = 0;
@@ -26893,7 +26893,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_minispn(PyObject *__pyx_pyinit_mod
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'minispn' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'optimized_minispn' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #else
@@ -26909,7 +26909,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_minispn(PyObject *__pyx_pyinit_mod
   #if CYTHON_USE_MODULE_STATE
   {
     int add_module_result = __Pyx_State_AddModule(__pyx_t_1, &__pyx_moduledef);
-    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "minispn" pseudovariable */
+    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "optimized_minispn" pseudovariable */
     if (unlikely((add_module_result < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     pystate_addmodule_run = 1;
   }
@@ -26937,7 +26937,7 @@ if (!__Pyx_RefNanny) {
 }
 #endif
 
-__Pyx_RefNannySetupContext("PyInit_minispn", 0);
+__Pyx_RefNannySetupContext("PyInit_optimized_minispn", 0);
   if (__Pyx_check_binary_version(__PYX_LIMITED_VERSION_HEX, __Pyx_get_runtime_version(), CYTHON_COMPILING_IN_LIMITED_API) < (0)) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -26968,13 +26968,13 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
   if (__pyx_AsyncGen_init(__pyx_m) < (0)) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
   /*--- Library function declarations ---*/
-  if (__pyx_module_is_main_minispn) {
+  if (__pyx_module_is_main_optimized_minispn) {
     if (PyObject_SetAttr(__pyx_m, __pyx_mstate_global->__pyx_n_u_name_2, __pyx_mstate_global->__pyx_n_u_main) < (0)) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "minispn")) {
-      if (unlikely((PyDict_SetItemString(modules, "minispn", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "optimized_minispn")) {
+      if (unlikely((PyDict_SetItemString(modules, "optimized_minispn", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   /*--- Builtin init code ---*/
@@ -27524,7 +27524,7 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_pyx_unpickle_Enum, __pyx_t_5) < (0)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":4
+  /* "optimized_minispn.pyx":4
  * from libc.stdint cimport uint64_t
  * 
  * SBOX = [42, 35, 11, 41, 30, 47, 26, 61, 18, 51, 49, 58, 1, 34, 7, 5, 6, 23, 9, 37, 12, 19, 14, 27, 16, 36, 62, 54, 46, 45, 57, 21, 53, 32, 33, 39, 59, 52, 43, 15, 4, 63, 38, 8, 13, 0, 55, 2, 40, 50, 25, 48, 44, 28, 3, 17, 56, 29, 20, 10, 60, 31, 22, 24]             # <<<<<<<<<<<<<<
@@ -27536,7 +27536,7 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_SBOX, __pyx_t_5) < (0)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":5
+  /* "optimized_minispn.pyx":5
  * 
  * SBOX = [42, 35, 11, 41, 30, 47, 26, 61, 18, 51, 49, 58, 1, 34, 7, 5, 6, 23, 9, 37, 12, 19, 14, 27, 16, 36, 62, 54, 46, 45, 57, 21, 53, 32, 33, 39, 59, 52, 43, 15, 4, 63, 38, 8, 13, 0, 55, 2, 40, 50, 25, 48, 44, 28, 3, 17, 56, 29, 20, 10, 60, 31, 22, 24]
  * PERM = [0, 6, 12, 18, 24, 30, 36, 42, 1, 7, 13, 19, 25, 31, 37, 43, 2, 8, 14, 20, 26, 32, 38, 44, 3, 9, 15, 21, 27, 33, 39, 45, 4, 10, 16, 22, 28, 34, 40, 46, 5, 11, 17, 23, 29, 35, 41, 47]             # <<<<<<<<<<<<<<
@@ -27548,28 +27548,28 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_PERM, __pyx_t_5) < (0)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":7
+  /* "optimized_minispn.pyx":7
  * PERM = [0, 6, 12, 18, 24, 30, 36, 42, 1, 7, 13, 19, 25, 31, 37, 43, 2, 8, 14, 20, 26, 32, 38, 44, 3, 9, 15, 21, 27, 33, 39, 45, 4, 10, 16, 22, 28, 34, 40, 46, 5, 11, 17, 23, 29, 35, 41, 47]
  * 
  * cdef uint64_t MASK = (<uint64_t>1 << 48) - 1             # <<<<<<<<<<<<<<
  * 
  * cdef uint64_t T[8][64]
 */
-  __pyx_v_7minispn_MASK = ((((uint64_t)1) << 48) - 1);
+  __pyx_v_17optimized_minispn_MASK = ((((uint64_t)1) << 48) - 1);
 
-  /* "minispn.pyx":13
+  /* "optimized_minispn.pyx":13
  * cdef uint64_t IS[4096]
  * 
  * def _build_tables():             # <<<<<<<<<<<<<<
  *     cdef int s, v, j, k, i, o
  *     cdef uint64_t r
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_1_build_tables, 0, __pyx_mstate_global->__pyx_n_u_build_tables, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[0])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_1_build_tables, 0, __pyx_mstate_global->__pyx_n_u_build_tables, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[0])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_build_tables, __pyx_t_5) < (0)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":50
+  /* "optimized_minispn.pyx":50
  *         IS[v] = (<uint64_t>inv[v >> 6] << 6) | <uint64_t>inv[v & 63]
  * 
  * _build_tables()             # <<<<<<<<<<<<<<
@@ -27590,112 +27590,112 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":91
+  /* "optimized_minispn.pyx":91
  *     cdef uint64_t rk[7]
  * 
  *     def set_round_keys(self, keys):             # <<<<<<<<<<<<<<
  *         if len(keys) != 7:
  *             raise ValueError("need 7 round keys")
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_6Cipher_1set_round_keys, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_set_round_keys, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[1])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_6Cipher_1set_round_keys, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_set_round_keys, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[1])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_7minispn_Cipher, __pyx_mstate_global->__pyx_n_u_set_round_keys, __pyx_t_5) < (0)) __PYX_ERR(0, 91, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher, __pyx_mstate_global->__pyx_n_u_set_round_keys, __pyx_t_5) < (0)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":98
+  /* "optimized_minispn.pyx":98
  *             self.rk[i] = <uint64_t>keys[i] & MASK
  * 
  *     cpdef uint64_t encrypt_int(self, uint64_t x):             # <<<<<<<<<<<<<<
  *         return _enc(x & MASK, self.rk)
  * 
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_6Cipher_3encrypt_int, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_encrypt_int, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[2])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 98, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_6Cipher_3encrypt_int, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_encrypt_int, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[2])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_7minispn_Cipher, __pyx_mstate_global->__pyx_n_u_encrypt_int, __pyx_t_5) < (0)) __PYX_ERR(0, 98, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher, __pyx_mstate_global->__pyx_n_u_encrypt_int, __pyx_t_5) < (0)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":101
+  /* "optimized_minispn.pyx":101
  *         return _enc(x & MASK, self.rk)
  * 
  *     cpdef uint64_t decrypt_int(self, uint64_t x):             # <<<<<<<<<<<<<<
  *         return _dec(x & MASK, self.rk)
  * 
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_6Cipher_5decrypt_int, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_decrypt_int, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[3])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_6Cipher_5decrypt_int, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_decrypt_int, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[3])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_7minispn_Cipher, __pyx_mstate_global->__pyx_n_u_decrypt_int, __pyx_t_5) < (0)) __PYX_ERR(0, 101, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher, __pyx_mstate_global->__pyx_n_u_decrypt_int, __pyx_t_5) < (0)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":104
+  /* "optimized_minispn.pyx":104
  *         return _dec(x & MASK, self.rk)
  * 
  *     def encrypt_bits(self, list bits):             # <<<<<<<<<<<<<<
  *         return _int2bits(_enc(_bits2int(bits), self.rk))
  * 
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_6Cipher_7encrypt_bits, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_encrypt_bits, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[4])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_6Cipher_7encrypt_bits, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_encrypt_bits, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[4])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_7minispn_Cipher, __pyx_mstate_global->__pyx_n_u_encrypt_bits, __pyx_t_5) < (0)) __PYX_ERR(0, 104, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher, __pyx_mstate_global->__pyx_n_u_encrypt_bits, __pyx_t_5) < (0)) __PYX_ERR(0, 104, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":107
+  /* "optimized_minispn.pyx":107
  *         return _int2bits(_enc(_bits2int(bits), self.rk))
  * 
  *     def decrypt_bits(self, list bits):             # <<<<<<<<<<<<<<
  *         return _int2bits(_dec(_bits2int(bits), self.rk))
  * 
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_6Cipher_9decrypt_bits, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_decrypt_bits, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[5])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 107, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_6Cipher_9decrypt_bits, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_decrypt_bits, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[5])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_7minispn_Cipher, __pyx_mstate_global->__pyx_n_u_decrypt_bits, __pyx_t_5) < (0)) __PYX_ERR(0, 107, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher, __pyx_mstate_global->__pyx_n_u_decrypt_bits, __pyx_t_5) < (0)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":110
+  /* "optimized_minispn.pyx":110
  *         return _int2bits(_dec(_bits2int(bits), self.rk))
  * 
  *     def encrypt_many(self, xs):             # <<<<<<<<<<<<<<
  *         cdef list out = []
  *         cdef uint64_t x
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_6Cipher_11encrypt_many, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_encrypt_many, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[6])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_6Cipher_11encrypt_many, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_encrypt_many, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[6])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_7minispn_Cipher, __pyx_mstate_global->__pyx_n_u_encrypt_many, __pyx_t_5) < (0)) __PYX_ERR(0, 110, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher, __pyx_mstate_global->__pyx_n_u_encrypt_many, __pyx_t_5) < (0)) __PYX_ERR(0, 110, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":117
+  /* "optimized_minispn.pyx":117
  *         return out
  * 
  *     def decrypt_many(self, xs):             # <<<<<<<<<<<<<<
  *         cdef list out = []
  *         cdef uint64_t x
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_6Cipher_13decrypt_many, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_decrypt_many, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[7])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 117, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_6Cipher_13decrypt_many, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_decrypt_many, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[7])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_7minispn_Cipher, __pyx_mstate_global->__pyx_n_u_decrypt_many, __pyx_t_5) < (0)) __PYX_ERR(0, 117, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher, __pyx_mstate_global->__pyx_n_u_decrypt_many, __pyx_t_5) < (0)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":124
+  /* "optimized_minispn.pyx":124
  *         return out
  * 
  *     def encrypt_inplace(self, uint64_t[::1] buf):             # <<<<<<<<<<<<<<
  *         cdef Py_ssize_t i, n = buf.shape[0]
  *         with nogil:
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_6Cipher_15encrypt_inplace, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_encrypt_inplace, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[8])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_6Cipher_15encrypt_inplace, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_encrypt_inplace, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[8])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 124, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_7minispn_Cipher, __pyx_mstate_global->__pyx_n_u_encrypt_inplace, __pyx_t_5) < (0)) __PYX_ERR(0, 124, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher, __pyx_mstate_global->__pyx_n_u_encrypt_inplace, __pyx_t_5) < (0)) __PYX_ERR(0, 124, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":130
+  /* "optimized_minispn.pyx":130
  *                 buf[i] = _enc(buf[i] & MASK, self.rk)
  * 
  *     def decrypt_inplace(self, uint64_t[::1] buf):             # <<<<<<<<<<<<<<
  *         cdef Py_ssize_t i, n = buf.shape[0]
  *         with nogil:
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_6Cipher_17decrypt_inplace, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_decrypt_inplace, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[9])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_6Cipher_17decrypt_inplace, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher_decrypt_inplace, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[9])); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_7minispn_Cipher, __pyx_mstate_global->__pyx_n_u_decrypt_inplace, __pyx_t_5) < (0)) __PYX_ERR(0, 130, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher, __pyx_mstate_global->__pyx_n_u_decrypt_inplace, __pyx_t_5) < (0)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "(tree fragment)":1
@@ -27703,9 +27703,9 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
  *     cdef tuple state
  *     cdef object _dict
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_6Cipher_19__reduce_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher___reduce_cython, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[10])); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_6Cipher_19__reduce_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher___reduce_cython, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[10])); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_7minispn_Cipher, __pyx_mstate_global->__pyx_n_u_reduce_cython, __pyx_t_5) < (0)) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher, __pyx_mstate_global->__pyx_n_u_reduce_cython, __pyx_t_5) < (0)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
   /* "(tree fragment)":16
@@ -27714,12 +27714,12 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_unpickle_Cipher__set_state(self, __pyx_state)
 */
-  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_6Cipher_21__setstate_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher___setstate_cython, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[11])); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 16, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_6Cipher_21__setstate_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_mstate_global->__pyx_n_u_Cipher___setstate_cython, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[11])); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_7minispn_Cipher, __pyx_mstate_global->__pyx_n_u_setstate_cython, __pyx_t_5) < (0)) __PYX_ERR(1, 16, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict(__pyx_mstate_global->__pyx_ptype_17optimized_minispn_Cipher, __pyx_mstate_global->__pyx_n_u_setstate_cython, __pyx_t_5) < (0)) __PYX_ERR(1, 16, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "minispn.pyx":136
+  /* "optimized_minispn.pyx":136
  *                 buf[i] = _dec(buf[i] & MASK, self.rk)
  * 
  * _BLOCK, _SBOX_BITS, _ROUNDS = 48, 6, 6             # <<<<<<<<<<<<<<
@@ -27739,38 +27739,38 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_ROUNDS, __pyx_t_4) < (0)) __PYX_ERR(0, 136, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "minispn.pyx":138
+  /* "optimized_minispn.pyx":138
  * _BLOCK, _SBOX_BITS, _ROUNDS = 48, 6, 6
  * 
  * def _b2i(bits):             # <<<<<<<<<<<<<<
  *     v = 0
  *     for b in bits:
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_3_b2i, 0, __pyx_mstate_global->__pyx_n_u_b2i, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[12])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_3_b2i, 0, __pyx_mstate_global->__pyx_n_u_b2i, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[12])); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_b2i, __pyx_t_4) < (0)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "minispn.pyx":144
+  /* "optimized_minispn.pyx":144
  *     return v
  * 
  * class MiniSPN:             # <<<<<<<<<<<<<<
  *     def __init__(self, block_size=_BLOCK, sbox_size=_SBOX_BITS, num_rounds=_ROUNDS, /,
  *                  sbox=None, perm=None):
 */
-  __pyx_t_4 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_mstate_global->__pyx_empty_tuple, __pyx_mstate_global->__pyx_n_u_MiniSPN, __pyx_mstate_global->__pyx_n_u_MiniSPN, (PyObject *) NULL, __pyx_mstate_global->__pyx_n_u_minispn, (PyObject *) NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_mstate_global->__pyx_empty_tuple, __pyx_mstate_global->__pyx_n_u_MiniSPN, __pyx_mstate_global->__pyx_n_u_MiniSPN, (PyObject *) NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, (PyObject *) NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
 
-  /* "minispn.pyx":145
+  /* "optimized_minispn.pyx":145
  * 
  * class MiniSPN:
  *     def __init__(self, block_size=_BLOCK, sbox_size=_SBOX_BITS, num_rounds=_ROUNDS, /,             # <<<<<<<<<<<<<<
  *                  sbox=None, perm=None):
  *         if (block_size, sbox_size, num_rounds) != (_BLOCK, _SBOX_BITS, _ROUNDS):
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_1__init__, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN___init, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[13])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 145, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_1__init__, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN___init, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[13])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_6, __pyx_mstate_global->__pyx_ptype_7minispn___pyx_defaults)) __PYX_ERR(0, 145, __pyx_L1_error)
+  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_6, __pyx_mstate_global->__pyx_ptype_17optimized_minispn___pyx_defaults)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_mstate_global->__pyx_n_u_BLOCK); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_CyFunction_Defaults(struct __pyx_defaults, __pyx_t_6)->arg0 = __pyx_t_5;
@@ -27786,191 +27786,191 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
   __Pyx_CyFunction_Defaults(struct __pyx_defaults, __pyx_t_6)->arg2 = __pyx_t_5;
   __Pyx_GIVEREF(__pyx_t_5);
   __pyx_t_5 = 0;
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_6, __pyx_pf_7minispn_6__defaults__);
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_6, __pyx_pf_17optimized_minispn_6__defaults__);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_init, __pyx_t_6) < (0)) __PYX_ERR(0, 145, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":164
+  /* "optimized_minispn.pyx":164
  *         self._c = Cipher()
  * 
  *     def add_key(self, key):             # <<<<<<<<<<<<<<
  *         assert len(key) == self.block_size, "Length of key must be equal block size"
  *         self.key = key
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_3add_key, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_add_key, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[14])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_3add_key, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_add_key, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[14])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_add_key, __pyx_t_6) < (0)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":170
+  /* "optimized_minispn.pyx":170
  *         self._c.set_round_keys([_b2i(k) for k in self.round_keys])
  * 
  *     def _expand_key(self, key):             # <<<<<<<<<<<<<<
  *         round_keys = []
  *         state = key
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_5_expand_key, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__expand_key, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[15])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 170, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_5_expand_key, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__expand_key, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[15])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 170, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_expand_key, __pyx_t_6) < (0)) __PYX_ERR(0, 170, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":179
+  /* "optimized_minispn.pyx":179
  *         return round_keys
  * 
  *     def _num2bit(self, num, size):             # <<<<<<<<<<<<<<
  *         bits = list(map(int, f"{num:b}"))
  *         return ([0] * (size - len(bits)) + bits)[:size]
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_7_num2bit, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__num2bit, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[16])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_7_num2bit, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__num2bit, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[16])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 179, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_num2bit, __pyx_t_6) < (0)) __PYX_ERR(0, 179, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":183
+  /* "optimized_minispn.pyx":183
  *         return ([0] * (size - len(bits)) + bits)[:size]
  * 
  *     def _substitute(self, block):             # <<<<<<<<<<<<<<
  *         new_block = []
  *         for s in range(0, self.block_size, self.sbox_size):
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_9_substitute, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__substitute, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[17])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 183, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_9_substitute, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__substitute, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[17])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_substitute, __pyx_t_6) < (0)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":190
+  /* "optimized_minispn.pyx":190
  *         return new_block
  * 
  *     def _xor(self, a, b):             # <<<<<<<<<<<<<<
  *         return [x ^ y for x, y in zip(a, b)]
  * 
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_11_xor, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__xor, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[18])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 190, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_11_xor, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__xor, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[18])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 190, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_xor, __pyx_t_6) < (0)) __PYX_ERR(0, 190, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":193
+  /* "optimized_minispn.pyx":193
  *         return [x ^ y for x, y in zip(a, b)]
  * 
  *     def _rotate(self, a, i):             # <<<<<<<<<<<<<<
  *         i = i % self.block_size
  *         return a[-i:] + a[:-i]
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_13_rotate, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__rotate, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[19])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 193, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_13_rotate, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__rotate, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[19])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_rotate, __pyx_t_6) < (0)) __PYX_ERR(0, 193, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":197
+  /* "optimized_minispn.pyx":197
  *         return a[-i:] + a[:-i]
  * 
  *     def encrypt_block(self, block):             # <<<<<<<<<<<<<<
  *         assert self.round_keys is not None, "Please add key before encrypting"
  *         return self._c.encrypt_bits(block)
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_15encrypt_block, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_encrypt_block, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[20])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 197, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_15encrypt_block, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_encrypt_block, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[20])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_encrypt_block, __pyx_t_6) < (0)) __PYX_ERR(0, 197, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":201
+  /* "optimized_minispn.pyx":201
  *         return self._c.encrypt_bits(block)
  * 
  *     def decrypt_block(self, block):             # <<<<<<<<<<<<<<
  *         assert self.round_keys is not None, "Please add key before decrypting"
  *         return self._c.decrypt_bits(block)
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_17decrypt_block, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_decrypt_block, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[21])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 201, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_17decrypt_block, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_decrypt_block, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[21])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 201, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_decrypt_block, __pyx_t_6) < (0)) __PYX_ERR(0, 201, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":205
+  /* "optimized_minispn.pyx":205
  *         return self._c.decrypt_bits(block)
  * 
  *     def _check(self):             # <<<<<<<<<<<<<<
  *         assert self.round_keys is not None, "Please add key first"
  * 
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_19_check, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__check, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[22])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_19_check, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN__check, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[22])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_check, __pyx_t_6) < (0)) __PYX_ERR(0, 205, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":208
+  /* "optimized_minispn.pyx":208
  *         assert self.round_keys is not None, "Please add key first"
  * 
  *     def encrypt_int(self, x):             # <<<<<<<<<<<<<<
  *         self._check(); return self._c.encrypt_int(x)
  * 
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_21encrypt_int, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_encrypt_int, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[23])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 208, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_21encrypt_int, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_encrypt_int, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[23])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 208, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_encrypt_int, __pyx_t_6) < (0)) __PYX_ERR(0, 208, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":211
+  /* "optimized_minispn.pyx":211
  *         self._check(); return self._c.encrypt_int(x)
  * 
  *     def decrypt_int(self, x):             # <<<<<<<<<<<<<<
  *         self._check(); return self._c.decrypt_int(x)
  * 
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_23decrypt_int, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_decrypt_int, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[24])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_23decrypt_int, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_decrypt_int, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[24])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 211, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_decrypt_int, __pyx_t_6) < (0)) __PYX_ERR(0, 211, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":214
+  /* "optimized_minispn.pyx":214
  *         self._check(); return self._c.decrypt_int(x)
  * 
  *     def encrypt_many(self, xs):             # <<<<<<<<<<<<<<
  *         self._check(); return self._c.encrypt_many(xs)
  * 
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_25encrypt_many, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_encrypt_many, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[25])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_25encrypt_many, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_encrypt_many, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[25])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_encrypt_many, __pyx_t_6) < (0)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":217
+  /* "optimized_minispn.pyx":217
  *         self._check(); return self._c.encrypt_many(xs)
  * 
  *     def decrypt_many(self, xs):             # <<<<<<<<<<<<<<
  *         self._check(); return self._c.decrypt_many(xs)
  * 
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_27decrypt_many, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_decrypt_many, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[26])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 217, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_27decrypt_many, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_decrypt_many, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[26])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 217, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_decrypt_many, __pyx_t_6) < (0)) __PYX_ERR(0, 217, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":220
+  /* "optimized_minispn.pyx":220
  *         self._check(); return self._c.decrypt_many(xs)
  * 
  *     def encrypt_inplace(self, buf):             # <<<<<<<<<<<<<<
  *         self._check(); self._c.encrypt_inplace(buf)
  * 
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_29encrypt_inplace, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_encrypt_inplace, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[27])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 220, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_29encrypt_inplace, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_encrypt_inplace, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[27])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_encrypt_inplace, __pyx_t_6) < (0)) __PYX_ERR(0, 220, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":223
+  /* "optimized_minispn.pyx":223
  *         self._check(); self._c.encrypt_inplace(buf)
  * 
  *     def decrypt_inplace(self, buf):             # <<<<<<<<<<<<<<
  *         self._check(); self._c.decrypt_inplace(buf)
  * 
 */
-  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_7MiniSPN_31decrypt_inplace, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_decrypt_inplace, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[28])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_7MiniSPN_31decrypt_inplace, 0, __pyx_mstate_global->__pyx_n_u_MiniSPN_decrypt_inplace, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[28])); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 223, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (__Pyx_SetNameInClass(__pyx_t_4, __pyx_mstate_global->__pyx_n_u_decrypt_inplace, __pyx_t_6) < (0)) __PYX_ERR(0, 223, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "minispn.pyx":144
+  /* "optimized_minispn.pyx":144
  *     return v
  * 
  * class MiniSPN:             # <<<<<<<<<<<<<<
@@ -27983,7 +27983,7 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "minispn.pyx":226
+  /* "optimized_minispn.pyx":226
  *         self._check(); self._c.decrypt_inplace(buf)
  * 
  * miniSPN = MiniSPN()             # <<<<<<<<<<<<<<
@@ -28008,12 +28008,12 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
 */
-  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_7minispn_5__pyx_unpickle_Cipher, 0, __pyx_mstate_global->__pyx_n_u_pyx_unpickle_Cipher, NULL, __pyx_mstate_global->__pyx_n_u_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[29])); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_CyFunction_New(&__pyx_mdef_17optimized_minispn_5__pyx_unpickle_Cipher, 0, __pyx_mstate_global->__pyx_n_u_pyx_unpickle_Cipher, NULL, __pyx_mstate_global->__pyx_n_u_optimized_minispn, __pyx_mstate_global->__pyx_d, ((PyObject *)__pyx_mstate_global->__pyx_codeobj_tab[29])); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (PyDict_SetItem(__pyx_mstate_global->__pyx_d, __pyx_mstate_global->__pyx_n_u_pyx_unpickle_Cipher, __pyx_t_4) < (0)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "minispn.pyx":1
+  /* "optimized_minispn.pyx":1
  * # cython: language_level=3, boundscheck=False, wraparound=False, cdivision=True             # <<<<<<<<<<<<<<
  * from libc.stdint cimport uint64_t
  * 
@@ -28032,7 +28032,7 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
   __Pyx_XDECREF(__pyx_t_6);
   if (__pyx_m) {
     if (__pyx_mstate->__pyx_d && stringtab_initialized) {
-      __Pyx_AddTraceback("init minispn", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init optimized_minispn", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     #if !CYTHON_USE_MODULE_STATE
     Py_CLEAR(__pyx_m);
@@ -28046,7 +28046,7 @@ __Pyx_RefNannySetupContext("PyInit_minispn", 0);
     }
     #endif
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init minispn");
+    PyErr_SetString(PyExc_ImportError, "init optimized_minispn");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
@@ -28237,8 +28237,6 @@ static const __Pyx_StringTabEntry __pyx_string_tab[] = {
   {__pyx_k_memview, sizeof(__pyx_k_memview), 0, 1, 1}, /* PyObject cname: __pyx_n_u_memview */
   {__pyx_k_metaclass, sizeof(__pyx_k_metaclass), 0, 1, 1}, /* PyObject cname: __pyx_n_u_metaclass */
   {__pyx_k_miniSPN, sizeof(__pyx_k_miniSPN), 0, 1, 1}, /* PyObject cname: __pyx_n_u_miniSPN */
-  {__pyx_k_minispn, sizeof(__pyx_k_minispn), 0, 1, 1}, /* PyObject cname: __pyx_n_u_minispn */
-  {__pyx_k_minispn_pyx, sizeof(__pyx_k_minispn_pyx), 0, 1, 0}, /* PyObject cname: __pyx_kp_u_minispn_pyx */
   {__pyx_k_mode, sizeof(__pyx_k_mode), 0, 1, 1}, /* PyObject cname: __pyx_n_u_mode */
   {__pyx_k_module, sizeof(__pyx_k_module), 0, 1, 1}, /* PyObject cname: __pyx_n_u_module */
   {__pyx_k_n, sizeof(__pyx_k_n), 0, 1, 1}, /* PyObject cname: __pyx_n_u_n */
@@ -28258,6 +28256,8 @@ static const __Pyx_StringTabEntry __pyx_string_tab[] = {
   {__pyx_k_only_the_48_6_6_configuration_is, sizeof(__pyx_k_only_the_48_6_6_configuration_is), 0, 1, 0}, /* PyObject cname: __pyx_kp_u_only_the_48_6_6_configuration_is */
   {__pyx_k_only_the_built_in_PERM_is_suppor, sizeof(__pyx_k_only_the_built_in_PERM_is_suppor), 0, 1, 0}, /* PyObject cname: __pyx_kp_u_only_the_built_in_PERM_is_suppor */
   {__pyx_k_only_the_built_in_SBOX_is_suppor, sizeof(__pyx_k_only_the_built_in_SBOX_is_suppor), 0, 1, 0}, /* PyObject cname: __pyx_kp_u_only_the_built_in_SBOX_is_suppor */
+  {__pyx_k_optimized_minispn, sizeof(__pyx_k_optimized_minispn), 0, 1, 1}, /* PyObject cname: __pyx_n_u_optimized_minispn */
+  {__pyx_k_optimized_minispn_pyx, sizeof(__pyx_k_optimized_minispn_pyx), 0, 1, 0}, /* PyObject cname: __pyx_kp_u_optimized_minispn_pyx */
   {__pyx_k_out, sizeof(__pyx_k_out), 0, 1, 1}, /* PyObject cname: __pyx_n_u_out */
   {__pyx_k_pack, sizeof(__pyx_k_pack), 0, 1, 1}, /* PyObject cname: __pyx_n_u_pack */
   {__pyx_k_perm, sizeof(__pyx_k_perm), 0, 1, 1}, /* PyObject cname: __pyx_n_u_perm */
@@ -28504,52 +28504,52 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
   {
     const __Pyx_PyCode_New_function_description descr = {0, 0, 0, 11, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 13, 347};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_s, __pyx_mstate->__pyx_n_u_v, __pyx_mstate->__pyx_n_u_j, __pyx_mstate->__pyx_n_u_k, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_o, __pyx_mstate->__pyx_n_u_r, __pyx_mstate->__pyx_n_u_sbox, __pyx_mstate->__pyx_n_u_inv, __pyx_mstate->__pyx_n_u_perm, __pyx_mstate->__pyx_n_u_invperm};
-    __pyx_mstate_global->__pyx_codeobj_tab[0] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_build_tables, __pyx_k_U_1_AU_aq_U_1_1D_q_U_1_AU_aq_U, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[0])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[0] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_build_tables, __pyx_k_U_1_AU_aq_U_1_1D_q_U_1_AU_aq_U, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[0])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 91, 56};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_keys, __pyx_mstate->__pyx_n_u_i};
-    __pyx_mstate_global->__pyx_codeobj_tab[1] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_set_round_keys, __pyx_k_A_3avS_AQ_E_aq_1E_4q_2Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[1])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[1] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_set_round_keys, __pyx_k_A_3avS_AQ_E_aq_1E_4q_2Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[1])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 98, 19};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_x};
-    __pyx_mstate_global->__pyx_codeobj_tab[2] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_int, __pyx_k_A_t1Bb_d, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[2])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[2] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_int, __pyx_k_A_t1Bb_d, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[2])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 101, 19};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_x};
-    __pyx_mstate_global->__pyx_codeobj_tab[3] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_int, __pyx_k_A_t1Bb_d, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[3])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[3] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_int, __pyx_k_A_t1Bb_d, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[3])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 104, 23};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_bits};
-    __pyx_mstate_global->__pyx_codeobj_tab[4] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_bits, __pyx_k_A_y_Qiq_t1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[4])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[4] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_bits, __pyx_k_A_y_Qiq_t1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[4])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 107, 23};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_bits};
-    __pyx_mstate_global->__pyx_codeobj_tab[5] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_bits, __pyx_k_A_y_Qiq_t1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[5])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[5] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_bits, __pyx_k_A_y_Qiq_t1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[5])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 110, 40};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_xs, __pyx_mstate->__pyx_n_u_out, __pyx_mstate->__pyx_n_u_x};
-    __pyx_mstate_global->__pyx_codeobj_tab[6] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_many, __pyx_k_A_E_wat1Bb_d_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[6])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[6] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_many, __pyx_k_A_E_wat1Bb_d_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[6])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 117, 40};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_xs, __pyx_mstate->__pyx_n_u_out, __pyx_mstate->__pyx_n_u_x};
-    __pyx_mstate_global->__pyx_codeobj_tab[7] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_many, __pyx_k_A_E_wat1Bb_d_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[7])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[7] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_many, __pyx_k_A_E_wat1Bb_d_q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[7])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 124, 52};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_buf, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_n};
-    __pyx_mstate_global->__pyx_codeobj_tab[8] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_inplace, __pyx_k_A_s_U_1_1E_Qc_RvT, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[8])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[8] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_inplace, __pyx_k_A_s_U_1_1E_Qc_RvT, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[8])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 130, 52};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_buf, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_n};
-    __pyx_mstate_global->__pyx_codeobj_tab[9] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_inplace, __pyx_k_A_s_U_1_1E_Qc_RvT, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[9])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[9] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_inplace, __pyx_k_A_s_U_1_1E_Qc_RvT, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[9])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 1, 87};
@@ -28564,87 +28564,87 @@ static int __Pyx_CreateCodeObjects(__pyx_mstatetype *__pyx_mstate) {
   {
     const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 138, 32};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_bits, __pyx_mstate->__pyx_n_u_v, __pyx_mstate->__pyx_n_u_b};
-    __pyx_mstate_global->__pyx_codeobj_tab[12] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_b2i, __pyx_k_Q_Rs_Rq_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[12])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[12] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_b2i, __pyx_k_Q_Rs_Rq_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[12])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {6, 4, 0, 6, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 145, 171};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_block_size, __pyx_mstate->__pyx_n_u_sbox_size, __pyx_mstate->__pyx_n_u_num_rounds, __pyx_mstate->__pyx_n_u_sbox, __pyx_mstate->__pyx_n_u_perm};
-    __pyx_mstate_global->__pyx_codeobj_tab[13] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_init, __pyx_k_44K1_A_L_t8_q_Qa_5_uD_AV3a_Qa_5, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[13])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[13] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_init, __pyx_k_44K1_A_L_t8_q_Qa_5_uD_AV3a_Qa_5, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[13])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 164, 64};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_key, __pyx_mstate->__pyx_n_u_k};
-    __pyx_mstate_global->__pyx_codeobj_tab[14] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_add_key, __pyx_k_A_s_5_4_A_G1_N_l_1_C_aq_AS_E_Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[14])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[14] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_add_key, __pyx_k_A_s_5_4_A_G1_N_l_1_C_aq_AS_E_Q, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[14])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 6, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 170, 93};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_key, __pyx_mstate->__pyx_n_u_round_keys, __pyx_mstate->__pyx_n_u_state, __pyx_mstate->__pyx_n_u_i, __pyx_mstate->__pyx_n_u_round_constant};
-    __pyx_mstate_global->__pyx_codeobj_tab[15] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_expand_key, __pyx_k_A_Q_E_at_r_T_Bb_2V4q_D_AT_at81G5, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[15])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[15] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_expand_key, __pyx_k_A_Q_E_at_r_T_Bb_2V4q_D_AT_at81G5, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[15])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 4, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 179, 44};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_num, __pyx_mstate->__pyx_n_u_size, __pyx_mstate->__pyx_n_u_bits};
-    __pyx_mstate_global->__pyx_codeobj_tab[16] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_num2bit, __pyx_k_A_t1Cq_t1_uBc_5, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[16])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[16] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_num2bit, __pyx_k_A_t1Cq_t1_uBc_5, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[16])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 5, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 183, 91};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_block, __pyx_mstate->__pyx_n_u_new_block, __pyx_mstate->__pyx_n_u_s, __pyx_mstate->__pyx_n_u_index};
-    __pyx_mstate_global->__pyx_codeobj_tab[17] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_substitute, __pyx_k_A_A_E_as_m4q_Cq_q_1E_ar_2T_WAT_4, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[17])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[17] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_substitute, __pyx_k_A_A_E_as_m4q_Cq_q_1E_ar_2T_WAT_4, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[17])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 5, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 190, 27};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_a, __pyx_mstate->__pyx_n_u_b, __pyx_mstate->__pyx_n_u_x, __pyx_mstate->__pyx_n_u_y};
-    __pyx_mstate_global->__pyx_codeobj_tab[18] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_xor, __pyx_k_A_q_Bd_U_Qc, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[18])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[18] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_xor, __pyx_k_A_q_Bd_U_Qc, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[18])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 3, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 193, 34};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_a, __pyx_mstate->__pyx_n_u_i};
-    __pyx_mstate_global->__pyx_codeobj_tab[19] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_rotate, __pyx_k_A_Bb_A_q_b_1A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[19])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[19] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_rotate, __pyx_k_A_Bb_A_q_b_1A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[19])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 197, 28};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_block};
-    __pyx_mstate_global->__pyx_codeobj_tab[20] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_block, __pyx_k_A_t_wfA_t3m1A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[20])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[20] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_block, __pyx_k_A_t_wfA_t3m1A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[20])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 201, 28};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_block};
-    __pyx_mstate_global->__pyx_codeobj_tab[21] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_block, __pyx_k_A_t_wfA_t3m1A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[21])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[21] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_block, __pyx_k_A_t_wfA_t3m1A, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[21])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {1, 0, 0, 1, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 205, 15};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self};
-    __pyx_mstate_global->__pyx_codeobj_tab[22] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_check, __pyx_k_A_t_wfA, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[22])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[22] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_check, __pyx_k_A_t_wfA, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[22])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 208, 21};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_x};
-    __pyx_mstate_global->__pyx_codeobj_tab[23] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_int, __pyx_k_A_G4wd, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[23])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[23] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_int, __pyx_k_A_G4wd, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[23])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 211, 21};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_x};
-    __pyx_mstate_global->__pyx_codeobj_tab[24] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_int, __pyx_k_A_G4wd, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[24])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[24] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_int, __pyx_k_A_G4wd, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[24])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 214, 21};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_xs};
-    __pyx_mstate_global->__pyx_codeobj_tab[25] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_many, __pyx_k_A_G4wd_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[25])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[25] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_many, __pyx_k_A_G4wd_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[25])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 217, 21};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_xs};
-    __pyx_mstate_global->__pyx_codeobj_tab[26] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_many, __pyx_k_A_G4wd_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[26])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[26] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_many, __pyx_k_A_G4wd_1, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[26])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 220, 20};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_buf};
-    __pyx_mstate_global->__pyx_codeobj_tab[27] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_inplace, __pyx_k_A_G4t3_aq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[27])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[27] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_encrypt_inplace, __pyx_k_A_G4t3_aq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[27])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {2, 0, 0, 2, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 223, 20};
     PyObject* const varnames[] = {__pyx_mstate->__pyx_n_u_self, __pyx_mstate->__pyx_n_u_buf};
-    __pyx_mstate_global->__pyx_codeobj_tab[28] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_inplace, __pyx_k_A_G4t3_aq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[28])) goto bad;
+    __pyx_mstate_global->__pyx_codeobj_tab[28] = __Pyx_PyCode_New(descr, varnames, __pyx_mstate->__pyx_kp_u_optimized_minispn_pyx, __pyx_mstate->__pyx_n_u_decrypt_inplace, __pyx_k_A_G4t3_aq, tuple_dedup_map); if (unlikely(!__pyx_mstate_global->__pyx_codeobj_tab[28])) goto bad;
   }
   {
     const __Pyx_PyCode_New_function_description descr = {3, 0, 0, 5, (unsigned int)(CO_OPTIMIZED|CO_NEWLOCALS), 1, 75};
