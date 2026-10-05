@@ -1,3 +1,6 @@
 __pycache__
 build
 *.db-*
+
+# Large binary capture file (kept locally, not pushed)
+symmetric/attacks/minispn_cpt.bin
