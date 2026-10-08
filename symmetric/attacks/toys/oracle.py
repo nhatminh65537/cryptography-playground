@@ -10,7 +10,7 @@ FLAG_FEISTEL = os.getenv('FLAG_FEISTEL', 'kitsu{this_just_is_a_test_flag_for_fei
 
 DB_PATH    = os.getenv('DB_PATH', 'sessions.db')
 BLOCK_BITS = 48
-SESSION_TTL = 7 * 24 * 3600
+SESSION_TTL = 3600
 
 CIPHERS = {'1': miniSPN, '2': miniFeistel}
 
