@@ -80,38 +80,34 @@ class GKRProver(Party):
             l = 2**i
             v = []
             for t in range(3):
-                addi = [0] * l
-                muli = [0] * l
-
-                for j, (a, b, c) in enumerate(wadd):
-                    x = (b << ln) | c
-                    e = (x >> i) & 1
-                    addi[x & (l - 1)] += chiadd[j]*(t*e + (1 - t)*(1 - e))
-
-                for j, (a, b, c) in enumerate(wmul):
-                    x = (b << ln) | c
-                    e = (x >> i) & 1
-                    muli[x & (l - 1)] += chimul[j]*(t*e + (1 - t)*(1 - e))
-
+                tot = 0
                 if i < ln:
-                    wbt = wb
                     wct = fold(wc, t)
+                    for j, (_, b, c) in enumerate(wadd):
+                        e = (c >> i) & 1
+                        tot += chiadd[j]*(t*e + (1 - t)*(1 - e))*(wb[0] + wct[c & (l-1)])
+                    for j, (_, b, c) in enumerate(wmul):
+                        e = (c >> i) & 1
+                        tot += chimul[j]*(t*e + (1 - t)*(1 - e))*(wb[0] * wct[c & (l-1)])
                 else:
+                    k = i - ln
                     wbt = fold(wb, t)
-                    wct = wc
+                    for j, (_, b, c) in enumerate(wadd):
+                        e = (b >> k) & 1
+                        tot += chiadd[j]*(t*e + (1 - t)*(1 - e))*(wbt[b & ((1 << k) - 1)] + wc[c])
+                    for j, (_, b, c) in enumerate(wmul):
+                        e = (b >> k) & 1
+                        tot += chimul[j]*(t*e + (1 - t)*(1 - e))*(wbt[b & ((1 << k) - 1)] * wc[c])
 
-                v.append(sum(
-                    addi[j]*(wbt[j >> ln] + wct[j & (2**ln - 1)]) +
-                    muli[j]*(wbt[j >> ln] * wct[j & (2**ln - 1)]) for j in range(l)
-                ))
+                v.append(tot)
 
             yield dst, v
             _, r = yield
             rs.append(r)
             if i < ln:
                 wc = fold(wc, r)
-                chiadd = [k*(r*(e := (c >> ln) & 1) + (1 - r)*(1 - e)) for k, (_, _, c) in zip(chiadd, wadd)]
-                chimul = [k*(r*(e := (c >> ln) & 1) + (1 - r)*(1 - e)) for k, (_, _, c) in zip(chimul, wmul)]
+                chiadd = [k*(r*(e := (c >> i) & 1) + (1 - r)*(1 - e)) for k, (_, _, c) in zip(chiadd, wadd)]
+                chimul = [k*(r*(e := (c >> i) & 1) + (1 - r)*(1 - e)) for k, (_, _, c) in zip(chimul, wmul)]
             else:
                 wb = fold(wb, r)
                 chiadd = [k*(r*(e := (b >> (i - ln)) & 1) + (1 - r)*(1 - e)) for k, (_, b, _) in zip(chiadd, wadd)]
@@ -209,7 +205,7 @@ class GKRVerifier(Party):
         yield dst, self.inp
         _, out = yield
 
-        r  = [F(randint(1, F.p)) for _ in range(log2(len(out)))]
+        r  = [F(randint(1, F.p)) for _ in range((len(out) - 1).bit_length())]
         wr = MLE(out)(*r)
 
         yield dst, r
