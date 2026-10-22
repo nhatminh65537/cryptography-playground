@@ -55,8 +55,8 @@ class MatmulProver(Party):
         claim = MLE(self.C)(*r1, *r2)
         yield dst, claim
 
-        A = deepcopy(self.A)
-        B = deepcopy(self.B)
+        A = self.A
+        B = self.B
 
         for i in range(ln):
             A = fold(A, r1[i])
@@ -83,7 +83,7 @@ class MatmulVerifier(Party):
     def set_dst(self, prover):
         self.dst = prover.name
 
-    def run(self):
+    def loop(self):
         assert self.dst is not None, "Please set prover"
         dst = self.dst
 
@@ -91,9 +91,13 @@ class MatmulVerifier(Party):
         _, claim = yield
 
         self.sum = claim
+        verifier = Verifier(self.name, None, [2]*self.ln, claim)
+        out = yield from verifier.loop()
+        return out
 
-        A = deepcopy(self.A)
-        B = deepcopy(self.B)
+    def run(self):
+        A = self.A
+        B = self.B
 
         ln = self.ln
 
@@ -101,9 +105,13 @@ class MatmulVerifier(Party):
             A = fold(A, self.r[0][i])
             B = fold(B, self.r[1][i], ln)
 
-        verifier = Verifier(self.name, *trans_tables([A, B]), claim)
-        result = yield from verifier.run()
-        return result
+        g, _ = trans_tables([A, B])
+
+        out = yield from self.loop()
+        if out is None:
+            return False
+        rs, last = out
+        return g(*rs) == last
 
 
 if __name__ == "__main__":
