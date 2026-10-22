@@ -45,23 +45,23 @@ class Verifier(Party):
     def __init__(self, name, g, degs, claim):
         super().__init__(name)
 
-        self.claims = [claim]
+        self.claim = claim
         self.g = g
         self.degs = degs
 
-    def run(self):
+    def loop(self):
         degs = self.degs
-        claims = [self.claims[0]]
+        claims = [self.claim]
         v = len(degs)
         rs = []
 
         for i in range(v):
             dst, (_, ev) = yield
             if len(ev) > degs[i]+1:
-                return False
+                return None
             gi = UniPoly(ev)
             if gi(1) + gi(0) != claims[-1]:
-                return False
+                return None
             r = F(randint(0, F.p-1))
             rs.append(r)
             claims.append(gi(r))
@@ -69,10 +69,15 @@ class Verifier(Party):
                 break
             yield dst, (f"r{i+1}", r)
 
-        if self.g(*rs) != claims[-1]:
-            return False
+        return rs, claims[-1]
 
-        return True
+
+    def run(self):
+        out = yield from self.loop()
+        if out is None:
+            return False
+        rs, last = out
+        return self.g(*rs) == last
 
 
 if __name__ == "__main__":
