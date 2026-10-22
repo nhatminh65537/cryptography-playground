@@ -1,7 +1,7 @@
 from .field import F
 from .mle import MLE
 from .poly import UniPoly
-from math import prod
+from math import prod, log2
 from .interactive import Party
 from random import randint
 
@@ -58,40 +58,40 @@ class GKRProver(Party):
         self.w       = None
         self.dst     = None
 
-    def loop(self, r, i):
+    def loop(self, r, li):
         dst = self.dst
 
-        wadd = self.circuit.wiring(i, ADD)
-        wmul = self.circuit.wiring(i, MUL)
+        wadd = self.circuit.wiring(li, ADD)
+        wmul = self.circuit.wiring(li, MUL)
 
-        ln = (len(self.circuit.layers[i]) - 1).bit_length() 
+        ln = (len(self.circuit.layers[li]) - 1).bit_length() 
 
         chiadd = [chi(int2bit(a, ln), r) for a, *_ in wadd]
         chimul = [chi(int2bit(a, ln), r) for a, *_ in wmul]
 
-        ln = (len(self.circuit.layers[i+1]) - 1).bit_length()
+        ln = (len(self.circuit.layers[li+1]) - 1).bit_length()
 
-        wb = self.w[i+1]
-        wc = self.w[i+1]
+        wb = self.w[li+1]
+        wc = self.w[li+1]
 
         rs = []
 
         for i in range(2*ln - 1, -1, -1):
             l = 2**i
             v = []
-            for t in range(2):
+            for t in range(3):
                 addi = [0] * l
                 muli = [0] * l
 
                 for j, (a, b, c) in enumerate(wadd):
                     x = (b << ln) | c
                     e = (x >> i) & 1
-                    addi[x & (l - 1)] = chiadd[j]*(t*e + (1 - t)*(1 - e))
+                    addi[x & (l - 1)] += chiadd[j]*(t*e + (1 - t)*(1 - e))
 
                 for j, (a, b, c) in enumerate(wmul):
                     x = (b << ln) | c
                     e = (x >> i) & 1
-                    muli[x & (l - 1)] = chimul[j]*(t*e + (1 - t)*(1 - e))
+                    muli[x & (l - 1)] += chimul[j]*(t*e + (1 - t)*(1 - e))
 
                 if i < ln:
                     wbt = wb
@@ -101,31 +101,29 @@ class GKRProver(Party):
                     wct = wc
 
                 v.append(sum(
-                    addi[j]*(wbt[j >> ln] + wct[j & (2*ln - 1)]) +
-                    muli[j]*(wbt[j >> ln] * wct[j & (2*ln - 1)]) for j in range(l)
+                    addi[j]*(wbt[j >> ln] + wct[j & (2**ln - 1)]) +
+                    muli[j]*(wbt[j >> ln] * wct[j & (2**ln - 1)]) for j in range(l)
                 ))
 
             yield dst, v
-            if i == v - 1:
-                break
             _, r = yield
             rs.append(r)
             if i < ln:
                 wc = fold(wc, r)
-                chiadd = [k*(r*(e := c >> ln) + (1 - r)*(1 - e)) for k, (_, _, c) in zip(chiadd, wadd)]
-                muladd = [k*(r*(e := c >> ln) + (1 - r)*(1 - e)) for k, (_, _, c) in zip(muladd, wmul)]
+                chiadd = [k*(r*(e := (c >> ln) & 1) + (1 - r)*(1 - e)) for k, (_, _, c) in zip(chiadd, wadd)]
+                chimul = [k*(r*(e := (c >> ln) & 1) + (1 - r)*(1 - e)) for k, (_, _, c) in zip(chimul, wmul)]
             else:
                 wb = fold(wb, r)
-                chiadd = [k*(r*(e := c >> (i - ln)) + (1 - r)*(1 - e)) for k, (_, b, _) in zip(chiadd, wadd)]
-                muladd = [k*(r*(e := c >> (i - ln)) + (1 - r)*(1 - e)) for k, (_, b, _) in zip(muladd, wmul)]
+                chiadd = [k*(r*(e := (b >> (i - ln)) & 1) + (1 - r)*(1 - e)) for k, (_, b, _) in zip(chiadd, wadd)]
+                chimul = [k*(r*(e := (b >> (i - ln)) & 1) + (1 - r)*(1 - e)) for k, (_, b, _) in zip(chimul, wmul)]
 
         r1 = rs[:ln]
         r2 = rs[ln:]
 
         lp = [UniPoly([r1e, r2e]) for r1e, r2e in zip(r1, r2)]
         l  = lambda x: [lpe(x) for lpe in lp]
-        g  = MLE(self.w[i+1])
-        yield dst, [g(*l(i)) for i in range(ln)]
+        g  = MLE(self.w[li+1])
+        yield dst, [g(*l(i)) for i in range(ln + 1)]
         _, r = yield
 
         return r
@@ -146,77 +144,81 @@ class GKRProver(Party):
 
 class GKRVerifier(Party):
 
-    def __init__(self, name, curcuit, inp):
+    def __init__(self, name, circuit, inp):
         super().__init__(name)
 
-        self.circuit = self.circuit
+        self.circuit = circuit
         self.inp = inp
         self.dst = None
 
-    def loop(self, wr, r, i):
+    def loop(self, wr, r, li):
         dst = self.dst
-        ln = (len(self.circuit.layers[i+1]) - 1).bit_length()
+        ln = (len(self.circuit.layers[li+1]) - 1).bit_length()
         rs = []
         claims = [wr]
 
         for i in range(2*ln - 1, -1, -1):
             _, v = yield
 
-            if len(v) > 2:
-                return
+            if len(v) > 3:
+                return None, None
 
             g = UniPoly(v)
             if g(0) + g(1) != claims[-1]:
-                return
+                return None, None
 
             c = F(randint(1, F.p))
             rs.append(c)
             claims.append(g(c))
-            if i == v - 1:
-                break
             yield dst, c
 
         _, v = yield
-        if len(v) > ln:
-            return
+        if len(v) > ln + 1:
+            return None, None
 
         r1 = rs[:ln]
         r2 = rs[ln:]
 
         f = UniPoly(v)
-        wadd = self.circuit.wiring(i, ADD)
-        wmul = self.circuit.wiring(i, MUL)
-        lni = (len(self.circuit.layers[i]) - 1).bit_length()
+        wadd = self.circuit.wiring(li, ADD)
+        wmul = self.circuit.wiring(li, MUL)
+        lni = (len(self.circuit.layers[li]) - 1).bit_length()
 
         i2b = int2bit
         addi = sum(chi(r+rs, i2b(a, lni)+i2b(b, ln)+i2b(c, ln)) for a, b, c in wadd)
         muli = sum(chi(r+rs, i2b(a, lni)+i2b(b, ln)+i2b(c, ln)) for a, b, c in wmul)
-        if addi*(f(0) + f(1)) + muli*(f(0) + f(1)) != claims[-1]:
-            return False
+        if addi*(f(0) + f(1)) + muli*(f(0) * f(1)) != claims[-1]:
+            return None, None
 
         r  = F(randint(1, F.p))
-        wr = g(r)
+        wr = f(r)
 
-        yield dst, r
+        r1 = rs[:ln]
+        r2 = rs[ln:]
 
-        return wr, r
+        lp = [UniPoly([r1e, r2e]) for r1e, r2e in zip(r1, r2)]
+        l  = lambda x: [lpe(x) for lpe in lp]
+
+        lr = l(r)
+        yield dst, lr
+
+        return wr, lr
 
     def run(self):
         dst = self.dst
         yield dst, self.inp
         _, out = yield
 
-        r  = F(randint(1, F.p))
-        wr = MLE(out)(r)
+        r  = [F(randint(1, F.p)) for _ in range(log2(len(out)))]
+        wr = MLE(out)(*r)
 
         yield dst, r
         for i in range(len(self.circuit.layers) - 1):
             wr, r = yield from self.loop(wr, r, i)
-
             if wr is None:
                 return False
 
-        return True
+        return MLE(self.inp)(*r) == wr
 
 
 if __name__ == "__main__":
